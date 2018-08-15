@@ -2,17 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc6d923d-4d4f-4518-b455-ef3e2065a658" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/out/production/resources/static/css/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/journalplanner/journalplanner/Resource.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/journalplanner/journalplanner/Resource.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/journalplanner/journalplanner/ResourceRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/journalplanner/journalplanner/ResourceRepository.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/com/journalplanner/journalplanner/controller/MainController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/Resource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/Resource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/ResourceRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/ResourceRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/controller/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -49,10 +42,11 @@
     <session id="-1655409992">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="3" />
+          <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -60,7 +54,7 @@
           <entry key="css" value="2" />
           <entry key="gradle" value="1" />
           <entry key="html" value="1" />
-          <entry key="java" value="12" />
+          <entry key="java" value="14" />
           <entry key="properties" value="1" />
         </counts>
       </usages-collector>
@@ -69,7 +63,7 @@
           <entry key="CSS" value="2" />
           <entry key="Groovy" value="1" />
           <entry key="HTML" value="1" />
-          <entry key="JAVA" value="12" />
+          <entry key="JAVA" value="14" />
           <entry key="Properties" value="1" />
         </counts>
       </usages-collector>
@@ -78,7 +72,7 @@
           <entry key="css" value="37" />
           <entry key="gradle" value="1" />
           <entry key="html" value="97" />
-          <entry key="java" value="1669" />
+          <entry key="java" value="2108" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -86,44 +80,34 @@
           <entry key="CSS" value="37" />
           <entry key="Groovy" value="1" />
           <entry key="HTML" value="97" />
-          <entry key="JAVA" value="1669" />
+          <entry key="JAVA" value="2108" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/controller/MainController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="47" column="7" selection-start-line="47" selection-start-column="7" selection-end-line="47" selection-end-column="7" />
+            <state relative-caret-position="420">
+              <caret line="28" column="48" selection-start-line="28" selection-start-column="48" selection-end-line="28" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1309#1310#0" expanded="true" />
-                <element signature="e#1358#1359#0" expanded="true" />
+                <element signature="e#1257#1258#0" expanded="true" />
+                <element signature="e#1306#1307#0" expanded="true" />
+                <element signature="e#1513#1514#0" expanded="true" />
+                <element signature="e#1562#1563#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-core/8.5.32/542325872693cc57f59f65138da82b5eee5099f7/tomcat-embed-core-8.5.32-sources.jar!/org/apache/tomcat/util/net/SocketProcessorBase.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/Resource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="31" column="38" lean-forward="true" selection-start-line="31" selection-start-column="38" selection-end-line="31" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/ResourceRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" selection-start-line="13" selection-end-line="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="225">
+              <caret line="16" column="12" lean-forward="true" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -520,8 +504,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/ResourceService.java" />
         <option value="$PROJECT_DIR$/src/main/resources/static/css/styles.css" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/index.html" />
-        <option value="$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/Resource.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/ResourceRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/Resource.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/controller/MainController.java" />
       </list>
     </option>
@@ -583,9 +567,9 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="AndroidView" />
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -596,7 +580,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534350853261" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534367204460" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -637,18 +621,18 @@
       <option name="presentableId" value="Default" />
       <updated>1534326374804</updated>
       <workItem from="1534326377329" duration="178000" />
-      <workItem from="1534326574932" duration="19534000" />
+      <workItem from="1534326574932" duration="19638000" />
+      <workItem from="1534363845287" duration="3357000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19712000" />
+    <option name="totallyTimeSpent" value="23173000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19092418" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1931378" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -658,7 +642,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.24432433" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.24432433" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -691,16 +675,7 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/ViewController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/ViewController.java" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/styles.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -742,45 +717,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/ResourceService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/Resource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-core/8.5.32/542325872693cc57f59f65138da82b5eee5099f7/tomcat-embed-core-8.5.32-sources.jar!/org/apache/tomcat/util/net/SocketProcessorBase.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
-          <caret line="31" column="38" lean-forward="true" selection-start-line="31" selection-start-column="38" selection-end-line="31" selection-end-column="38" />
+          <caret line="31" column="38" selection-start-line="31" selection-start-column="38" selection-end-line="31" selection-end-column="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/ResourceRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        <state relative-caret-position="165">
+          <caret line="11" column="34" lean-forward="true" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/controller/MainController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/ResourceService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="47" column="7" selection-start-line="47" selection-start-column="7" selection-end-line="47" selection-end-column="7" />
+        <state relative-caret-position="120">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1309#1310#0" expanded="true" />
-            <element signature="e#1358#1359#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/Resource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="16" column="12" lean-forward="true" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/controller/MainController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="48" selection-start-line="28" selection-start-column="48" selection-end-line="28" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1257#1258#0" expanded="true" />
+            <element signature="e#1306#1307#0" expanded="true" />
+            <element signature="e#1513#1514#0" expanded="true" />
+            <element signature="e#1562#1563#0" expanded="true" />
           </folding>
         </state>
       </provider>

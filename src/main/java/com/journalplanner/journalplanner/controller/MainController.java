@@ -1,7 +1,7 @@
 package com.journalplanner.journalplanner.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
+import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 import com.journalplanner.journalplanner.Resource;
@@ -9,7 +9,7 @@ import com.journalplanner.journalplanner.ResourceRepository;
 
 import javax.transaction.Transactional;
 
-@Controller
+@RestController
 @RequestMapping(path="/api")
 public class MainController {
     @Autowired
@@ -35,15 +35,23 @@ public class MainController {
         return resourceRepository.findById(id);
     }
 
+    @PostMapping("/add")
+    @ResponseStatus(HttpStatus.CREATED)
+    public Resource addResource(@RequestBody Resource resource){
+        return resourceRepository.save(resource);
+    }
+
+    @PutMapping("/resource/{id}")
+    public Resource updateResource(@PathVariable(value = "id") Integer id, @RequestBody Resource resource){
+        resourceRepository.findById(id);
+        resource.setId(id);
+        return resourceRepository.save(resource);
+
+    }
+
     @Transactional
     @DeleteMapping(path = "delete/{id}")
     public void deleteResourceById(@PathVariable(value = "id") Integer id){
         resourceRepository.deleteById(id);
     }
-
-    /*@PostMapping("/add")
-    public @ResponseBody String addResource(@RequestBody Resource resource){
-        resourceRepository.save(resource);
-        return "Saved Resources";
-    }*/
 }
