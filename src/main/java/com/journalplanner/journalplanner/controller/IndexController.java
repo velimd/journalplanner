@@ -18,7 +18,7 @@ public class IndexController {
 
     @RequestMapping("/")
     public String index(Model model) {
-        List<Resource> resources =  (List<Resource>) resourceRepository.findAll(); //later make a method to check for instanceof
+        List<Resource> resources =  resourceRepository.findAll();
         model.addAttribute("resources", resources);
         return "index";
     }
