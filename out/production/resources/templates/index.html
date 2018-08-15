@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Title</title>
+</head>
+<body>
+
+<main id="resources">
+    <article th:each="r:${resources}">
+        <h2 class="title" th:text="${r.name}"></h2>
+    </article>
+</main>
+</body>
+</html>

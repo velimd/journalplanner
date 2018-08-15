@@ -1,4 +1,4 @@
-package com.journalplanner.journalplanner;
+package com.journalplanner.journalplanner.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
