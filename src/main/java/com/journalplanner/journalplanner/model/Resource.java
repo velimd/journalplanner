@@ -1,7 +1,8 @@
-package com.journalplanner.journalplanner;
+package com.journalplanner.journalplanner.model;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
+import java.util.ArrayList;
 
 @Entity
 @Table(name="resource")
@@ -11,13 +12,20 @@ public class Resource {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
 
-    @NotNull
+    @Column(name="name", nullable = false)
     private String name;
 
-    @NotNull
+    @Column(name="url", nullable = false)
     private String url;
 
+    @Column(name="memo", nullable = true)
     private String memo;
+
+    @Column(name = "language", nullable = true)
+    private ArrayList<Language> language;
+
+    @Column(name = "framework", nullable = true)
+    private ArrayList<Language> framework;
 
     public Integer getId(){
         return id;
@@ -40,5 +48,17 @@ public class Resource {
     }
     public void setMemo(String memo) {
         this.memo = memo;
+    }
+    public ArrayList<Language> getLanguage() {
+        return language;
+    }
+    public void setLanguage(ArrayList<Language> language) {
+        this.language = language;
+    }
+    public ArrayList<Language> getFramework() {
+        return framework;
+    }
+    public void setFramework(ArrayList<Language> framework) {
+        this.framework = framework;
     }
 }

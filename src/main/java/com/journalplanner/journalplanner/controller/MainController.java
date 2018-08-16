@@ -4,13 +4,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
-import com.journalplanner.journalplanner.Resource;
-import com.journalplanner.journalplanner.ResourceRepository;
+import com.journalplanner.journalplanner.model.Resource;
+import com.journalplanner.journalplanner.repository.ResourceRepository;
 
 import javax.transaction.Transactional;
 
 @RestController
-@RequestMapping(path="/api")
+@RequestMapping(path="/api/resource")
 public class MainController {
     @Autowired
     private ResourceRepository resourceRepository;
@@ -30,9 +30,9 @@ public class MainController {
         return resourceRepository.findAll();
     }
 
-    @GetMapping(path = "resource/{id}")
+    @GetMapping(path = "/{id}")
     public @ResponseBody Resource getResourceById(@PathVariable(value="id") Integer id){
-        return resourceRepository.findById(id);
+        return resourceRepository.findById(id); //if statement to return message if the id doesnt exist.
     }
 
     @PostMapping("/add")
@@ -41,9 +41,9 @@ public class MainController {
         return resourceRepository.save(resource);
     }
 
-    @PutMapping("/resource/{id}")
+    @PutMapping("/{id}")
     public Resource updateResource(@PathVariable(value = "id") Integer id, @RequestBody Resource resource){
-        resourceRepository.findById(id);
+        resourceRepository.findById(id); //make a check method to see if the id does exist.
         resource.setId(id);
         return resourceRepository.save(resource);
 

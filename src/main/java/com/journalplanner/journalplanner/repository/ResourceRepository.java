@@ -1,8 +1,8 @@
-package com.journalplanner.journalplanner;
+package com.journalplanner.journalplanner.repository;
 
 import org.springframework.data.repository.CrudRepository;
 
-import com.journalplanner.journalplanner.Resource;
+import com.journalplanner.journalplanner.model.Resource;
 
 import java.util.List;
 

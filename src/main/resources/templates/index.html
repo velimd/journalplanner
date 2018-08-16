@@ -7,10 +7,12 @@
 </head>
 <body>
 
-<main id="resources">
-    <article th:each="r:${resources}">
-        <h2 class="title" th:text="${r.name}"></h2>
-    </article>
-</main>
+<div th:fragment="header">
+    <main id="resources">
+        <article th:each="r:${resources}">
+            <h2 class="title" th:text="${r.name}"></h2>
+        </article>
+    </main>
+</div>
 </body>
 </html>
