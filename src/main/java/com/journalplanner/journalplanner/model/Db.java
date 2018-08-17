@@ -8,8 +8,8 @@ import java.util.HashSet;
 import java.util.Set;
 
 @Entity
-@Table(name = "database")
-public class Database {
+@Table(name = "Db")
+public class Db {
     @Id
     @NotNull
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -18,12 +18,12 @@ public class Database {
     @Column(name = "name")
     private String name;
 
-    @ManyToMany(mappedBy = "databases")
-    @JsonIgnoreProperties({"languages","frameworks","technologies","databases"})
+    @ManyToMany(mappedBy = "dbs")
+    @JsonIgnoreProperties({"languages","frameworks","technologies","dbs"})
     private Set<Resource> resources = new HashSet<>();
 
-    @ManyToMany(mappedBy = "databases")
-    @JsonIgnoreProperties({"languages","frameworks","technologies","databases"})
+    @ManyToMany(mappedBy = "dbs")
+    @JsonIgnoreProperties({"languages","frameworks","technologies","dbs"})
     private Set<Project> projects = new HashSet<>();
 
     public Integer getId() {

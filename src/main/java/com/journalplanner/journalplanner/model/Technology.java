@@ -19,11 +19,11 @@ public class Technology {
     private String name;
 
     @ManyToMany(mappedBy = "technologies")
-    @JsonIgnoreProperties({"languages","frameworks","technologies","databases"})
+    @JsonIgnoreProperties({"languages","frameworks","technologies","dbs"})
     private Set<Resource> resources = new HashSet<>();
 
     @ManyToMany(mappedBy = "technologies")
-    @JsonIgnoreProperties({"languages","frameworks","technologies","databases"})
+    @JsonIgnoreProperties({"languages","frameworks","technologies","dbs"})
     private Set<Project> projects = new HashSet<>();
 
     public Integer getId() {

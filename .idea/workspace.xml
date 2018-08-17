@@ -2,10 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc6d923d-4d4f-4518-b455-ef3e2065a658" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/journalplanner/journalplanner/model/Framework.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/journalplanner/journalplanner/model/Language.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/journalplanner/journalplanner/model/Project.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/journalplanner/journalplanner/model/Resource.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/model/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/model/Db.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/model/Framework.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/model/Framework.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/model/Language.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/model/Language.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/model/Project.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/model/Project.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/model/Resource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/model/Resource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/model/Technology.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/model/Technology.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -58,7 +65,7 @@
           <entry key="css" value="2" />
           <entry key="gradle" value="4" />
           <entry key="html" value="3" />
-          <entry key="java" value="111" />
+          <entry key="java" value="121" />
           <entry key="properties" value="8" />
         </counts>
       </usages-collector>
@@ -67,7 +74,7 @@
           <entry key="CSS" value="2" />
           <entry key="Groovy" value="4" />
           <entry key="HTML" value="3" />
-          <entry key="JAVA" value="111" />
+          <entry key="JAVA" value="121" />
           <entry key="Properties" value="8" />
         </counts>
       </usages-collector>
@@ -76,7 +83,7 @@
           <entry key="css" value="37" />
           <entry key="gradle" value="4" />
           <entry key="html" value="253" />
-          <entry key="java" value="5534" />
+          <entry key="java" value="5578" />
           <entry key="properties" value="20" />
         </counts>
       </usages-collector>
@@ -85,7 +92,7 @@
           <entry key="CSS" value="37" />
           <entry key="Groovy" value="4" />
           <entry key="HTML" value="253" />
-          <entry key="JAVA" value="5534" />
+          <entry key="JAVA" value="5578" />
           <entry key="Properties" value="20" />
         </counts>
       </usages-collector>
@@ -93,21 +100,55 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/model/Resource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="406">
-              <caret line="93" column="5" selection-start-line="93" selection-start-column="5" selection-end-line="93" selection-end-column="5" />
+            <state relative-caret-position="708">
+              <caret line="95" column="21" selection-start-line="95" selection-start-column="21" selection-end-line="95" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2902#2903#0" expanded="true" />
                 <element signature="e#2937#2938#0" expanded="true" />
-                <element signature="e#3002#3003#0" expanded="true" />
-                <element signature="e#3050#3051#0" expanded="true" />
-                <element signature="e#3093#3094#0" expanded="true" />
-                <element signature="e#3125#3126#0" expanded="true" />
-                <element signature="e#3182#3183#0" expanded="true" />
-                <element signature="e#3224#3225#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/model/Project.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1260">
+              <caret line="84" column="17" selection-start-line="84" selection-start-column="17" selection-end-line="84" selection-end-column="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1988#1989#0" expanded="true" />
+                <element signature="e#2013#2014#0" expanded="true" />
+                <element signature="e#2049#2050#0" expanded="true" />
+                <element signature="e#2077#2078#0" expanded="true" />
+                <element signature="e#2107#2108#0" expanded="true" />
+                <element signature="e#2134#2135#0" expanded="true" />
+                <element signature="e#2173#2174#0" expanded="true" />
+                <element signature="e#2205#2206#0" expanded="true" />
+                <element signature="e#2234#2235#0" expanded="true" />
+                <element signature="e#2260#2261#0" expanded="true" />
+                <element signature="e#2297#2298#0" expanded="true" />
+                <element signature="e#2327#2328#0" expanded="true" />
+                <element signature="e#2369#2370#0" expanded="true" />
+                <element signature="e#2401#2402#0" expanded="true" />
+                <element signature="e#2457#2458#0" expanded="true" />
+                <element signature="e#2499#2500#0" expanded="true" />
+                <element signature="e#2543#2544#0" expanded="true" />
+                <element signature="e#2576#2577#0" expanded="true" />
+                <element signature="e#2635#2636#0" expanded="true" />
+                <element signature="e#2679#2680#0" expanded="true" />
+                <element signature="e#2726#2727#0" expanded="true" />
+                <element signature="e#2761#2762#0" expanded="true" />
+                <element signature="e#2825#2826#0" expanded="true" />
+                <element signature="e#2873#2874#0" expanded="true" />
+                <element signature="e#2915#2916#0" expanded="true" />
+                <element signature="e#2947#2948#0" expanded="true" />
+                <element signature="e#3003#3004#0" expanded="true" />
+                <element signature="e#3045#3046#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -131,6 +172,9 @@
       <find>language</find>
       <find>Language</find>
       <find>Technology</find>
+      <find>databases</find>
+      <find>Database</find>
+      <find>database</find>
     </findStrings>
     <replaceStrings>
       <replace>framework</replace>
@@ -141,6 +185,9 @@
       <replace>Technology</replace>
       <replace>database</replace>
       <replace>Database</replace>
+      <replace>dbs</replace>
+      <replace>Db</replace>
+      <replace>db</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/controller</dir>
@@ -542,12 +589,13 @@
         <option value="$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/controller/FrameworkController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/repository/ProjectRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/controller/ProjectController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/model/Technology.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/model/Database.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/model/Framework.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/model/Language.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/model/Project.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/model/Technology.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/model/Dbs.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/model/Resource.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/model/Project.java" />
       </list>
     </option>
   </component>
@@ -664,7 +712,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534519411609" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534519968820" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -710,18 +758,18 @@
       <workItem from="1534406270874" duration="23731000" />
       <workItem from="1534437679390" duration="670000" />
       <workItem from="1534493487176" duration="9690000" />
-      <workItem from="1534512509037" duration="6310000" />
+      <workItem from="1534512509037" duration="6839000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63574000" />
+    <option name="totallyTimeSpent" value="64103000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20199226" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.20199226" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -731,7 +779,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32972974" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4997233" visible="true" weight="0.37513512" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4997233" weight="0.37513512" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.25405404" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -756,6 +804,42 @@
       <window_info anchor="right" id="Theme Preview" order="9" />
       <window_info anchor="right" id="Bean Validation" order="10" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20199226" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32972974" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4997233" weight="0.37513512" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.25405404" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Build" order="7" weight="0.32972974" />
+      <window_info anchor="bottom" id="Spring" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5002767" side_tool="true" weight="0.24108107" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32972974" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="14" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Maven Projects" order="5" />
+      <window_info anchor="right" id="Gradle" order="6" weight="0.17266187" />
+      <window_info anchor="right" id="Database" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+      <window_info anchor="right" id="Bean Validation" order="10" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -926,20 +1010,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/model/Database.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/model/Db.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="21" column="80" selection-start-line="21" selection-start-column="80" selection-end-line="21" selection-end-column="80" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/model/Framework.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="23" column="80" selection-start-line="23" selection-start-column="80" selection-end-line="23" selection-end-column="80" />
+        <state relative-caret-position="165">
+          <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -948,8 +1022,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/model/Language.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="80" selection-start-line="25" selection-start-column="80" selection-end-line="25" selection-end-column="80" />
+        <state relative-caret-position="390">
+          <caret line="26" column="2" selection-start-line="26" selection-start-column="2" selection-end-line="26" selection-end-column="2" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -958,46 +1032,70 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/model/Technology.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="30" column="5" lean-forward="true" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+        <state relative-caret-position="390">
+          <caret line="26" column="2" selection-start-line="26" selection-start-column="2" selection-end-line="26" selection-end-column="2" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/model/Project.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/model/Framework.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="85" column="5" selection-start-line="85" selection-start-column="5" selection-end-line="85" selection-end-column="5" />
+        <state relative-caret-position="360">
+          <caret line="24" column="2" selection-start-line="24" selection-start-column="2" selection-end-line="24" selection-end-column="2" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2726#2727#0" expanded="true" />
-            <element signature="e#2761#2762#0" expanded="true" />
-            <element signature="e#2826#2827#0" expanded="true" />
-            <element signature="e#2874#2875#0" expanded="true" />
-            <element signature="e#2917#2918#0" expanded="true" />
-            <element signature="e#2949#2950#0" expanded="true" />
-            <element signature="e#3006#3007#0" expanded="true" />
-            <element signature="e#3048#3049#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/model/Resource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="93" column="5" selection-start-line="93" selection-start-column="5" selection-end-line="93" selection-end-column="5" />
+        <state relative-caret-position="708">
+          <caret line="95" column="21" selection-start-line="95" selection-start-column="21" selection-end-line="95" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2902#2903#0" expanded="true" />
             <element signature="e#2937#2938#0" expanded="true" />
-            <element signature="e#3002#3003#0" expanded="true" />
-            <element signature="e#3050#3051#0" expanded="true" />
-            <element signature="e#3093#3094#0" expanded="true" />
-            <element signature="e#3125#3126#0" expanded="true" />
-            <element signature="e#3182#3183#0" expanded="true" />
-            <element signature="e#3224#3225#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/model/Project.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1260">
+          <caret line="84" column="17" selection-start-line="84" selection-start-column="17" selection-end-line="84" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1988#1989#0" expanded="true" />
+            <element signature="e#2013#2014#0" expanded="true" />
+            <element signature="e#2049#2050#0" expanded="true" />
+            <element signature="e#2077#2078#0" expanded="true" />
+            <element signature="e#2107#2108#0" expanded="true" />
+            <element signature="e#2134#2135#0" expanded="true" />
+            <element signature="e#2173#2174#0" expanded="true" />
+            <element signature="e#2205#2206#0" expanded="true" />
+            <element signature="e#2234#2235#0" expanded="true" />
+            <element signature="e#2260#2261#0" expanded="true" />
+            <element signature="e#2297#2298#0" expanded="true" />
+            <element signature="e#2327#2328#0" expanded="true" />
+            <element signature="e#2369#2370#0" expanded="true" />
+            <element signature="e#2401#2402#0" expanded="true" />
+            <element signature="e#2457#2458#0" expanded="true" />
+            <element signature="e#2499#2500#0" expanded="true" />
+            <element signature="e#2543#2544#0" expanded="true" />
+            <element signature="e#2576#2577#0" expanded="true" />
+            <element signature="e#2635#2636#0" expanded="true" />
+            <element signature="e#2679#2680#0" expanded="true" />
+            <element signature="e#2726#2727#0" expanded="true" />
+            <element signature="e#2761#2762#0" expanded="true" />
+            <element signature="e#2825#2826#0" expanded="true" />
+            <element signature="e#2873#2874#0" expanded="true" />
+            <element signature="e#2915#2916#0" expanded="true" />
+            <element signature="e#2947#2948#0" expanded="true" />
+            <element signature="e#3003#3004#0" expanded="true" />
+            <element signature="e#3045#3046#0" expanded="true" />
           </folding>
         </state>
       </provider>

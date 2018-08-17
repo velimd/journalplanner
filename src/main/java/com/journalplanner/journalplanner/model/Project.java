@@ -40,10 +40,10 @@ public class Project {
     private Set<Technology> technologies = new HashSet<>();
 
     @ManyToMany(cascade = CascadeType.ALL)
-    @JoinTable(name = "project_database", joinColumns = { @JoinColumn(name = "project_id") }, inverseJoinColumns = { @JoinColumn(name = "database_id") })
-    @Column(name = "database", nullable = true)
+    @JoinTable(name = "project_db", joinColumns = { @JoinColumn(name = "project_id") }, inverseJoinColumns = { @JoinColumn(name = "db_id") })
+    @Column(name = "db", nullable = true)
     @JsonIgnoreProperties({"projects", "resources"})
-    private Set<Database> databases = new HashSet<>();
+    private Set<Db> dbs = new HashSet<>();
 
     public Integer getId() {
         return id;
@@ -81,10 +81,10 @@ public class Project {
     public void setTechnologies(Set<Technology> technologies) {
         this.technologies = technologies;
     }
-    public Set<Database> getDatabases() {
-        return databases;
+    public Set<Db> getDbs() {
+        return dbs;
     }
-    public void setDatabases(Set<Database> databases) {
-        this.databases = databases;
+    public void setDbs(Set<Db> dbs) {
+        this.dbs = dbs;
     }
 }

@@ -37,16 +37,16 @@ public class Resource {
     private Set<Framework> frameworks = new HashSet<>();
 
     @ManyToMany(cascade = CascadeType.ALL)
-    @JoinTable(name = "project_technology", joinColumns = { @JoinColumn(name = "project_id") }, inverseJoinColumns = { @JoinColumn(name = "technology_id") })
+    @JoinTable(name = "resource_technology", joinColumns = { @JoinColumn(name = "resource_id") }, inverseJoinColumns = { @JoinColumn(name = "technology_id") })
     @Column(name = "technology", nullable = true)
     @JsonIgnoreProperties({"projects", "resources"})
     private Set<Technology> technologies = new HashSet<>();
 
     @ManyToMany(cascade = CascadeType.ALL)
-    @JoinTable(name = "project_database", joinColumns = { @JoinColumn(name = "project_id") }, inverseJoinColumns = { @JoinColumn(name = "database_id") })
-    @Column(name = "database", nullable = true)
+    @JoinTable(name = "resource_database", joinColumns = { @JoinColumn(name = "resource_id") }, inverseJoinColumns = { @JoinColumn(name = "database_id") })
+    @Column(name = "db", nullable = true)
     @JsonIgnoreProperties({"projects", "resources"})
-    private Set<Database> databases = new HashSet<>();
+    private Set<Db> dbs = new HashSet<>();
 
     public Integer getId(){
         return id;
@@ -89,10 +89,10 @@ public class Resource {
     public void setTechnologies(Set<Technology> technologies) {
         this.technologies = technologies;
     }
-    public Set<Database> getDatabases() {
-        return databases;
+    public Set<Db> getDbs() {
+        return dbs;
     }
-    public void setDatabases(Set<Database> databases) {
-        this.databases = databases;
+    public void setDbs(Set<Db> dbs) {
+        this.dbs = dbs;
     }
 }
