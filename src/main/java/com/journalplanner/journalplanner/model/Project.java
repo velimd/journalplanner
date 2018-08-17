@@ -22,7 +22,7 @@ public class Project {
     private String url;
 
     @ManyToMany(cascade = CascadeType.ALL)
-    @JoinTable(name = "projects_language", joinColumns = { @JoinColumn(name = "projects_id") }, inverseJoinColumns = { @JoinColumn(name = "language_id") })
+    @JoinTable(name = "project_language", joinColumns = { @JoinColumn(name = "project_id") }, inverseJoinColumns = { @JoinColumn(name = "language_id") })
     @Column(name = "language", nullable = true)
     @JsonIgnoreProperties({"projects", "resources"})
     private Set<Language> languages = new HashSet<>();
@@ -32,6 +32,18 @@ public class Project {
     @Column(name = "framework", nullable = true)
     @JsonIgnoreProperties({"projects", "resources"})
     private Set<Framework> frameworks = new HashSet<>();
+
+    @ManyToMany(cascade = CascadeType.ALL)
+    @JoinTable(name = "project_technology", joinColumns = { @JoinColumn(name = "project_id") }, inverseJoinColumns = { @JoinColumn(name = "technology_id") })
+    @Column(name = "technology", nullable = true)
+    @JsonIgnoreProperties({"projects", "resources"})
+    private Set<Technology> technologies = new HashSet<>();
+
+    @ManyToMany(cascade = CascadeType.ALL)
+    @JoinTable(name = "project_database", joinColumns = { @JoinColumn(name = "project_id") }, inverseJoinColumns = { @JoinColumn(name = "database_id") })
+    @Column(name = "database", nullable = true)
+    @JsonIgnoreProperties({"projects", "resources"})
+    private Set<Database> databases = new HashSet<>();
 
     public Integer getId() {
         return id;
@@ -62,5 +74,17 @@ public class Project {
     }
     public void setFrameworks(Set<Framework> frameworks) {
         this.frameworks = frameworks;
+    }
+    public Set<Technology> getTechnologies() {
+        return technologies;
+    }
+    public void setTechnologies(Set<Technology> technologies) {
+        this.technologies = technologies;
+    }
+    public Set<Database> getDatabases() {
+        return databases;
+    }
+    public void setDatabases(Set<Database> databases) {
+        this.databases = databases;
     }
 }

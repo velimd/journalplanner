@@ -3,24 +3,26 @@ package com.journalplanner.journalplanner.model;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 import java.util.HashSet;
 import java.util.Set;
 
 @Entity
-@Table(name = "framework")
-public class Framework {
+@Table(name = "technology")
+public class Technology {
     @Id
+    @NotNull
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
 
     @Column(name = "name")
     private String name;
 
-    @ManyToMany(mappedBy = "frameworks")
+    @ManyToMany(mappedBy = "technologies")
     @JsonIgnoreProperties({"languages","frameworks","technologies","databases"})
     private Set<Resource> resources = new HashSet<>();
 
-    @ManyToMany(mappedBy = "frameworks")
+    @ManyToMany(mappedBy = "technologies")
     @JsonIgnoreProperties({"languages","frameworks","technologies","databases"})
     private Set<Project> projects = new HashSet<>();
 
