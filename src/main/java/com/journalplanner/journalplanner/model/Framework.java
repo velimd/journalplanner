@@ -12,6 +12,8 @@ public class Framework {
     @Column(name = "name")
     private String name;
 
+    @ManyToOne
+    @JoinColumn(name = "framework_id")
     public Integer getId() {
         return id;
     }

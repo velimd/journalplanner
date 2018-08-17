@@ -41,12 +41,16 @@ public class Project {
     public void setUrl(String url) {
         this.url = url;
     }
+
+    @OneToMany(mappedBy = "language", cascade = CascadeType.ALL)
     public ArrayList<Language> getLanguage() {
         return language;
     }
     public void setLanguage(ArrayList<Language> language) {
         this.language = language;
     }
+
+    @OneToMany(mappedBy = "framework", cascade = CascadeType.ALL)
     public ArrayList<Framework> getFramework() {
         return framework;
     }

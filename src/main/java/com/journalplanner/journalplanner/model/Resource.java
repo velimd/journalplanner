@@ -1,8 +1,11 @@
 package com.journalplanner.journalplanner.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
-import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
 @Table(name="resource")
@@ -21,11 +24,11 @@ public class Resource {
     @Column(name="memo", nullable = true)
     private String memo;
 
+    @ManyToMany(cascade = CascadeType.ALL)
+    @JoinTable(name = "resource_language", joinColumns = { @JoinColumn(name = "resource_id") }, inverseJoinColumns = { @JoinColumn(name = "language_id") })
     @Column(name = "language", nullable = true)
-    private ArrayList<Language> language;
-
-    @Column(name = "framework", nullable = true)
-    private ArrayList<Language> framework;
+    @JsonIgnoreProperties("resources")
+    private Set<Language> languages = new HashSet<>();
 
     public Integer getId(){
         return id;
@@ -49,16 +52,10 @@ public class Resource {
     public void setMemo(String memo) {
         this.memo = memo;
     }
-    public ArrayList<Language> getLanguage() {
-        return language;
+    public Set<Language> getLanguages() {
+        return languages;
     }
-    public void setLanguage(ArrayList<Language> language) {
-        this.language = language;
-    }
-    public ArrayList<Language> getFramework() {
-        return framework;
-    }
-    public void setFramework(ArrayList<Language> framework) {
-        this.framework = framework;
+    public void setLanguages(Set<Language> languages) {
+        this.languages = languages;
     }
 }

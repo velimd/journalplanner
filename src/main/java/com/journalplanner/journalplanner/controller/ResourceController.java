@@ -1,5 +1,6 @@
 package com.journalplanner.journalplanner.controller;
 
+import com.journalplanner.journalplanner.model.Language;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
@@ -11,11 +12,11 @@ import javax.transaction.Transactional;
 
 @RestController
 @RequestMapping(path="/api/resource")
-public class MainController {
+public class ResourceController {
     @Autowired
     private ResourceRepository resourceRepository;
 
-    @GetMapping(path="/add")
+    /*@GetMapping(path="/add")
     public @ResponseBody String addNewResource(@RequestParam String name, @RequestParam String url, @RequestParam String memo){
         Resource r = new Resource();
         r.setName(name);
@@ -23,7 +24,7 @@ public class MainController {
         r.setMemo(memo);
         resourceRepository.save(r);
         return "Saved";
-    }
+    }*/
 
     @GetMapping(path="/all")
     public @ResponseBody Iterable<Resource> getAllResources(){
@@ -38,7 +39,12 @@ public class MainController {
     @PostMapping("/add")
     @ResponseStatus(HttpStatus.CREATED)
     public Resource addResource(@RequestBody Resource resource){
-        return resourceRepository.save(resource);
+        Resource r = new Resource();
+        r.setName(resource.getName());
+        r.setUrl(resource.getUrl());
+        r.setMemo(resource.getMemo());
+        r.setLanguages(resource.getLanguages());
+        return resourceRepository.save(r);
     }
 
     @PutMapping("/{id}")

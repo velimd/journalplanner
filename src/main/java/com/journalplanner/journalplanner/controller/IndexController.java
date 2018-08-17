@@ -1,6 +1,6 @@
 package com.journalplanner.journalplanner.controller;
 
-import java.util.List;
+import java.util.Set;
 
 import com.journalplanner.journalplanner.repository.ResourceRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,7 +17,7 @@ public class IndexController {
 
     @RequestMapping("/")
     public String index(Model model) {
-        List<Resource> resources =  resourceRepository.findAll();
+        Set<Resource> resources =  resourceRepository.findAll();
         model.addAttribute("resources", resources);
         return "index";
     }

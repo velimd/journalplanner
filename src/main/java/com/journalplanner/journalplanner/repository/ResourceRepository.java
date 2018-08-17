@@ -4,10 +4,10 @@ import org.springframework.data.repository.CrudRepository;
 
 import com.journalplanner.journalplanner.model.Resource;
 
-import java.util.List;
+import java.util.Set;
 
 public interface ResourceRepository extends CrudRepository<Resource, Long> {
-    List<Resource> findAll();
+    Set<Resource> findAll();
     void deleteById(Integer id);
     Resource findById(Integer id);
 }
