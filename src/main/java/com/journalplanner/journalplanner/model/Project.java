@@ -1,13 +1,17 @@
 package com.journalplanner.journalplanner.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import javax.persistence.*;
-import java.util.ArrayList;
+import javax.validation.constraints.NotNull;
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
 @Table(name = "project")
 public class Project {
-
     @Id
+    @NotNull
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
 
@@ -17,11 +21,17 @@ public class Project {
     @Column(name = "url", nullable = false)
     private String url;
 
+    @ManyToMany(cascade = CascadeType.ALL)
+    @JoinTable(name = "projects_language", joinColumns = { @JoinColumn(name = "projects_id") }, inverseJoinColumns = { @JoinColumn(name = "language_id") })
     @Column(name = "language", nullable = true)
-    private ArrayList<Language> language;
+    @JsonIgnoreProperties({"projects", "resources"})
+    private Set<Language> languages = new HashSet<>();
 
+    @ManyToMany(cascade = CascadeType.ALL)
+    @JoinTable(name = "project_framework", joinColumns = { @JoinColumn(name = "project_id") }, inverseJoinColumns = { @JoinColumn(name = "framework_id") })
     @Column(name = "framework", nullable = true)
-    private ArrayList<Framework> framework;
+    @JsonIgnoreProperties({"projects", "resources"})
+    private Set<Framework> frameworks = new HashSet<>();
 
     public Integer getId() {
         return id;
@@ -41,20 +51,16 @@ public class Project {
     public void setUrl(String url) {
         this.url = url;
     }
-
-    @OneToMany(mappedBy = "language", cascade = CascadeType.ALL)
-    public ArrayList<Language> getLanguage() {
-        return language;
+    public Set<Language> getLanguages() {
+        return languages;
     }
-    public void setLanguage(ArrayList<Language> language) {
-        this.language = language;
+    public void setLanguages(Set<Language> languages) {
+        this.languages = languages;
     }
-
-    @OneToMany(mappedBy = "framework", cascade = CascadeType.ALL)
-    public ArrayList<Framework> getFramework() {
-        return framework;
+    public Set<Framework> getFrameworks() {
+        return frameworks;
     }
-    public void setFramework(ArrayList<Framework> framework) {
-        this.framework = framework;
+    public void setFrameworks(Set<Framework> frameworks) {
+        this.frameworks = frameworks;
     }
 }

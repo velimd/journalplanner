@@ -2,12 +2,10 @@ package com.journalplanner.journalplanner.controller;
 
 import com.journalplanner.journalplanner.model.Language;
 import com.journalplanner.journalplanner.repository.LanguageRepository;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
-
-import com.journalplanner.journalplanner.model.Language;
-import com.journalplanner.journalplanner.repository.LanguageRepository;
 
 import javax.transaction.Transactional;
 

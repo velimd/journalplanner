@@ -1,6 +1,5 @@
 package com.journalplanner.journalplanner.controller;
 
-import com.journalplanner.journalplanner.model.Language;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
@@ -39,12 +38,7 @@ public class ResourceController {
     @PostMapping("/add")
     @ResponseStatus(HttpStatus.CREATED)
     public Resource addResource(@RequestBody Resource resource){
-        Resource r = new Resource();
-        r.setName(resource.getName());
-        r.setUrl(resource.getUrl());
-        r.setMemo(resource.getMemo());
-        r.setLanguages(resource.getLanguages());
-        return resourceRepository.save(r);
+        return resourceRepository.save(resource);
     }
 
     @PutMapping("/{id}")

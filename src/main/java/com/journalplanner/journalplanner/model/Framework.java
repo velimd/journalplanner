@@ -1,6 +1,10 @@
 package com.journalplanner.journalplanner.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import javax.persistence.*;
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
 @Table(name = "framework")
@@ -12,8 +16,14 @@ public class Framework {
     @Column(name = "name")
     private String name;
 
-    @ManyToOne
-    @JoinColumn(name = "framework_id")
+    @ManyToMany(mappedBy = "frameworks")
+    @JsonIgnoreProperties({"languages","frameworks"})
+    private Set<Resource> resources = new HashSet<>();
+
+    @ManyToMany(mappedBy = "frameworks")
+    @JsonIgnoreProperties({"languages","frameworks"})
+    private Set<Project> projects = new HashSet<>();
+
     public Integer getId() {
         return id;
     }
@@ -25,5 +35,17 @@ public class Framework {
     }
     public void setName(String name) {
         this.name = name;
+    }
+    public Set<Resource> getResources() {
+        return resources;
+    }
+    public void setResources(Set<Resource> resources) {
+        this.resources = resources;
+    }
+    public Set<Project> getProjects() {
+        return projects;
+    }
+    public void setProjects(Set<Project> projects) {
+        this.projects = projects;
     }
 }

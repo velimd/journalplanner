@@ -27,8 +27,14 @@ public class Resource {
     @ManyToMany(cascade = CascadeType.ALL)
     @JoinTable(name = "resource_language", joinColumns = { @JoinColumn(name = "resource_id") }, inverseJoinColumns = { @JoinColumn(name = "language_id") })
     @Column(name = "language", nullable = true)
-    @JsonIgnoreProperties("resources")
+    @JsonIgnoreProperties({"projects", "resources"})
     private Set<Language> languages = new HashSet<>();
+
+    @ManyToMany(cascade = CascadeType.ALL)
+    @JoinTable(name = "resource_framework", joinColumns = { @JoinColumn(name = "resource_id") }, inverseJoinColumns = { @JoinColumn(name = "framework_id") })
+    @Column(name = "framework", nullable = true)
+    @JsonIgnoreProperties({"projects", "resources"})
+    private Set<Framework> frameworks = new HashSet<>();
 
     public Integer getId(){
         return id;
@@ -43,6 +49,7 @@ public class Resource {
     public String getUrl() {
         return url;
     }
+
     public void setUrl(String url) {
         this.url = url;
     }
@@ -57,5 +64,11 @@ public class Resource {
     }
     public void setLanguages(Set<Language> languages) {
         this.languages = languages;
+    }
+    public Set<Framework> getFrameworks() {
+        return frameworks;
+    }
+    public void setFrameworks(Set<Framework> frameworks) {
+        this.frameworks = frameworks;
     }
 }
