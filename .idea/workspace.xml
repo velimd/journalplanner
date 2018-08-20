@@ -3,6 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="cc6d923d-4d4f-4518-b455-ef3e2065a658" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/journalplanner/journalplanner/controller/IndexController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/journalplanner/journalplanner/controller/IndexController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/static/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/static/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/templates/footer.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/controller/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/controller/IndexController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/footer.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -39,83 +49,64 @@
     <session id="-1655409992">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="7" />
+          <entry key="project.closed" value="11" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.5" value="1" />
+          <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="8" />
+          <entry key="project.opened" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="2" />
-          <entry key="gradle" value="4" />
-          <entry key="html" value="3" />
-          <entry key="java" value="131" />
-          <entry key="properties" value="8" />
+          <entry key="css" value="6" />
+          <entry key="gradle" value="5" />
+          <entry key="html" value="5" />
+          <entry key="java" value="137" />
+          <entry key="js" value="2" />
+          <entry key="properties" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="2" />
-          <entry key="Groovy" value="4" />
-          <entry key="HTML" value="3" />
-          <entry key="JAVA" value="131" />
-          <entry key="Properties" value="8" />
+          <entry key="CSS" value="6" />
+          <entry key="Groovy" value="5" />
+          <entry key="HTML" value="5" />
+          <entry key="JAVA" value="137" />
+          <entry key="JavaScript" value="2" />
+          <entry key="Properties" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="37" />
+          <entry key="css" value="60" />
           <entry key="gradle" value="4" />
-          <entry key="html" value="253" />
+          <entry key="html" value="254" />
           <entry key="java" value="5700" />
-          <entry key="properties" value="20" />
+          <entry key="properties" value="46" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="37" />
+          <entry key="CSS" value="60" />
           <entry key="Groovy" value="4" />
-          <entry key="HTML" value="253" />
+          <entry key="HTML" value="254" />
           <entry key="JAVA" value="5700" />
-          <entry key="Properties" value="20" />
+          <entry key="Properties" value="46" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/controller/TechnologyController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="29" column="72" lean-forward="true" selection-start-line="29" selection-start-column="72" selection-end-line="29" selection-end-column="72" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/controller/FrameworkController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="41">
-              <caret line="13" column="13" selection-end-line="47" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -526,26 +517,21 @@
         <option value="$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/MainController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/ViewController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/ResourceService.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/css/styles.css" />
         <option value="$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/ResourceRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/Resource.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/index.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/footer.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/model/stackResourceProject.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/model/stack.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/JournalplannerApplication.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/repository/StackRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/model/Stack.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/model/framework.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/model/language.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/controller/MainController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/repository/ResourceRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/controller/IndexController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/repository/LanguageRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/repository/FrameworkRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/controller/ResourceController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/controller/LanguageController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/controller/FrameworkController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/repository/ProjectRepository.java" />
@@ -561,6 +547,11 @@
         <option value="$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/repository/DbRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/controller/TechnologyController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/controller/DbController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/index.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/css/styles.css" />
+        <option value="$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/controller/ResourceController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/controller/IndexController.java" />
       </list>
     </option>
   </component>
@@ -571,10 +562,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="67" />
-    <option name="y" value="25" />
-    <option name="width" value="1853" />
-    <option name="height" value="1055" />
+    <option name="x" value="366" />
+    <option name="y" value="27" />
+    <option name="width" value="973" />
+    <option name="height" value="898" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -626,40 +617,6 @@
               <item name="journalplanner" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="journalplanner" type="b2602c69:ProjectViewProjectNode" />
-              <item name="journalplanner" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="journalplanner" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="journalplanner" type="b2602c69:ProjectViewProjectNode" />
-              <item name="journalplanner" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="journalplanner" type="462c0819:PsiDirectoryNode" />
-              <item name="repository" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="journalplanner" type="b2602c69:ProjectViewProjectNode" />
-              <item name="journalplanner" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="journalplanner" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="journalplanner" type="b2602c69:ProjectViewProjectNode" />
-              <item name="journalplanner" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -677,7 +634,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534753304057" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534762816684" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -724,18 +681,21 @@
       <workItem from="1534437679390" duration="670000" />
       <workItem from="1534493487176" duration="9690000" />
       <workItem from="1534512509037" duration="7133000" />
-      <workItem from="1534752111425" duration="1193000" />
+      <workItem from="1534752111425" duration="6944000" />
+      <workItem from="1534763742456" duration="609000" />
+      <workItem from="1534764947900" duration="830000" />
+      <workItem from="1534771900994" duration="602000" />
+      <workItem from="1534774867987" duration="831000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65590000" />
+    <option name="totallyTimeSpent" value="74213000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="25" width="1920" height="990" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20531267" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20651014" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -745,7 +705,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32972974" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4997233" visible="true" weight="0.37513512" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4997233" weight="0.40348837" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.25405404" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -764,7 +724,7 @@
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="Maven Projects" order="5" />
-      <window_info anchor="right" id="Gradle" order="6" weight="0.17266187" />
+      <window_info anchor="right" id="Gradle" order="6" visible="true" weight="0.1664888" />
       <window_info anchor="right" id="Database" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="right" id="Theme Preview" order="9" />
@@ -779,13 +739,6 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/ViewController.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="29" selection-start-line="1" selection-start-column="29" selection-end-line="1" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-core/8.5.32/542325872693cc57f59f65138da82b5eee5099f7/tomcat-embed-core-8.5.32-sources.jar!/org/apache/tomcat/util/net/SocketProcessorBase.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -800,27 +753,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/footer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" lean-forward="true" selection-start-line="7" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="7" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/service/ResourceService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/model/Languages.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/model/stackResourceProject.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/model/stack.java" />
@@ -831,29 +763,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="68" lean-forward="true" selection-start-line="29" selection-start-column="68" selection-end-line="29" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/model/Stack.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/repository/StackRepository.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="27" lean-forward="true" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/controller/IndexController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/controller/LanguageController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -882,13 +793,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/controller/ResourceController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="24" column="23" lean-forward="true" selection-start-line="19" selection-start-column="8" selection-end-line="24" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/repository/ResourceRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -914,9 +818,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -924,9 +825,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -934,9 +832,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
           <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -944,9 +839,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="271">
           <caret line="26" column="2" selection-start-line="26" selection-start-column="2" selection-end-line="26" selection-end-column="2" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -954,9 +846,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="26" column="2" selection-start-line="26" selection-start-column="2" selection-end-line="26" selection-end-column="2" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -964,15 +853,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="24" lean-forward="true" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2077#2078#0" expanded="true" />
-            <element signature="e#2104#2105#0" expanded="true" />
-            <element signature="e#2267#2268#0" expanded="true" />
-            <element signature="e#2297#2298#0" expanded="true" />
-            <element signature="e#2873#2874#0" expanded="true" />
-            <element signature="e#2899#2900#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -980,19 +860,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" lean-forward="true" selection-end-line="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/controller/FrameworkController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="41">
-          <caret line="13" column="13" selection-end-line="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1000,22 +867,78 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="585">
           <caret line="43" column="22" lean-forward="true" selection-start-line="43" selection-start-column="22" selection-end-line="43" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/footer.html" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/controller/FrameworkController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="41">
+          <caret line="13" column="13" selection-end-line="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/service/ResourceService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/controller/TechnologyController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="29" column="72" lean-forward="true" selection-start-line="29" selection-start-column="72" selection-end-line="29" selection-end-column="72" />
+        <state relative-caret-position="15">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="30" column="41" lean-forward="true" selection-start-line="30" selection-start-column="41" selection-end-line="30" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/styles.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="74" selection-start-line="5" selection-start-column="74" selection-end-line="5" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/controller/ResourceController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="383">
+          <caret line="29" column="43" selection-start-line="29" selection-start-column="43" selection-end-line="29" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#967#968#0" expanded="true" />
+            <element signature="e#1018#1019#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/controller/IndexController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/client/src/App.js" />
   </component>
   <component name="masterDetails">
     <states>

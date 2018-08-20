@@ -3,16 +3,13 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>Title</title>
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css?version=51">
 </head>
 <body>
 
-<div th:fragment="header">
-    <main id="resources">
-        <article th:each="r:${resources}">
-            <h2 class="title" th:text="${r.name}"></h2>
-        </article>
-    </main>
-</div>
+<div id="react"></div>
+
+<script src="built/bundle.js"></script>
+
 </body>
 </html>

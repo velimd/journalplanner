@@ -21,9 +21,4 @@ public class IndexController {
         model.addAttribute("resources", resources);
         return "index";
     }
-
-    @RequestMapping("/footer")
-    public String footer() {
-        return "footer";
-    }
 }
