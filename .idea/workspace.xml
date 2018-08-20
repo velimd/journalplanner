@@ -3,7 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="cc6d923d-4d4f-4518-b455-ef3e2065a658" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/client/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/client/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/client/src/components/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/client/src/components/Navbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/client/src/pages/Home.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/client/src/pages/Home.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/client/src/pages/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/client/src/pages/Home.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -40,7 +43,7 @@
     <session id="-1655409992">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="11" />
+          <entry key="project.closed" value="12" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.10" value="1" />
@@ -58,91 +61,109 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="8" />
+          <entry key="css" value="9" />
           <entry key="gradle" value="5" />
           <entry key="html" value="5" />
-          <entry key="java" value="137" />
-          <entry key="js" value="5" />
+          <entry key="java" value="139" />
+          <entry key="js" value="7" />
+          <entry key="json" value="1" />
           <entry key="properties" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="8" />
+          <entry key="CSS" value="9" />
           <entry key="Groovy" value="5" />
           <entry key="HTML" value="5" />
-          <entry key="JAVA" value="137" />
-          <entry key="JavaScript" value="5" />
+          <entry key="JAVA" value="139" />
+          <entry key="JSON" value="1" />
+          <entry key="JavaScript" value="7" />
           <entry key="Properties" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="60" />
+          <entry key="css" value="86" />
           <entry key="gradle" value="4" />
-          <entry key="html" value="257" />
+          <entry key="html" value="265" />
           <entry key="java" value="5700" />
-          <entry key="js" value="565" />
+          <entry key="js" value="740" />
           <entry key="properties" value="46" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="60" />
+          <entry key="CSS" value="86" />
           <entry key="Groovy" value="4" />
-          <entry key="HTML" value="257" />
+          <entry key="HTML" value="265" />
           <entry key="JAVA" value="5700" />
-          <entry key="JavaScript" value="565" />
+          <entry key="JavaScript" value="740" />
           <entry key="Properties" value="46" />
         </counts>
       </usages-collector>
     </session>
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="journalplanner" />
+  </component>
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/client/src/App.js">
+        <entry file="file://$PROJECT_DIR$/frontend/client/public/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="35" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="135">
+              <caret line="9" column="212" selection-start-line="9" selection-start-column="212" selection-end-line="9" selection-end-column="212" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/frontend/client/src/pages/Home.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+            <state relative-caret-position="285">
+              <caret line="19" column="30" lean-forward="true" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/client/src/pages/Home.css">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/client/public/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="206" selection-start-line="17" selection-start-column="206" selection-end-line="17" selection-end-column="206" />
+            <state relative-caret-position="30">
+              <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/client/src/components/Navbar.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="76" selection-start-line="22" selection-start-column="76" selection-end-line="22" selection-end-column="76" />
+            <state relative-caret-position="225">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/model/Resource.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="36" column="56" lean-forward="true" selection-start-line="36" selection-start-column="56" selection-end-line="36" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/model/Language.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="21" column="22" lean-forward="true" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -595,11 +616,12 @@
         <option value="$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/controller/ResourceController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/controller/IndexController.java" />
         <option value="$PROJECT_DIR$/frontend/client/src/App.css" />
-        <option value="$PROJECT_DIR$/frontend/client/public/index.html" />
         <option value="$PROJECT_DIR$/frontend/client/src/components/navbar.js" />
         <option value="$PROJECT_DIR$/frontend/client/src/App.js" />
-        <option value="$PROJECT_DIR$/frontend/client/src/pages/Home.js" />
+        <option value="$PROJECT_DIR$/frontend/client/public/index.html" />
+        <option value="$PROJECT_DIR$/frontend/client/src/pages/Home.css" />
         <option value="$PROJECT_DIR$/frontend/client/src/components/Navbar.js" />
+        <option value="$PROJECT_DIR$/frontend/client/src/pages/Home.js" />
       </list>
     </option>
   </component>
@@ -1906,7 +1928,7 @@
               <item name="journalplanner" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="frontend" type="462c0819:PsiDirectoryNode" />
               <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="journalplanner" type="b2602c69:ProjectViewProjectNode" />
@@ -1914,6 +1936,7 @@
               <item name="frontend" type="462c0819:PsiDirectoryNode" />
               <item name="client" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="journalplanner" type="b2602c69:ProjectViewProjectNode" />
@@ -1945,7 +1968,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534779624530" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534783079181" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -1998,28 +2021,27 @@
       <workItem from="1534764947900" duration="830000" />
       <workItem from="1534771900994" duration="602000" />
       <workItem from="1534774867987" duration="831000" />
-      <workItem from="1534776312128" duration="3306000" />
+      <workItem from="1534776312128" duration="6825000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77519000" />
+    <option name="totallyTimeSpent" value="81038000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1920" height="990" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17075774" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49902534" visible="true" weight="0.17075774" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="UI Designer" order="4" />
-      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Favorites" order="5" sideWeight="0.50097466" side_tool="true" weight="0.17075774" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32972974" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4997233" weight="0.40348837" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4997233" weight="0.0" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.25405404" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -2121,13 +2143,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/model/Resource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="708">
-          <caret line="95" column="21" selection-start-line="95" selection-start-column="21" selection-end-line="95" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/repository/DbRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -2152,13 +2167,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/model/Technology.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="271">
-          <caret line="26" column="2" selection-start-line="26" selection-start-column="2" selection-end-line="26" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/model/Language.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
           <caret line="26" column="2" selection-start-line="26" selection-start-column="2" selection-end-line="26" selection-end-column="2" />
         </state>
       </provider>
@@ -2261,16 +2269,6 @@
     <entry file="file://$PROJECT_DIR$/frontend/client/src/components/Navbar.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/client/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="206" selection-start-line="17" selection-start-column="206" selection-end-line="17" selection-end-column="206" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/client/src/pages/Home.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/client/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -2281,17 +2279,55 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/client/src/pages/Home.js">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/model/Resource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+        <state relative-caret-position="266">
+          <caret line="36" column="56" lean-forward="true" selection-start-line="36" selection-start-column="56" selection-end-line="36" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/model/Language.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="21" column="22" lean-forward="true" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/client/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/client/src/pages/Home.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/client/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="212" selection-start-line="9" selection-start-column="212" selection-end-line="9" selection-end-column="212" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/client/src/components/Navbar.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="76" selection-start-line="22" selection-start-column="76" selection-end-line="22" selection-end-column="76" />
+        <state relative-caret-position="225">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/client/src/pages/Home.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="30" lean-forward="true" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
