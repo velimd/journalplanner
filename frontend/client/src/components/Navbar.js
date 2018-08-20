@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './Navbar.css';
 
 class Navbar extends Component {
@@ -7,7 +7,7 @@ class Navbar extends Component {
         return (
             <div>
                 <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-                    <a className="navbar-brand" href="#">Navbar</a>
+                    <Link className="navbar-brand" to="/">Navbar</Link>
                     <button className="navbar-toggler" type="button" data-toggle="collapse"
                             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">
@@ -17,10 +17,10 @@ class Navbar extends Component {
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav mr-auto">
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Resources</a>
+                                <Link className="nav-link" to="/resources/add">Add Resources</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Projects</a>
+                                <Link className="nav-link" to="/projects/add">Add Projects</Link>
                             </li>
                         </ul>
                     </div>
