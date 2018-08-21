@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 import './Project.css';
 import Navbar from '../components/Navbar.js'
@@ -23,7 +24,6 @@ class Project extends Component {
         return (
             <div>
                 <Navbar/>
-                <div className="container-fluid">
                     <table className="table table-dark">
                         <thead>
                         <tr>
@@ -59,6 +59,8 @@ class Project extends Component {
                         })}
                         </tbody>
                     </table>
+                <div style={{textAlign:'center'}}>
+                    <Link to="/projects/add"><button type="button" id="btn-add" className="btn btn-dark">Add</button></Link>
                 </div>
             </div>
         );
