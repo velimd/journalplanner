@@ -4,6 +4,7 @@ import './App.css';
 
 import Home from './pages/Home.js';
 import Resource from './pages/Resource.js';
+import AddResource from './pages/AddResource.js';
 import Project from './pages/Project.js'
 
 class App extends Component {
@@ -13,6 +14,8 @@ class App extends Component {
           <div>
               <Route exact path="/" component={Home}/>
               <Route exact path="/resources" component={Resource}/>
+              <Route exact path="/resources/add" component={AddResource}/>
+
               <Route exact path="/projects" component={Project}/>
           </div>
         </Router>
