@@ -38,7 +38,7 @@ class Project extends Component {
                             return(
                                 <tr key={p.id}>
                                     <th scope="row">{p.id}</th>
-                                    <td>{p.name}k</td>
+                                    <td>{p.name}</td>
                                     <td><a href={"http://"+p.url}>{p.url}</a></td>
                                     <td>
                                         {p.languages.map((l, k) =>
