@@ -39,7 +39,7 @@ class Resource extends Component {
                     <tr>
                         <th scope="row">{r.id}</th>
                         <td>{r.name}k</td>
-                        <td>{r.url}</td>
+                        <td><a href={"http://"+r.url}>{r.url}</a></td>
                         <td>{r.memo}</td>
                         <td>
                             {r.languages.map((l, k) =>
@@ -55,7 +55,6 @@ class Resource extends Component {
                                 <button type="button" className="btn btn-primary btn-sm">{t.name} </button>
                             )}
                         </td>
-
                     </tr>
                     )}
                     </tbody>
