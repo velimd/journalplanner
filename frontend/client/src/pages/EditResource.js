@@ -1,37 +1,34 @@
 import React, { Component } from 'react';
+import axios from 'axios';
 
 import './Resource.css';
 import Navbar from '../components/Navbar.js'
 
-class AddResource extends Component {
-    constructor(){
-        super();
+class EditResource extends Component {
+    constructor(props){
+        super(props);
         this.state={
-            resources:[]
+            resource:{
+                name:'',
+                url:'',
+                memo:''
+            }
         };
     }
-
-    addResource(e){
-        var URL = 'http://localhost:8080/api/resource/add';
-
-        let name = document.getElementById('name').value;
-        let url = document.getElementById('url').value;
-        let memo = document.getElementById('memo').value;
-
-        fetch(URL, {
-            method: 'POST',
-            headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({
-                name: name,
-                url: url,
-                memo:memo
-            })
+    componentDidMount(){
+        var url = 'http://localhost:8080/api/resource/'+this.props.match.params.id;
+        axios.get(url).then(res => {
+            this.setState({resource:res.data})
         })
-            .then((res) =>res.json())
-            .then((data) => console.log(data))
+    }
+    editResource(e){
+        e.preventDefault();
+        const r ={
+            name:this.state.name,
+            url:this.state.url,
+            memo:this.state.memo
+        }
+        axios.put('http://localhost:8080/api/resource/'+this.props.match.params.id, r).then(res => console.log(res.data));
     }
 
     render() {
@@ -41,20 +38,20 @@ class AddResource extends Component {
                 <div className="container">
                     <div className="panel panel-default">
                         <div className="panel-body">
-                            <form onSubmit={this.addResource}>
+                            <form onSubmit={this.editResource}>
                                 <div className="form-row">
                                     <div className="form-group col-md-6">
                                         <label htmlFor="Name">Title</label>
-                                        <input type="text" className="form-control" id="name" placeholder="Title"/>
+                                        <input type="text" className="form-control" id="name" placeholder="Title" value={this.state.resource.name} onChange={this.onChange}/>
                                     </div>
                                     <div className="form-group col-md-6">
                                         <label htmlFor="URL">URL</label>
-                                        <input type="text" className="form-control" id="url" placeholder="URL"/>
+                                        <input type="text" className="form-control" id="url" placeholder="URL" value={this.state.resource.url}/>
                                     </div>
                                 </div>
                                 <div className="form-group">
                                     <label htmlFor="Memo">Memo</label>
-                                    <input type="text" className="form-control" id="memo" placeholder="Memo"/>
+                                    <input type="text" className="form-control" id="memo" placeholder="Memo" value={this.state.resource.memo}/>
                                 </div>
                                 <button type="submit" id="btn-add-submit">submit</button>
                             </form>
@@ -66,4 +63,4 @@ class AddResource extends Component {
     }
 }
 
-export default AddResource;
+export default EditResource;
