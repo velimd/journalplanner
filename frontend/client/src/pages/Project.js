@@ -34,27 +34,29 @@ class Project extends Component {
                         </tr>
                         </thead>
                         <tbody>
-                        {this.state.projects.map((p, key) =>
-                            <tr>
-                                <th scope="row">{p.id}</th>
-                                <td>{p.name}k</td>
-                                <td><a href={"http://"+p.url}>{p.url}</a></td>
-                                <td>
-                                    {p.languages.map((l, k) =>
-                                        <button type="button" className="btn btn-primary btn-sm">{l.name} </button>
-                                    )}
-                                    {p.frameworks.map((f, i) =>
-                                        <button type="button" className="btn btn-primary btn-sm">{f.name} </button>
-                                    )}
-                                    {p.dbs.map((d, j) =>
-                                        <button type="button" className="btn btn-primary btn-sm">{d.name} </button>
-                                    )}
-                                    {p.technologies.map((t, n) =>
-                                        <button type="button" className="btn btn-primary btn-sm">{t.name} </button>
-                                    )}
-                                </td>
-                            </tr>
-                        )}
+                        {this.state.projects.map((p, key) => {
+                            return(
+                                <tr key={p.id}>
+                                    <th scope="row">{p.id}</th>
+                                    <td>{p.name}k</td>
+                                    <td><a href={"http://"+p.url}>{p.url}</a></td>
+                                    <td>
+                                        {p.languages.map((l, k) =>
+                                            <button type="button" className="btn btn-primary btn-sm" key={l.id}>{l.name} </button>
+                                        )}
+                                        {p.frameworks.map((f, i) =>
+                                            <button type="button" className="btn btn-primary btn-sm" key={f.id}>{f.name} </button>
+                                        )}
+                                        {p.dbs.map((d, j) =>
+                                            <button type="button" className="btn btn-primary btn-sm" key={d.id}>{d.name} </button>
+                                        )}
+                                        {p.technologies.map((t, n) =>
+                                            <button type="button" className="btn btn-primary btn-sm" key={t.id}>{t.name} </button>
+                                        )}
+                                    </td>
+                                </tr>
+                            )
+                        })}
                         </tbody>
                     </table>
                 </div>
