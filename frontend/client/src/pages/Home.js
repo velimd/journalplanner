@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 import './Home.css';
 import Navbar from '../components/Navbar.js'
@@ -12,11 +13,15 @@ class Home extends Component {
                     <div className="container">
                         <div className="jumbotron text-center col-md-6">
                             <h1>Resources</h1>
-                            <button type="button" className="btn btn-primary">View</button>
+                            <Link to="/resources">
+                                <button type="button" className="btn btn-primary">View</button>
+                            </Link>
                         </div>
                         <div className="jumbotron text-center col-md-6">
                             <h1>Projects</h1>
-                            <button type="button" className="btn btn-primary">View</button>
+                            <Link to="/projects">
+                                <button type="button" className="btn btn-primary">View</button>
+                            </Link>
                         </div>
                     </div>
                 </div>
