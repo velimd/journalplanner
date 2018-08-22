@@ -10,7 +10,11 @@ class EditProject extends Component {
         this.state={
             project:[{
                 name:"",
-                url:""
+                url:"",
+                languages:[],
+                frameworks:[],
+                technologies:[],
+                dbs:[]
             }]
         };
     }
@@ -31,7 +35,11 @@ class EditProject extends Component {
         console.log(this.state.name)
         const project ={
             name:this.state.name || this.state.project.name,
-            url:this.state.url || this.state.project.url
+            url:this.state.url || this.state.project.url,
+            languages: this.state.project.languages,
+            frameworks: this.state.project.frameworks,
+            technologies: this.state.project.technologies,
+            dbs: this.state.project.dbs
         }
         axios.put('http://localhost:8080/api/project/'+this.props.match.params.id, project).then(res =>{
             console.log(res);

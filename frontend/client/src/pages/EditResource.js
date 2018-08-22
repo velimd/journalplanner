@@ -11,7 +11,11 @@ class EditResource extends Component {
             resource:[{
                 name:"",
                 url:"",
-                memo:""
+                memo:"",
+                languages:[],
+                frameworks:[],
+                technologies:[],
+                dbs:[]
             }]
         };
     }
@@ -32,7 +36,11 @@ class EditResource extends Component {
         const resource ={
             name:this.state.name || this.state.resource.name,
             url:this.state.url || this.state.resource.url,
-            memo:this.state.memo || this.state.resource.memo
+            memo:this.state.memo || this.state.resource.memo,
+            languages: this.state.resource.languages,
+            frameworks: this.state.resource.frameworks,
+            technologies: this.state.resource.technologies,
+            dbs: this.state.resource.dbs
         }
         axios.put('http://localhost:8080/api/resource/'+this.props.match.params.id, resource).then(res =>{
             console.log(res);

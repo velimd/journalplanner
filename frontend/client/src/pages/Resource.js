@@ -18,6 +18,7 @@ class Resource extends Component {
             this.setState({
                 resources:res.data
             });
+            console.log(res.data);
         });
     }
 
