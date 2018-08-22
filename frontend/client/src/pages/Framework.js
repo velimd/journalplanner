@@ -40,7 +40,7 @@ class Framework extends Component {
                             return (
                                 <tr key={f.id}>
                                     <th scope="row">{f.id}</th>
-                                    <td><Link to={"resources/edit/"+f.id}>{f.name}</Link></td>
+                                    <td><Link to={"frameworks/edit/"+f.id}>{f.name}</Link></td>
                                 </tr>
                             )
                         })}

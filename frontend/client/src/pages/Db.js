@@ -40,7 +40,7 @@ class Db extends Component {
                             return (
                                 <tr key={d.id}>
                                     <th scope="row">{d.id}</th>
-                                    <td><Link to={"resources/edit/"+d.id}>{d.name}</Link></td>
+                                    <td><Link to={"dbs/edit/"+d.id}>{d.name}</Link></td>
                                 </tr>
                             )
                         })}

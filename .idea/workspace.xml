@@ -5,10 +5,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/client/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/client/src/components/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/client/src/components/Navbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/client/src/pages/Db.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/client/src/pages/Db.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/client/src/pages/Framework.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/client/src/pages/Framework.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/client/src/pages/Language.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/client/src/pages/Language.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/client/src/pages/Technology.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/client/src/pages/Technology.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -73,7 +71,7 @@
           <entry key="gradle" value="5" />
           <entry key="html" value="8" />
           <entry key="java" value="147" />
-          <entry key="js" value="100" />
+          <entry key="js" value="114" />
           <entry key="json" value="2" />
           <entry key="properties" value="9" />
           <entry key="rnc" value="1" />
@@ -86,7 +84,7 @@
           <entry key="HTML" value="8" />
           <entry key="JAVA" value="147" />
           <entry key="JSON" value="2" />
-          <entry key="JavaScript" value="100" />
+          <entry key="JavaScript" value="114" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="Properties" value="9" />
           <entry key="RNG Compact" value="1" />
@@ -98,7 +96,7 @@
           <entry key="gradle" value="4" />
           <entry key="html" value="291" />
           <entry key="java" value="5726" />
-          <entry key="js" value="6803" />
+          <entry key="js" value="7067" />
           <entry key="properties" value="46" />
         </counts>
       </usages-collector>
@@ -108,7 +106,7 @@
           <entry key="Groovy" value="4" />
           <entry key="HTML" value="291" />
           <entry key="JAVA" value="5726" />
-          <entry key="JavaScript" value="6803" />
+          <entry key="JavaScript" value="7067" />
           <entry key="Properties" value="46" />
         </counts>
       </usages-collector>
@@ -120,22 +118,9 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/client/src/pages/AddLanguage.js">
+        <entry file="file://$PROJECT_DIR$/frontend/client/src/pages/EditLanguage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
-              <caret line="39" column="109" selection-end-line="52" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/frontend/client/src/pages/AddFramework.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="21" column="44" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
+            <state>
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -144,22 +129,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/client/src/pages/AddDb.js">
+        <entry file="file://$PROJECT_DIR$/frontend/client/src/pages/EditFramework.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="129">
-              <caret line="18" column="34" lean-forward="true" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/client/src/pages/AddTechnology.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="21" column="45" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
+            <state relative-caret-position="135">
+              <caret line="30" column="56" selection-start-line="30" selection-start-column="56" selection-end-line="30" selection-end-column="56" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -170,8 +143,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/client/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="624">
-              <caret line="50" column="59" selection-start-line="50" selection-start-column="59" selection-end-line="50" selection-end-column="59" />
+            <state relative-caret-position="189">
+              <caret line="32" column="16" lean-forward="true" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -180,10 +153,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/client/src/pages/Framework.js">
+        <entry file="file://$PROJECT_DIR$/frontend/client/src/pages/EditTechnology.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="604">
-              <caret line="50" column="41" selection-start-line="50" selection-start-column="41" selection-end-line="50" selection-end-column="41" />
+            <state relative-caret-position="579">
+              <caret line="65" column="26" lean-forward="true" selection-start-line="65" selection-start-column="26" selection-end-line="65" selection-end-column="26" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -191,23 +164,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/client/src/pages/Technology.js">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/frontend/client/src/pages/EditDb.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" column="25" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/client/src/pages/Db.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="615">
-              <caret line="50" column="34" selection-start-line="50" selection-start-column="34" selection-end-line="50" selection-end-column="34" />
+            <state relative-caret-position="459">
+              <caret line="57" column="138" selection-start-line="57" selection-start-column="138" selection-end-line="57" selection-end-column="138" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -248,8 +209,8 @@
       <replace>dbs</replace>
       <replace />
       <replace>db</replace>
-      <replace>Db</replace>
       <replace>Technology</replace>
+      <replace>Db</replace>
       <replace>technology</replace>
     </replaceStrings>
     <dirStrings>
@@ -626,10 +587,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/repository/ResourceRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/repository/LanguageRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/repository/FrameworkRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/controller/LanguageController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/controller/FrameworkController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/repository/ProjectRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/controller/ProjectController.java" />
@@ -667,16 +624,20 @@
         <option value="$PROJECT_DIR$/frontend/client/src/pages/Project.js" />
         <option value="$PROJECT_DIR$/frontend/client/src/pages/Resource.css" />
         <option value="$PROJECT_DIR$/frontend/client/src/pages/Project.css" />
-        <option value="$PROJECT_DIR$/frontend/client/src/pages/Language.js" />
-        <option value="$PROJECT_DIR$/frontend/client/src/components/Navbar.js" />
         <option value="$PROJECT_DIR$/frontend/client/src/pages/AddLanguage.js" />
         <option value="$PROJECT_DIR$/frontend/client/src/pages/AddDb.js" />
         <option value="$PROJECT_DIR$/frontend/client/src/pages/AddTechnology.js" />
-        <option value="$PROJECT_DIR$/frontend/client/src/App.js" />
-        <option value="$PROJECT_DIR$/frontend/client/src/pages/Framework.js" />
         <option value="$PROJECT_DIR$/frontend/client/src/pages/Technology.js" />
         <option value="$PROJECT_DIR$/frontend/client/src/pages/Db.js" />
         <option value="$PROJECT_DIR$/frontend/client/src/pages/AddFramework.js" />
+        <option value="$PROJECT_DIR$/frontend/client/src/pages/Language.js" />
+        <option value="$PROJECT_DIR$/frontend/client/src/components/Navbar.js" />
+        <option value="$PROJECT_DIR$/frontend/client/src/App.js" />
+        <option value="$PROJECT_DIR$/frontend/client/src/pages/Framework.js" />
+        <option value="$PROJECT_DIR$/frontend/client/src/pages/EditFramework.js" />
+        <option value="$PROJECT_DIR$/frontend/client/src/pages/EditTechnology.js" />
+        <option value="$PROJECT_DIR$/frontend/client/src/pages/EditLanguage.js" />
+        <option value="$PROJECT_DIR$/frontend/client/src/pages/EditDb.js" />
       </list>
     </option>
   </component>
@@ -754,41 +715,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="journalplanner" type="b2602c69:ProjectViewProjectNode" />
-              <item name="journalplanner" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="journalplanner" type="b2602c69:ProjectViewProjectNode" />
-              <item name="journalplanner" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="journalplanner" type="b2602c69:ProjectViewProjectNode" />
-              <item name="journalplanner" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="journalplanner" type="b2602c69:ProjectViewProjectNode" />
-              <item name="journalplanner" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="journalplanner" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="journalplanner" type="b2602c69:ProjectViewProjectNode" />
-              <item name="journalplanner" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="journalplanner" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -807,7 +733,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534949498750" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534950962271" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../files/react" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -867,12 +793,12 @@
       <workItem from="1534866621494" duration="4645000" />
       <workItem from="1534925805669" duration="9355000" />
       <workItem from="1534935535419" duration="2125000" />
-      <workItem from="1534941323772" duration="8169000" />
+      <workItem from="1534941323772" duration="9566000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="127730000" />
+    <option name="totallyTimeSpent" value="129127000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1920" height="990" extended-state="6" />
@@ -957,34 +883,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/repository/TechnologyRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/model/Db.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/model/Technology.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="26" column="2" selection-start-line="26" selection-start-column="2" selection-end-line="26" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/model/Project.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="24" lean-forward="true" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/repository/LanguageRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -1147,16 +1045,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/client/src/pages/EditResource.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="73" column="117" selection-start-line="73" selection-start-column="117" selection-end-line="73" selection-end-column="117" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/client/src/pages/AddProject.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="690">
@@ -1208,16 +1096,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/client/src/components/Navbar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="71" selection-start-line="25" selection-start-column="71" selection-end-line="25" selection-end-column="71" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/client/src/pages/Resource.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="349">
@@ -1245,19 +1123,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/client/src/pages/AddLanguage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="39" column="109" selection-end-line="52" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/client/src/pages/AddDb.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
+        <state relative-caret-position="270">
           <caret line="18" column="34" lean-forward="true" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
@@ -1265,40 +1133,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/client/src/pages/Language.js">
+    <entry file="file://$PROJECT_DIR$/frontend/client/src/pages/AddFramework.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="27" column="35" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/client/src/pages/AddTechnology.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="21" column="45" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/client/src/pages/Framework.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="604">
-          <caret line="50" column="41" selection-start-line="50" selection-start-column="41" selection-end-line="50" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/client/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="624">
-          <caret line="50" column="59" selection-start-line="50" selection-start-column="59" selection-end-line="50" selection-end-column="59" />
+        <state relative-caret-position="234">
+          <caret line="21" column="44" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
@@ -1325,10 +1163,106 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/client/src/pages/AddFramework.js">
+    <entry file="file://$PROJECT_DIR$/frontend/client/src/pages/Language.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="21" column="44" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
+        <state relative-caret-position="459">
+          <caret line="42" column="60" selection-start-line="42" selection-start-column="60" selection-end-line="42" selection-end-column="60" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/client/src/pages/AddTechnology.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="45" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/client/src/components/Navbar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="73" selection-start-line="9" selection-start-column="73" selection-end-line="9" selection-end-column="73" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/client/src/pages/EditResource.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="52" column="16" lean-forward="true" selection-start-line="52" selection-start-column="16" selection-end-line="52" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/client/src/pages/AddLanguage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="24" lean-forward="true" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/client/src/pages/Framework.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="694">
+          <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/client/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="32" column="16" lean-forward="true" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/client/src/pages/EditTechnology.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="579">
+          <caret line="65" column="26" lean-forward="true" selection-start-line="65" selection-start-column="26" selection-end-line="65" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/client/src/pages/EditFramework.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="30" column="56" selection-start-line="30" selection-start-column="56" selection-end-line="30" selection-end-column="56" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/client/src/pages/EditLanguage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/client/src/pages/EditDb.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="57" column="138" selection-start-line="57" selection-start-column="138" selection-end-line="57" selection-end-column="138" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>

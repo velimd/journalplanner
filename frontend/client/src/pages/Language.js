@@ -40,7 +40,7 @@ class Language extends Component {
                             return (
                                 <tr key={l.id}>
                                     <th scope="row">{l.id}</th>
-                                    <td><Link to={"resources/edit/"+l.id}>{l.name}</Link></td>
+                                    <td><Link to={"languages/edit/"+l.id}>{l.name}</Link></td>
                                 </tr>
                             )
                         })}

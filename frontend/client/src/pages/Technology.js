@@ -40,7 +40,7 @@ class Technology extends Component {
                             return (
                                 <tr key={t.id}>
                                     <th scope="row">{t.id}</th>
-                                    <td><Link to={"resources/edit/"+t.id}>{t.name}</Link></td>
+                                    <td><Link to={"technologies/edit/"+t.id}>{t.name}</Link></td>
                                 </tr>
                             )
                         })}
