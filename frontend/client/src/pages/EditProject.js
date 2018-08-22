@@ -50,7 +50,7 @@ class EditProject extends Component {
     delete(e){
         e.preventDefault();
 
-        axios.delete('http://localhost:8080/api/resource/delete/'+this.props.match.params.id).then(res =>{
+        axios.delete('http://localhost:8080/api/project/delete/'+this.props.match.params.id).then(res =>{
             console.log(res);
             console.log(res.data);
         })
