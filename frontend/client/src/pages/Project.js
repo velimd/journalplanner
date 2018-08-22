@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import axios from 'axios';
 
 import './Project.css';
 import Navbar from '../components/Navbar.js'
@@ -13,9 +14,9 @@ class Project extends Component {
     }
     componentDidMount(){
         var url = 'http://localhost:8080/api/project/all';
-        fetch(url).then(res => res.json()).then(res => {
+        axios.get(url).then(res => {
             this.setState({
-                projects:res
+                projects:res.data
             });
         });
     }

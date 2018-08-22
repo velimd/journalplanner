@@ -1,31 +1,33 @@
 import React, { Component } from 'react';
+import axios from 'axios';
 
 import './Resource.css';
 import Navbar from '../components/Navbar.js'
 
 class AddProject extends Component {
-
     addProject(e){
         var URL = 'http://localhost:8080/api/project/add';
 
-        let name = document.getElementById('name').value;
-        let url = document.getElementById('url').value;
+        e.preventDefault();
 
-        fetch(URL, {
-            method: 'POST',
-            headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({
-                name: name,
-                url: url
-            })
+        const project ={
+            name:this.state.name,
+            url:this.state.url
+        }
+
+        axios.post(URL, project).then(res =>{
+            console.log(res);
+            console.log(res.data);
         })
-            .then((res) =>res.json())
-            .then((data) => console.log(data))
-    }
 
+        this.props.history.push('/projects');
+    }
+    handleChange(e) {
+        const name=e.target.name;
+        this.setState({
+            [name]:e.target.value,
+        });
+    }
     render() {
         return (
             <div>
@@ -33,16 +35,16 @@ class AddProject extends Component {
                 <div className="container">
                     <div className="panel panel-default">
                         <div className="panel-body">
-                            <form onSubmit={this.addProject}>
+                            <form onSubmit={this.addProject.bind(this)}>
                                 <div className="form-group">
                                     <label htmlFor="Name">Title</label>
-                                    <input type="text" className="form-control" id="name" placeholder="Title"/>
+                                    <input type="text" className="form-control" name="name" placeholder="Title" onChange={this.handleChange.bind(this)}/>
                                 </div>
                                 <div className="form-group">
                                     <label htmlFor="URL">URL</label>
-                                    <input type="text" className="form-control" id="url" placeholder="Url"/>
+                                    <input type="text" className="form-control" name="url" placeholder="Url" onChange={this.handleChange.bind(this)}/>
                                 </div>
-                                <button type="submit" id="btn-add-submit">submit</button>
+                                <button className="btn btn-primary" type="submit" id="btn-add-submit">submit</button>
                             </form>
                         </div>
                     </div>

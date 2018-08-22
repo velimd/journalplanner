@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 
-import './Resource.css';
+import './Add.css';
 import Navbar from '../components/Navbar.js'
 
 class EditResource extends Component {
@@ -29,7 +29,6 @@ class EditResource extends Component {
     }
     onSubmit(e){
         e.preventDefault();
-        console.log(this.state.name)
         const resource ={
             name:this.state.name || this.state.resource.name,
             url:this.state.url || this.state.resource.url,
@@ -41,7 +40,15 @@ class EditResource extends Component {
         })
         this.props.history.push('/resources');
     }
+    delete(e){
+        e.preventDefault();
 
+        axios.delete('http://localhost:8080/api/resource/delete/'+this.props.match.params.id).then(res =>{
+            console.log(res);
+            console.log(res.data);
+        })
+        this.props.history.push('/resources');
+    }
     render() {
         return (
             <div>
@@ -64,8 +71,11 @@ class EditResource extends Component {
                                     <label htmlFor="Memo">Memo</label>
                                     <input type="text" className="form-control" name="memo" placeholder="Memo" defaultValue={this.state.resource.memo} onChange={this.handleChange.bind(this)}/>
                                 </div>
-                                <button type="submit" id="btn-add-submit">submit</button>
+                                <button className="btn btn-primary" type="submit" id="btn-add-submit">submit</button>
                             </form>
+                            <div>
+                                <button type="button" className="btn btn-danger" onClick={this.delete.bind(this)}>Delete</button>
+                            </div>
                         </div>
                     </div>
                 </div>

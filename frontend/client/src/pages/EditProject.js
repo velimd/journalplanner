@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 
+import './Add.css';
 import Navbar from '../components/Navbar.js'
 
 class EditProject extends Component {
@@ -36,8 +37,17 @@ class EditProject extends Component {
             console.log(res);
             console.log(res.data);
         })
+        this.props.history.push('/projects');
     }
+    delete(e){
+        e.preventDefault();
 
+        axios.delete('http://localhost:8080/api/resource/delete/'+this.props.match.params.id).then(res =>{
+            console.log(res);
+            console.log(res.data);
+        })
+        this.props.history.push('/projects');
+    }
     render() {
         return (
             <div>
@@ -56,8 +66,11 @@ class EditProject extends Component {
                                         <input type="text" className="form-control" name="url" placeholder="URL" defaultValue={this.state.project.url} onChange={this.handleChange.bind(this)}/>
                                     </div>
                                 </div>
-                                <button type="submit" id="btn-add-submit">submit</button>
+                                <button className="btn btn-primary" type="submit" id="btn-add-submit">submit</button>
                             </form>
+                            <div>
+                                <button type="button" className="btn btn-danger" onClick={this.delete.bind(this)}>Delete</button>
+                            </div>
                         </div>
                     </div>
                 </div>
