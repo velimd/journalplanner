@@ -23,7 +23,7 @@ class Navbar extends Component {
                                 <Link className="nav-link" to="/projects">Projects</Link>
                             </li>
                             <li className="nav-item dropdown">
-                                <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                <a className="nav-link dropdown-toggle" id="navbarDropdown" role="button"
                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Stack
                                 </a>

@@ -25,7 +25,7 @@ class Db extends Component {
             <div>
                 <Navbar/>
                 <div style={{textAlign:'center'}}>
-                    <Link to="/resources/add"><button type="button" id="btn-add" className="btn btn-dark">Add</button></Link>
+                    <Link to="/dbs/add"><button type="button" id="btn-add" className="btn btn-dark">Add</button></Link>
                 </div>
                 <div>
                     <table className="table table-dark">
@@ -48,7 +48,7 @@ class Db extends Component {
                     </table>
                 </div>
                 <div style={{textAlign:'center'}}>
-                    <Link to="/resources/add"><button type="button" id="btn-add" className="btn btn-dark">Add</button></Link>
+                    <Link to="/dbs/add"><button type="button" id="btn-add" className="btn btn-dark">Add</button></Link>
                 </div>
             </div>
         );
