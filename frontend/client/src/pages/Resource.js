@@ -39,7 +39,7 @@ class Resource extends Component {
                         return (
                             <tr key={r.id}>
                                 <th scope="row">{r.id}</th>
-                                <td>{r.name}</td>
+                                <td><Link to={"resources/edit/"+r.id}>{r.name}</Link></td>
                                 <td><a href={"http://"+r.url}>{r.url}</a></td>
                                 <td>{r.memo}</td>
                                 <td>

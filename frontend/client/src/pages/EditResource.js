@@ -8,11 +8,11 @@ class EditResource extends Component {
     constructor(props){
         super(props);
         this.state={
-            resource:{
-                name:'',
-                url:'',
-                memo:''
-            }
+            resource:[{
+                name:"",
+                url:"",
+                memo:""
+            }]
         };
     }
     componentDidMount(){
@@ -21,14 +21,25 @@ class EditResource extends Component {
             this.setState({resource:res.data})
         })
     }
-    editResource(e){
+    handleChange(e) {
+        const name=e.target.name;
+        this.setState({
+            [name]:e.target.value,
+        });
+    }
+    onSubmit(e){
         e.preventDefault();
-        const r ={
-            name:this.state.name,
-            url:this.state.url,
-            memo:this.state.memo
+        console.log(this.state.name)
+        const resource ={
+            name:this.state.name || this.state.resource.name,
+            url:this.state.url || this.state.resource.url,
+            memo:this.state.memo || this.state.resource.memo
         }
-        axios.put('http://localhost:8080/api/resource/'+this.props.match.params.id, r).then(res => console.log(res.data));
+        axios.put('http://localhost:8080/api/resource/'+this.props.match.params.id, resource).then(res =>{
+            console.log(res);
+            console.log(res.data);
+        })
+        this.props.history.push('/resources');
     }
 
     render() {
@@ -38,20 +49,20 @@ class EditResource extends Component {
                 <div className="container">
                     <div className="panel panel-default">
                         <div className="panel-body">
-                            <form onSubmit={this.editResource}>
+                            <form onSubmit={this.onSubmit.bind(this)}>
                                 <div className="form-row">
                                     <div className="form-group col-md-6">
                                         <label htmlFor="Name">Title</label>
-                                        <input type="text" className="form-control" id="name" placeholder="Title" value={this.state.resource.name} onChange={this.onChange}/>
+                                        <input type="text" className="form-control" name="name" placeholder="Title" defaultValue={this.state.resource.name} onChange={this.handleChange.bind(this)}/>
                                     </div>
                                     <div className="form-group col-md-6">
                                         <label htmlFor="URL">URL</label>
-                                        <input type="text" className="form-control" id="url" placeholder="URL" value={this.state.resource.url}/>
+                                        <input type="text" className="form-control" name="url" placeholder="URL" defaultValue={this.state.resource.url} onChange={this.handleChange.bind(this)}/>
                                     </div>
                                 </div>
                                 <div className="form-group">
                                     <label htmlFor="Memo">Memo</label>
-                                    <input type="text" className="form-control" id="memo" placeholder="Memo" value={this.state.resource.memo}/>
+                                    <input type="text" className="form-control" name="memo" placeholder="Memo" defaultValue={this.state.resource.memo} onChange={this.handleChange.bind(this)}/>
                                 </div>
                                 <button type="submit" id="btn-add-submit">submit</button>
                             </form>
