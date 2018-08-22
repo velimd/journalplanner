@@ -25,6 +25,10 @@ class Project extends Component {
         return (
             <div>
                 <Navbar/>
+                <div style={{textAlign:'center'}}>
+                    <Link to="/projects/add"><button type="button" id="btn-add" className="btn btn-dark">Add</button></Link>
+                </div>
+                <div>
                     <table className="table table-dark">
                         <thead>
                         <tr>
@@ -60,6 +64,7 @@ class Project extends Component {
                         })}
                         </tbody>
                     </table>
+                </div>
                 <div style={{textAlign:'center'}}>
                     <Link to="/projects/add"><button type="button" id="btn-add" className="btn btn-dark">Add</button></Link>
                 </div>

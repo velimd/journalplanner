@@ -1,0 +1,11 @@
+.btn {
+    margin-right: 2px;
+}
+
+#btn-add {
+    /*float: right;*/
+    margin-bottom: 20px;
+    /*border: solid;
+    border-width: thin;*/
+    border-radius: 8px;
+}

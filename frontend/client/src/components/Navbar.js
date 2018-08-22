@@ -22,7 +22,24 @@ class Navbar extends Component {
                             <li className="nav-item">
                                 <Link className="nav-link" to="/projects">Projects</Link>
                             </li>
+                            <li className="nav-item dropdown">
+                                <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Stack
+                                </a>
+                                <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <Link className="dropdown-item" to="/languages">Languages</Link>
+                                    <Link className="dropdown-item" to="/frameworks">Frameworks</Link>
+                                    <Link className="dropdown-item" to="/technologies">Technologies</Link>
+                                    <Link className="dropdown-item" to="/dbs">Databases</Link>
+                                </div>
+                            </li>
                         </ul>
+                        <form className="form-inline navbar-right">
+                            <input className="form-control mr-sm-2" type="search" placeholder="Search"
+                                   aria-label="Search"/>
+                                <button className="btn btn-primary my-2" type="submit">Search</button>
+                        </form>
                     </div>
                 </nav>
             </div>
