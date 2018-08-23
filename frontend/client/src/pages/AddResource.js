@@ -6,26 +6,17 @@ import Navbar from '../components/Navbar.js'
 
 class AddResource extends Component {
     addResource(e){
-        var URL = 'http://localhost:8080/api/resource/add';
-
         e.preventDefault();
-
+        var URL = 'http://localhost:8080/api/resource/add';
         const resource ={
             name:this.state.name,
             url:this.state.url,
-            memo:this.state.memo,
-            languages:{
-                name:this.state.languages
-            }
-
-
-        }
-
+            memo:this.state.memo
+        };
         axios.post(URL, resource).then(res =>{
             console.log(res);
             console.log(res.data);
-        })
-
+        });
         this.props.history.push('/resources');
     }
     handleChange(e) {

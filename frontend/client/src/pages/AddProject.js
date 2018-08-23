@@ -6,20 +6,15 @@ import Navbar from '../components/Navbar.js'
 
 class AddProject extends Component {
     addProject(e){
-        var URL = 'http://localhost:8080/api/project/add';
-
         e.preventDefault();
-
+        var URL = 'http://localhost:8080/api/project/add';
         const project ={
             name:this.state.name,
             url:this.state.url
-        }
-
+        };
         axios.post(URL, project).then(res =>{
             console.log(res);
-            console.log(res.data);
-        })
-
+        });
         this.props.history.push('/projects');
     }
     handleChange(e) {

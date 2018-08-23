@@ -11,15 +11,12 @@ class EditResource extends Component {
             resource:[{
                 name:"",
                 url:"",
-                memo:"",
-                languages:[{
-                    id:"",
-                    name:""
-                }],
-                frameworks:[],
-                technologies:[],
-                dbs:[]
+                memo:""
             }],
+            languages:[],
+            frameworks:[],
+            technologies:[],
+            dbs:[],
             language:[],
             framework:[],
             technology:[],
@@ -29,8 +26,14 @@ class EditResource extends Component {
     componentDidMount(){
         var url = 'http://localhost:8080/api/resource/'+this.props.match.params.id;
         axios.get(url).then(res => {
-            this.setState({resource:res.data})
-        })
+            this.setState({
+                resource:res.data,
+                languages:res.data.languages,
+                frameworks:res.data.frameworks,
+                technologies:res.data.technologies,
+                dbs:res.data.dbs
+            })
+        });
 
         axios.get('http://localhost:8080/api/language/all').then(res => {
             this.setState({
@@ -117,6 +120,60 @@ class EditResource extends Component {
                                 <div className="form-group">
                                     <label htmlFor="Memo">Memo</label>
                                     <input type="text" className="form-control" name="memo" placeholder="Memo" defaultValue={this.state.resource.memo} onChange={this.handleChange.bind(this)}/>
+                                </div>
+                                <div className="row">
+
+                                    <table className="table">
+                                        <thead>
+                                        <tr>
+                                            <th scope="col">Languages</th>
+                                            <th scope="col">Frameworks</th>
+                                            <th scope="col">Technologies</th>
+                                            <th scope="col">Databases</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    {this.state.languages.map((language, key) => {
+                                                        return (
+                                                            <div key={language.id}>
+                                                                {language.name}
+                                                            </div>
+                                                        )
+                                                    })}
+                                                </td>
+                                                <td>
+                                                    {this.state.frameworks.map((framework, key) => {
+                                                        return (
+                                                            <div key={framework.id}>
+                                                                {framework.name}
+                                                            </div>
+                                                        )
+                                                    })}
+                                                </td>
+                                                <td>
+                                                    {this.state.technologies.map((technologies, key) => {
+                                                        return (
+                                                            <div key={technologies.id}>
+                                                                {technologies.name}
+                                                            </div>
+                                                        )
+                                                    })}
+                                                </td>
+                                                <td>
+                                                    {this.state.dbs.map((dbs, key) => {
+                                                        return (
+                                                            <div key={dbs.id}>
+                                                                {dbs.name}
+                                                            </div>
+                                                        )
+                                                    })}
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
                                 </div>
                                 <div className="form-row">
                                     <div className="dropdown col-md-3">
