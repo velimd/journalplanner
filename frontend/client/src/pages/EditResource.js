@@ -12,11 +12,18 @@ class EditResource extends Component {
                 name:"",
                 url:"",
                 memo:"",
-                languages:[],
+                languages:[{
+                    id:"",
+                    name:""
+                }],
                 frameworks:[],
                 technologies:[],
                 dbs:[]
-            }]
+            }],
+            language:[],
+            framework:[],
+            technology:[],
+            db:[]
         };
     }
     componentDidMount(){
@@ -24,6 +31,27 @@ class EditResource extends Component {
         axios.get(url).then(res => {
             this.setState({resource:res.data})
         })
+
+        axios.get('http://localhost:8080/api/language/all').then(res => {
+            this.setState({
+                language:res.data
+            });
+        });
+        axios.get('http://localhost:8080/api/framework/all').then(res => {
+            this.setState({
+                framework:res.data
+            });
+        });
+        axios.get('http://localhost:8080/api/technology/all').then(res => {
+            this.setState({
+                technology:res.data
+            });
+        });
+        axios.get('http://localhost:8080/api/db/all').then(res => {
+            this.setState({
+                db:res.data
+            });
+        });
     }
     handleChange(e) {
         const name=e.target.name;
@@ -43,8 +71,6 @@ class EditResource extends Component {
             dbs: this.state.resource.dbs
         }
         axios.put('http://localhost:8080/api/resource/'+this.props.match.params.id, resource).then(res =>{
-            console.log(res);
-            console.log(res.data);
         })
         this.props.history.push('/resources');
     }
@@ -56,6 +82,19 @@ class EditResource extends Component {
             console.log(res.data);
         })
         this.props.history.push('/resources');
+    }
+    addStack(e){
+        const stackName=e.target.name;
+        const stack={
+            id:e.target.id,
+            name:e.target.textContent
+        }
+        this.setState({
+            resource: {
+                ...this.state.resource,
+                [stackName]: this.state.resource[stackName].concat(stack)
+            }
+        });
     }
     render() {
         return (
@@ -78,6 +117,72 @@ class EditResource extends Component {
                                 <div className="form-group">
                                     <label htmlFor="Memo">Memo</label>
                                     <input type="text" className="form-control" name="memo" placeholder="Memo" defaultValue={this.state.resource.memo} onChange={this.handleChange.bind(this)}/>
+                                </div>
+                                <div className="form-row">
+                                    <div className="dropdown col-md-3">
+                                        <button className="btn btn-info dropdown-toggle" type="button"
+                                                id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false">
+                                            Languages
+                                        </button>
+                                        <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            {this.state.language.map((l, key) => {
+                                                return (
+                                                    <div key={l.id}>
+                                                        <a className="dropdown-item" name="languages" id={l.id} onClick={this.addStack.bind(this)}>{l.name}</a>
+                                                    </div>
+                                                )
+                                            })}
+                                        </div>
+                                    </div>
+                                    <div className="dropdown col-md-3">
+                                        <button className="btn btn-success dropdown-toggle" type="button"
+                                                id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false">
+                                            Frameworks
+                                        </button>
+                                        <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            {this.state.framework.map((f, key) => {
+                                                return (
+                                                    <div key={f.id}>
+                                                        <a className="dropdown-item" id={f.id} name="frameworks" onClick={this.addStack.bind(this)}>{f.name}</a>
+                                                    </div>
+                                                )
+                                            })}
+                                        </div>
+                                    </div>
+                                    <div className="dropdown col-md-3">
+                                        <button className="btn btn-danger dropdown-toggle" type="button"
+                                                id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false">
+                                            Technologies
+                                        </button>
+                                        <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            {this.state.technology.map((t, key) => {
+                                                return (
+                                                    <div key={t.id}>
+                                                        <a className="dropdown-item" id={t.id} name="technologies" onClick={this.addStack.bind(this)}>{t.name}</a>
+                                                    </div>
+                                                )
+                                            })}
+                                        </div>
+                                    </div>
+                                    <div className="dropdown col-md-3">
+                                        <button className="btn btn-warning dropdown-toggle" type="button"
+                                                id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false">
+                                            Databases
+                                        </button>
+                                        <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            {this.state.db.map((d, key) => {
+                                                return (
+                                                    <div key={d.id}>
+                                                        <a className="dropdown-item" id={d.id} name="dbs" onClick={this.addStack.bind(this)}>{d.name}</a>
+                                                    </div>
+                                                )
+                                            })}
+                                        </div>
+                                    </div>
                                 </div>
                                 <button className="btn btn-primary" type="submit" id="btn-add-submit">submit</button>
                             </form>
