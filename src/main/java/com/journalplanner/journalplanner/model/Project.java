@@ -21,25 +21,25 @@ public class Project {
     @Column(name = "url", nullable = false)
     private String url;
 
-    @ManyToMany(cascade = CascadeType.ALL)
+    @ManyToMany
     @JoinTable(name = "project_language", joinColumns = { @JoinColumn(name = "project_id") }, inverseJoinColumns = { @JoinColumn(name = "language_id") })
     @Column(name = "language", nullable = true)
     @JsonIgnoreProperties({"projects", "resources"})
     private Set<Language> languages = new HashSet<>();
 
-    @ManyToMany(cascade = CascadeType.ALL)
+    @ManyToMany
     @JoinTable(name = "project_framework", joinColumns = { @JoinColumn(name = "project_id") }, inverseJoinColumns = { @JoinColumn(name = "framework_id") })
     @Column(name = "framework", nullable = true)
     @JsonIgnoreProperties({"projects", "resources"})
     private Set<Framework> frameworks = new HashSet<>();
 
-    @ManyToMany(cascade = CascadeType.ALL)
+    @ManyToMany
     @JoinTable(name = "project_technology", joinColumns = { @JoinColumn(name = "project_id") }, inverseJoinColumns = { @JoinColumn(name = "technology_id") })
     @Column(name = "technology", nullable = true)
     @JsonIgnoreProperties({"projects", "resources"})
     private Set<Technology> technologies = new HashSet<>();
 
-    @ManyToMany(cascade = CascadeType.ALL)
+    @ManyToMany
     @JoinTable(name = "project_db", joinColumns = { @JoinColumn(name = "project_id") }, inverseJoinColumns = { @JoinColumn(name = "db_id") })
     @Column(name = "db", nullable = true)
     @JsonIgnoreProperties({"projects", "resources"})
