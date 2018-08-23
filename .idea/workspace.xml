@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc6d923d-4d4f-4518-b455-ef3e2065a658" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/client/src/pages/AddResource.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/client/src/pages/AddResource.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/client/src/pages/EditResource.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/client/src/pages/EditResource.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/journalplanner/journalplanner/controller/ResourceController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/journalplanner/journalplanner/controller/ResourceController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/client/src/pages/EditProject.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/client/src/pages/EditProject.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -71,7 +68,7 @@
           <entry key="gradle" value="5" />
           <entry key="html" value="8" />
           <entry key="java" value="149" />
-          <entry key="js" value="133" />
+          <entry key="js" value="134" />
           <entry key="json" value="2" />
           <entry key="properties" value="9" />
           <entry key="rnc" value="1" />
@@ -85,7 +82,7 @@
           <entry key="HTML" value="8" />
           <entry key="JAVA" value="149" />
           <entry key="JSON" value="2" />
-          <entry key="JavaScript" value="133" />
+          <entry key="JavaScript" value="134" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="Properties" value="9" />
           <entry key="RNG Compact" value="1" />
@@ -97,7 +94,7 @@
           <entry key="gradle" value="4" />
           <entry key="html" value="291" />
           <entry key="java" value="5846" />
-          <entry key="js" value="9154" />
+          <entry key="js" value="9182" />
           <entry key="properties" value="46" />
         </counts>
       </usages-collector>
@@ -107,7 +104,7 @@
           <entry key="Groovy" value="4" />
           <entry key="HTML" value="291" />
           <entry key="JAVA" value="5846" />
-          <entry key="JavaScript" value="9154" />
+          <entry key="JavaScript" value="9182" />
           <entry key="Properties" value="46" />
         </counts>
       </usages-collector>
@@ -119,10 +116,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/client/src/pages/AddResource.js">
+        <entry file="file://$PROJECT_DIR$/frontend/client/src/pages/EditResource.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="45" column="35" lean-forward="true" selection-start-line="45" selection-start-column="35" selection-end-line="45" selection-end-column="35" />
+            <state relative-caret-position="553">
+              <caret line="185" column="35" selection-start-line="120" selection-start-column="32" selection-end-line="185" selection-end-column="38" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -131,10 +128,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/frontend/client/src/pages/EditResource.js">
+        <entry file="file://$PROJECT_DIR$/frontend/client/src/pages/EditProject.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="553">
-              <caret line="179" column="104" selection-start-line="179" selection-start-column="104" selection-end-line="179" selection-end-column="104" />
+            <state relative-caret-position="643">
+              <caret line="182" column="33" lean-forward="true" selection-start-line="182" selection-start-column="33" selection-end-line="182" selection-end-column="33" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -600,10 +597,10 @@
         <option value="$PROJECT_DIR$/frontend/client/src/pages/Technology.js" />
         <option value="$PROJECT_DIR$/frontend/client/src/components/Navbar.js" />
         <option value="$PROJECT_DIR$/frontend/client/src/pages/Resource.js" />
-        <option value="$PROJECT_DIR$/frontend/client/src/pages/EditProject.js" />
         <option value="$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/controller/ResourceController.java" />
         <option value="$PROJECT_DIR$/frontend/client/src/pages/AddResource.js" />
         <option value="$PROJECT_DIR$/frontend/client/src/pages/EditResource.js" />
+        <option value="$PROJECT_DIR$/frontend/client/src/pages/EditProject.js" />
       </list>
     </option>
   </component>
@@ -699,7 +696,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1535020098923" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1535020797267" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../files/react" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -761,12 +758,12 @@
       <workItem from="1534935535419" duration="2125000" />
       <workItem from="1534941323772" duration="10015000" />
       <workItem from="1534951369784" duration="4155000" />
-      <workItem from="1535011903802" duration="6516000" />
+      <workItem from="1535011903802" duration="7217000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="140247000" />
+    <option name="totallyTimeSpent" value="140948000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1920" height="990" extended-state="6" />
@@ -1107,13 +1104,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/client/src/pages/EditProject.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="52" column="55" selection-start-line="52" selection-start-column="55" selection-end-line="52" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/client/src/pages/EditLanguage.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-377">
@@ -1181,7 +1171,17 @@
     <entry file="file://$PROJECT_DIR$/frontend/client/src/pages/EditResource.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="553">
-          <caret line="179" column="104" selection-start-line="179" selection-start-column="104" selection-end-line="179" selection-end-column="104" />
+          <caret line="185" column="35" selection-start-line="120" selection-start-column="32" selection-end-line="185" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/client/src/pages/EditProject.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="643">
+          <caret line="182" column="33" lean-forward="true" selection-start-line="182" selection-start-column="33" selection-end-line="182" selection-end-column="33" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
