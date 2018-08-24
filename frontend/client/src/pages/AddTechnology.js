@@ -12,14 +12,13 @@ class AddTechnology extends Component {
 
         const technology ={
             name:this.state.name
-        }
+        };
 
         axios.post(URL, technology).then(res =>{
             console.log(res);
             console.log(res.data);
-        })
-
-        this.props.history.push('/technologies');
+            this.props.history.push('/technologies');
+        });
     }
     handleChange(e) {
         const name=e.target.name;

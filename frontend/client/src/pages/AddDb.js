@@ -12,14 +12,13 @@ class AddDb extends Component {
 
         const db ={
             name:this.state.name
-        }
+        };
 
         axios.post(URL, db).then(res =>{
             console.log(res);
             console.log(res.data);
-        })
-
-        this.props.history.push('/dbs');
+            this.props.history.push('/dbs');
+        });
     }
     handleChange(e) {
         const name=e.target.name;

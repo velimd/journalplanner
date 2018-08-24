@@ -17,9 +17,8 @@ class AddFramework extends Component {
         axios.post(URL, framework).then(res =>{
             console.log(res);
             console.log(res.data);
-        })
-
-        this.props.history.push('/frameworks');
+            this.props.history.push('/frameworks');
+        });
     }
     handleChange(e) {
         const name=e.target.name;

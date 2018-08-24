@@ -16,8 +16,8 @@ class AddResource extends Component {
         axios.post(URL, resource).then(res =>{
             console.log(res);
             console.log(res.data);
+            this.props.history.push('/resources/edit/'+res.data.id);
         });
-        this.props.history.push('/resources');
     }
     handleChange(e) {
         const name=e.target.name;

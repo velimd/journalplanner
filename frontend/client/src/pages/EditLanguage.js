@@ -29,12 +29,12 @@ class EditLanguage extends Component {
         e.preventDefault();
         const language ={
             name:this.state.name || this.state.language.name
-        }
+        };
         axios.put('http://localhost:8080/api/language/'+this.props.match.params.id, language).then(res =>{
             console.log(res);
             console.log(res.data);
-        })
-        this.props.history.push('/languages');
+            this.props.history.push('/languages');
+        });
     }
     delete(e){
         e.preventDefault();
@@ -42,8 +42,8 @@ class EditLanguage extends Component {
         axios.delete('http://localhost:8080/api/language/delete/'+this.props.match.params.id).then(res =>{
             console.log(res);
             console.log(res.data);
-        })
-        this.props.history.push('/languages');
+            this.props.history.push('/languages');
+        });
     }
     render() {
         return (

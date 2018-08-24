@@ -72,10 +72,10 @@ class EditResource extends Component {
             frameworks: this.state.resource.frameworks,
             technologies: this.state.resource.technologies,
             dbs: this.state.resource.dbs
-        }
+        };
         axios.put('http://localhost:8080/api/resource/'+this.props.match.params.id, resource).then(res =>{
-        })
-        this.props.history.push('/resources');
+            this.props.history.push('/resources');
+        });
     }
     delete(e){
         e.preventDefault();
@@ -83,15 +83,15 @@ class EditResource extends Component {
         axios.delete('http://localhost:8080/api/resource/delete/'+this.props.match.params.id).then(res =>{
             console.log(res);
             console.log(res.data);
-        })
-        this.props.history.push('/resources');
+            this.props.history.push('/resources');
+        });
     }
     addStack(e){
         const stackName=e.target.name;
         const stack={
             id:e.target.id,
             name:e.target.textContent
-        }
+        };
         this.setState({
             resource: {
                 ...this.state.resource,

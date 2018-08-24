@@ -12,14 +12,13 @@ class AddLanguage extends Component {
 
         const language ={
             name:this.state.name
-        }
+        };
 
         axios.post(URL, language).then(res =>{
             console.log(res);
             console.log(res.data);
-        })
-
-        this.props.history.push('/languages');
+            this.props.history.push('/languages');
+        });
     }
     handleChange(e) {
         const name=e.target.name;

@@ -17,7 +17,7 @@ class EditFramework extends Component {
         var url = 'http://localhost:8080/api/framework/'+this.props.match.params.id;
         axios.get(url).then(res => {
             this.setState({framework:res.data})
-        })
+        });
     }
     handleChange(e) {
         const name=e.target.name;
@@ -29,12 +29,12 @@ class EditFramework extends Component {
         e.preventDefault();
         const framework ={
             name:this.state.name || this.state.framework.name
-        }
+        };
         axios.put('http://localhost:8080/api/framework/'+this.props.match.params.id, framework).then(res =>{
             console.log(res);
             console.log(res.data);
-        })
-        this.props.history.push('/frameworks');
+            this.props.history.push('/frameworks');
+        });
     }
     delete(e){
         e.preventDefault();
@@ -42,8 +42,8 @@ class EditFramework extends Component {
         axios.delete('http://localhost:8080/api/framework/delete/'+this.props.match.params.id).then(res =>{
             console.log(res);
             console.log(res.data);
-        })
-        this.props.history.push('/frameworks');
+            this.props.history.push('/frameworks');
+        });
     }
     render() {
         return (

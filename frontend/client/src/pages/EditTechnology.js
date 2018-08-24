@@ -17,7 +17,7 @@ class EditTechnology extends Component {
         var url = 'http://localhost:8080/api/technology/'+this.props.match.params.id;
         axios.get(url).then(res => {
             this.setState({technology:res.data})
-        })
+        });
     }
     handleChange(e) {
         const name=e.target.name;
@@ -29,12 +29,12 @@ class EditTechnology extends Component {
         e.preventDefault();
         const technology ={
             name:this.state.name || this.state.technology.name
-        }
+        };
         axios.put('http://localhost:8080/api/technology/'+this.props.match.params.id, technology).then(res =>{
             console.log(res);
             console.log(res.data);
-        })
-        this.props.history.push('/technologies');
+            this.props.history.push('/technologies');
+        });
     }
     delete(e){
         e.preventDefault();
@@ -42,8 +42,8 @@ class EditTechnology extends Component {
         axios.delete('http://localhost:8080/api/technology/delete/'+this.props.match.params.id).then(res =>{
             console.log(res);
             console.log(res.data);
-        })
-        this.props.history.push('/technologies');
+            this.props.history.push('/technologies');
+        });
     }
     render() {
         return (

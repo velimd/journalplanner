@@ -14,8 +14,8 @@ class AddProject extends Component {
         };
         axios.post(URL, project).then(res =>{
             console.log(res);
+            this.props.history.push('/projects/edit/'+res.data.id);
         });
-        this.props.history.push('/projects');
     }
     handleChange(e) {
         const name=e.target.name;

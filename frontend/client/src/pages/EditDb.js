@@ -17,7 +17,7 @@ class EditDb extends Component {
         var url = 'http://localhost:8080/api/db/'+this.props.match.params.id;
         axios.get(url).then(res => {
             this.setState({db:res.data})
-        })
+        });
     }
     handleChange(e) {
         const name=e.target.name;
@@ -29,12 +29,12 @@ class EditDb extends Component {
         e.preventDefault();
         const db ={
             name:this.state.name || this.state.db.name
-        }
+        };
         axios.put('http://localhost:8080/api/db/'+this.props.match.params.id, db).then(res =>{
             console.log(res);
             console.log(res.data);
-        })
-        this.props.history.push('/dbs');
+            this.props.history.push('/dbs');
+        });
     }
     delete(e){
         e.preventDefault();
@@ -42,8 +42,8 @@ class EditDb extends Component {
         axios.delete('http://localhost:8080/api/db/delete/'+this.props.match.params.id).then(res =>{
             console.log(res);
             console.log(res.data);
-        })
-        this.props.history.push('/dbs');
+            this.props.history.push('/dbs');
+        });
     }
     render() {
         return (

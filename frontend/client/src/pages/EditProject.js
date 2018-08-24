@@ -30,7 +30,7 @@ class EditProject extends Component {
                 frameworks:res.data.frameworks,
                 technologies:res.data.technologies,
                 dbs:res.data.dbs})
-        })
+        });
 
         axios.get('http://localhost:8080/api/language/all').then(res => {
             this.setState({
@@ -69,12 +69,12 @@ class EditProject extends Component {
             frameworks: this.state.project.frameworks,
             technologies: this.state.project.technologies,
             dbs: this.state.project.dbs
-        }
+        };
         axios.put('http://localhost:8080/api/project/'+this.props.match.params.id, project).then(res =>{
             console.log(res);
             console.log(res.data);
-        })
-        this.props.history.push('/projects');
+            this.props.history.push('/projects');
+        });
     }
     delete(e){
         e.preventDefault();
@@ -82,15 +82,15 @@ class EditProject extends Component {
         axios.delete('http://localhost:8080/api/project/delete/'+this.props.match.params.id).then(res =>{
             console.log(res);
             console.log(res.data);
-        })
-        this.props.history.push('/projects');
+            this.props.history.push('/projects');
+        });
     }
     addStack(e){
         const stackName=e.target.name;
         const stack={
             id:e.target.id,
             name:e.target.textContent
-        }
+        };
         this.setState({
             project: {
                 ...this.state.project,
