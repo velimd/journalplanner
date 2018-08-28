@@ -89,23 +89,35 @@ class EditResource extends Component {
     addStack(e){
         const stackName=e.target.name;
         const stack={
-            id:e.target.id,
+            id:e.target.id,                                                                     
             name:e.target.textContent
         };
-        this.setState({
-            resource: {
-                ...this.state.resource,
-                [stackName]: this.state.resource[stackName].concat(stack)
-            }
+        var bool = this.state[stackName].some(function(e1){
+            console.log(e1.id+" "+stack.id);
+            return e1.name===stack.name;
         });
+        console.log(bool);
+        console.log(this.state.languages);
+        if(!bool) {
+            this.setState({
+                resource: {
+                    ...this.state.resource,
+                    [stackName]: this.state.resource[stackName].concat(stack)
+                },
+                [stackName]: this.state[stackName].concat(stack)
+            });
+        }
+        else{
+            console.log("Stack is already added");
+        }
     }
     render() {
         return (
             <div>
                 <Navbar/>
                 <div className="container">
-                    <div className="panel panel-default">
-                        <div className="panel-body">
+                    <div className="card">
+                        <div className="card-body">
                             <form onSubmit={this.onSubmit.bind(this)}>
                                 <div className="form-row">
                                     <div className="form-group col-md-6">
@@ -135,36 +147,36 @@ class EditResource extends Component {
                                         <tbody>
                                             <tr>
                                                 <td>
-                                                    {this.state.languages.map((language, key) => {
+                                                    {this.state.languages.map((language) => {
                                                         return (
-                                                            <div key={language.id}>
+                                                            <div item={language} key={language.id}>
                                                                 {language.name}
                                                             </div>
                                                         )
                                                     })}
                                                 </td>
                                                 <td>
-                                                    {this.state.frameworks.map((framework, key) => {
+                                                    {this.state.frameworks.map((framework) => {
                                                         return (
-                                                            <div key={framework.id}>
+                                                            <div item={framework} key={framework.id}>
                                                                 {framework.name}
                                                             </div>
                                                         )
                                                     })}
                                                 </td>
                                                 <td>
-                                                    {this.state.technologies.map((technologies, key) => {
+                                                    {this.state.technologies.map((technologies) => {
                                                         return (
-                                                            <div key={technologies.id}>
+                                                            <div item={technologies} key={technologies.id}>
                                                                 {technologies.name}
                                                             </div>
                                                         )
                                                     })}
                                                 </td>
                                                 <td>
-                                                    {this.state.dbs.map((dbs, key) => {
+                                                    {this.state.dbs.map((dbs) => {
                                                         return (
-                                                            <div key={dbs.id}>
+                                                            <div item={dbs} key={dbs.id}>
                                                                 {dbs.name}
                                                             </div>
                                                         )

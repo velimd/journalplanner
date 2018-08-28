@@ -30,8 +30,8 @@ class AddResource extends Component {
             <div>
                 <Navbar/>
                 <div className="container">
-                    <div className="panel panel-default">
-                        <div className="panel-body">
+                    <div className="card">
+                        <div className="card-body">
                             <form onSubmit={this.addResource.bind(this)}>
                                 <div className="form-row">
                                     <div className="form-group col-md-6">

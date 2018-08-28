@@ -31,8 +31,8 @@ class AddDb extends Component {
             <div>
                 <Navbar/>
                 <div className="container">
-                    <div className="panel panel-default">
-                        <div className="panel-body">
+                    <div className="card">
+                        <div className="card-body">
                             <form onSubmit={this.addDb.bind(this)}>
                                 <div className="form-group">
                                     <label htmlFor="Name">Name</label>
