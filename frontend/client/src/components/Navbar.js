@@ -35,11 +35,6 @@ class Navbar extends Component {
                                 </div>
                             </li>
                         </ul>
-                        <form className="form-inline navbar-right">
-                            <input className="form-control mr-sm-2" type="search" placeholder="Search"
-                                   aria-label="Search"/>
-                                <button className="btn btn-primary my-2" type="submit">Search</button>
-                        </form>
                     </div>
                 </nav>
             </div>

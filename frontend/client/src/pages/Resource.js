@@ -24,9 +24,21 @@ class Resource extends Component {
         return (
             <div>
                 <Navbar/>
-                <div style={{textAlign:'center'}}>
-                    <Link to="/resources/add"><button type="button" id="btn-add" className="btn btn-dark">Add</button></Link>
+                <div className="row">
+                    <div className="col">
+                        <form className="form-inline" id="search">
+                            <input className="form-control my-2" placeholder="Search"/>
+                            <button type="submit" className="btn btn-primary my-2">Search</button>
+                        </form>
+                    </div>
+                    <div className="col">
+                        <div style={{textAlign:'center'}}>
+                            <Link to="/resources/add" ><button type="button" id="btn-add" className="btn btn-dark">Add</button></Link>
+                        </div>
+                    </div>
+                    <div className="col"></div>
                 </div>
+
                 <div>
                     <table className="table table-dark">
                         <thead>
