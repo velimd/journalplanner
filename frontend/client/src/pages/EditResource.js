@@ -89,15 +89,12 @@ class EditResource extends Component {
     addStack(e){
         const stackName=e.target.name;
         const stack={
-            id:e.target.id,                                                                     
+            id:e.target.id,
             name:e.target.textContent
         };
         var bool = this.state[stackName].some(function(e1){
-            console.log(e1.id+" "+stack.id);
             return e1.name===stack.name;
         });
-        console.log(bool);
-        console.log(this.state.languages);
         if(!bool) {
             this.setState({
                 resource: {
@@ -110,6 +107,19 @@ class EditResource extends Component {
         else{
             console.log("Stack is already added");
         }
+    }
+    removeStack(e){
+        const stackName=e.target.name;
+        const newArr = this.state[stackName].filter(function(e1){
+            return e1.name!==e.target.textContent;
+        });
+        this.setState({
+            resource: {
+                ...this.state.resource,
+                [stackName]: newArr
+            },
+            [stackName]: newArr
+        });
     }
     render() {
         return (
@@ -150,7 +160,7 @@ class EditResource extends Component {
                                                     {this.state.languages.map((language) => {
                                                         return (
                                                             <div item={language} key={language.id}>
-                                                                {language.name}
+                                                                <button type="button" name="languages" id={language.id} className="btn btn-light" onClick={this.removeStack.bind(this)}>{language.name}</button>
                                                             </div>
                                                         )
                                                     })}
@@ -159,7 +169,7 @@ class EditResource extends Component {
                                                     {this.state.frameworks.map((framework) => {
                                                         return (
                                                             <div item={framework} key={framework.id}>
-                                                                {framework.name}
+                                                                <button type="button"  name="frameworks" id={framework.id} className="btn btn-light" onClick={this.removeStack.bind(this)}>{framework.name}</button>
                                                             </div>
                                                         )
                                                     })}
@@ -168,7 +178,7 @@ class EditResource extends Component {
                                                     {this.state.technologies.map((technologies) => {
                                                         return (
                                                             <div item={technologies} key={technologies.id}>
-                                                                {technologies.name}
+                                                                <button type="button"  name="technologies" id={technologies.id} className="btn btn-light" onClick={this.removeStack.bind(this)}>{technologies.name}</button>
                                                             </div>
                                                         )
                                                     })}
@@ -177,7 +187,7 @@ class EditResource extends Component {
                                                     {this.state.dbs.map((dbs) => {
                                                         return (
                                                             <div item={dbs} key={dbs.id}>
-                                                                {dbs.name}
+                                                                <button type="button"  name="dbs" id={dbs.id} className="btn btn-light" onClick={this.removeStack.bind(this)}>{dbs.name}</button>
                                                             </div>
                                                         )
                                                     })}
@@ -253,6 +263,7 @@ class EditResource extends Component {
                                         </div>
                                     </div>
                                 </div>
+                                <br/>
                                 <button className="btn btn-primary" type="submit" id="btn-add-submit">submit</button>
                             </form>
                             <div>

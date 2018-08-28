@@ -106,6 +106,19 @@ class EditProject extends Component {
             console.log("Stack is already added");
         }
     }
+    removeStack(e){
+        const stackName=e.target.name;
+        const newArr = this.state[stackName].filter(function(e1){
+            return e1.name!==e.target.textContent;
+        });
+        this.setState({
+            project: {
+                ...this.state.project,
+                [stackName]: newArr
+            },
+            [stackName]: newArr
+        });
+    }
     render() {
         return (
             <div>
@@ -141,7 +154,7 @@ class EditProject extends Component {
                                                 {this.state.languages.map((language) => {
                                                     return (
                                                         <div item={language} key={language.id}>
-                                                            {language.name}
+                                                            <button type="button" name="languages" id={language.id} className="btn btn-light" onClick={this.removeStack.bind(this)}>{language.name}</button>
                                                         </div>
                                                     )
                                                 })}
@@ -150,7 +163,7 @@ class EditProject extends Component {
                                                 {this.state.frameworks.map((framework) => {
                                                     return (
                                                         <div item={framework} key={framework.id}>
-                                                            {framework.name}
+                                                            <button type="button"  name="frameworks" id={framework.id} className="btn btn-light" onClick={this.removeStack.bind(this)}>{framework.name}</button>
                                                         </div>
                                                     )
                                                 })}
@@ -159,7 +172,7 @@ class EditProject extends Component {
                                                 {this.state.technologies.map((technologies) => {
                                                     return (
                                                         <div item={technologies} key={technologies.id}>
-                                                            {technologies.name}
+                                                            <button type="button"  name="technologies" id={technologies.id} className="btn btn-light" onClick={this.removeStack.bind(this)}>{technologies.name}</button>
                                                         </div>
                                                     )
                                                 })}
@@ -168,7 +181,7 @@ class EditProject extends Component {
                                                 {this.state.dbs.map((dbs) => {
                                                     return (
                                                         <div item={dbs} key={dbs.id}>
-                                                            {dbs.name}
+                                                            <button type="button"  name="dbs" id={dbs.id} className="btn btn-light" onClick={this.removeStack.bind(this)}>{dbs.name}</button>
                                                         </div>
                                                     )
                                                 })}
