@@ -10,7 +10,7 @@ class Home extends Component {
             <div>
                 <Navbar/>
                 <div className="row">
-                    <div className="container">
+                    <div className="container" id="home">
                         <div className="jumbotron text-center col-md-6">
                             <h1>Resources</h1>
                             <Link to="/resources">

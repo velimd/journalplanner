@@ -1,3 +1,7 @@
+#home{
+    display: flex
+}
+
 .jumbotron{
     border-style:solid;
     border-width: thin;
