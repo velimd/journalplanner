@@ -9,7 +9,8 @@ class Resource extends Component {
     constructor(){
         super();
         this.state={
-            resources:[]
+            resources:[],
+            search:""
         };
     }
     componentDidMount(){
@@ -20,15 +21,22 @@ class Resource extends Component {
             });
         });
     }
+    updateSearch(e){
+        this.setState({
+           search:e.target.value
+        });
+    }
     render() {
+        let filteredList=this.state.resources.filter((resource) => {
+            return resource.name.toLowerCase().indexOf(this.state.search.toLowerCase()) !== -1;
+        });
         return (
             <div>
                 <Navbar/>
                 <div className="row">
                     <div className="col">
                         <form className="form-inline" id="search">
-                            <input className="form-control my-2" placeholder="Search"/>
-                            <button type="submit" className="btn btn-primary my-2">Search</button>
+                            <input className="form-control my-2" placeholder="Search" onChange={this.updateSearch.bind(this)}/>
                         </form>
                     </div>
                     <div className="col">
@@ -51,7 +59,7 @@ class Resource extends Component {
                         </tr>
                         </thead>
                         <tbody>
-                        {this.state.resources.map((r, key) => {
+                        {filteredList.map((r, key) => {
                             return (
                                 <tr key={r.id}>
                                     <th scope="row">{r.id}</th>
