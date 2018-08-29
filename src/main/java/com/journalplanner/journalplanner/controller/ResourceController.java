@@ -5,7 +5,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 import com.journalplanner.journalplanner.model.Resource;
-import com.journalplanner.journalplanner.repository.ResourceRepository;
+import com.journalplanner.journalplanner.service.ResourceService;
 
 import javax.transaction.Transactional;
 
@@ -13,7 +13,7 @@ import javax.transaction.Transactional;
 @RequestMapping(path="/api/resource")
 public class ResourceController {
     @Autowired
-    private ResourceRepository resourceRepository;
+    private ResourceService resourceService;
 
     /*@GetMapping(path="/add")
     public @ResponseBody String addNewResource(@RequestParam String name, @RequestParam String url, @RequestParam String memo){
@@ -21,37 +21,36 @@ public class ResourceController {
         r.setName(name);
         r.setUrl(url);
         r.setMemo(memo);
-        resourceRepository.save(r);
+        resourceService.save(r);
         return "Saved";
     }*/
 
     @GetMapping(path="/all")
     public @ResponseBody Iterable<Resource> getAllResources(){
-        return resourceRepository.findAll();
+        return resourceService.getAllResources();
     }
 
     @GetMapping(path = "/{id}")
     public @ResponseBody Resource getResourceById(@PathVariable(value="id") Integer id){
-        return resourceRepository.findById(id); //if statement to return message if the id doesnt exist.
+        return resourceService.getResourceById(id); //if statement to return message if the id doesnt exist.
     }
 
     @PostMapping("/add")
     @ResponseStatus(HttpStatus.CREATED)
     public Resource addResource(@RequestBody Resource resource){
-        return resourceRepository.save(resource);
+        return resourceService.createResource(resource);
     }
 
     @PutMapping("/{id}")
     public Resource updateResource(@PathVariable(value = "id") Integer id, @RequestBody Resource resource){
-        resourceRepository.findById(id); //make a check method to see if the id does exist.
         resource.setId(id);
-        return resourceRepository.save(resource);
+        return resourceService.createResource(resource);
 
     }
 
     @Transactional
     @DeleteMapping(path = "delete/{id}")
     public void deleteResourceById(@PathVariable(value = "id") Integer id){
-        resourceRepository.deleteById(id);
+        resourceService.deleteResourceById(id);
     }
 }
