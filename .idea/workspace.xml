@@ -3,17 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="cc6d923d-4d4f-4518-b455-ef3e2065a658" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/journalplanner/journalplanner/controller/ResourceController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/journalplanner/journalplanner/service/ResourceService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/controller/DbController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/controller/DbController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/controller/FrameworkController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/controller/FrameworkController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/controller/LanguageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/controller/LanguageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/controller/ProjectController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/controller/ProjectController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/controller/ResourceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/controller/ResourceController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/controller/TechnologyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/controller/TechnologyController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/repository/ProjectRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/repository/ProjectRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/repository/ResourceRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/repository/ResourceRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/service/ResourceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/service/ResourceService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/client/src/pages/EditDb.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/client/src/pages/EditDb.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/client/src/pages/EditFramework.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/client/src/pages/EditFramework.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/client/src/pages/EditLanguage.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/client/src/pages/EditLanguage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/client/src/pages/EditProject.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/client/src/pages/EditProject.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/client/src/pages/EditResource.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/client/src/pages/EditResource.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/client/src/pages/EditTechnology.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/client/src/pages/EditTechnology.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -79,7 +74,7 @@
           <entry key="gradle" value="6" />
           <entry key="html" value="10" />
           <entry key="java" value="185" />
-          <entry key="js" value="205" />
+          <entry key="js" value="211" />
           <entry key="json" value="2" />
           <entry key="properties" value="11" />
           <entry key="rnc" value="1" />
@@ -93,7 +88,7 @@
           <entry key="HTML" value="10" />
           <entry key="JAVA" value="185" />
           <entry key="JSON" value="2" />
-          <entry key="JavaScript" value="205" />
+          <entry key="JavaScript" value="211" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="Properties" value="11" />
           <entry key="RNG Compact" value="1" />
@@ -105,7 +100,7 @@
           <entry key="gradle" value="4" />
           <entry key="html" value="299" />
           <entry key="java" value="6766" />
-          <entry key="js" value="13643" />
+          <entry key="js" value="13740" />
           <entry key="properties" value="50" />
         </counts>
       </usages-collector>
@@ -115,7 +110,7 @@
           <entry key="Groovy" value="4" />
           <entry key="HTML" value="299" />
           <entry key="JAVA" value="6766" />
-          <entry key="JavaScript" value="13643" />
+          <entry key="JavaScript" value="13740" />
           <entry key="Properties" value="50" />
         </counts>
       </usages-collector>
@@ -127,164 +122,63 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/service/LanguageService.java">
+        <entry file="file://$PROJECT_DIR$/frontend/client/src/pages/EditDb.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="31" lean-forward="true" selection-end-line="31" />
+            <state relative-caret-position="476">
+              <caret line="82" column="40" selection-start-line="62" selection-start-column="32" selection-end-line="84" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/client/src/pages/EditFramework.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="885">
+              <caret line="84" column="38" selection-start-line="84" selection-start-column="38" selection-end-line="84" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/client/src/pages/EditLanguage.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="446">
+              <caret line="84" column="38" selection-start-line="84" selection-start-column="38" selection-end-line="84" selection-end-column="38" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#465#466#0" expanded="true" />
-                <element signature="e#516#517#0" expanded="true" />
-                <element signature="e#566#567#0" expanded="true" />
-                <element signature="e#620#621#0" expanded="true" />
-                <element signature="e#676#677#0" expanded="true" />
-                <element signature="e#732#733#0" expanded="true" />
-                <element signature="e#781#782#0" expanded="true" />
-                <element signature="e#830#831#0" expanded="true" />
+                <element signature="e#0#41#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/controller/LanguageController.java">
+        <entry file="file://$PROJECT_DIR$/frontend/client/src/pages/EditTechnology.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="645">
-              <caret line="43" column="43" selection-start-line="43" selection-start-column="43" selection-end-line="43" selection-end-column="43" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#620#621#0" expanded="true" />
-                <element signature="e#668#669#0" expanded="true" />
-                <element signature="e#1029#1030#0" expanded="true" />
-                <element signature="e#1082#1083#0" expanded="true" />
-                <element signature="e#1524#1525#0" expanded="true" />
-                <element signature="e#1570#1571#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="510">
+              <caret line="84" column="38" selection-start-line="84" selection-start-column="38" selection-end-line="84" selection-end-column="38" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/service/FrameworkService.java">
+        <entry file="file://$PROJECT_DIR$/frontend/client/src/pages/EditProject.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="28" column="17" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
+            <state relative-caret-position="671">
+              <caret line="284" column="38" selection-start-line="284" selection-start-column="38" selection-end-line="284" selection-end-column="38" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#472#473#0" expanded="true" />
-                <element signature="e#524#525#0" expanded="true" />
-                <element signature="e#576#577#0" expanded="true" />
-                <element signature="e#631#632#0" expanded="true" />
-                <element signature="e#691#692#0" expanded="true" />
-                <element signature="e#749#750#0" expanded="true" />
-                <element signature="e#799#800#0" expanded="true" />
-                <element signature="e#849#850#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/service/TechnologyService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="44" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#479#480#0" expanded="true" />
-                <element signature="e#532#533#0" expanded="true" />
-                <element signature="e#586#587#0" expanded="true" />
-                <element signature="e#642#643#0" expanded="true" />
-                <element signature="e#706#707#0" expanded="true" />
-                <element signature="e#766#767#0" expanded="true" />
-                <element signature="e#817#818#0" expanded="true" />
-                <element signature="e#868#869#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/controller/FrameworkController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="645">
-              <caret line="43" column="45" selection-start-line="43" selection-start-column="45" selection-end-line="43" selection-end-column="45" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#628#629#0" expanded="true" />
-                <element signature="e#677#678#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/service/DbService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" column="30" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#423#424#0" expanded="true" />
-                <element signature="e#468#469#0" expanded="true" />
-                <element signature="e#506#507#0" expanded="true" />
-                <element signature="e#554#555#0" expanded="true" />
-                <element signature="e#586#587#0" expanded="true" />
-                <element signature="e#630#631#0" expanded="true" />
-                <element signature="e#745#746#0" expanded="true" />
-                <element signature="e#788#789#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/controller/DbController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="33" column="24" lean-forward="true" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#569#570#0" expanded="true" />
-                <element signature="e#611#612#0" expanded="true" />
-                <element signature="e#937#938#0" expanded="true" />
-                <element signature="e#985#986#0" expanded="true" />
-                <element signature="e#1394#1395#0" expanded="true" />
-                <element signature="e#1434#1435#0" expanded="true" />
+                <element signature="e#0#41#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/controller/TechnologyController.java">
+        <entry file="file://$PROJECT_DIR$/frontend/client/src/pages/EditResource.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="34" column="115" selection-start-line="34" selection-start-column="115" selection-end-line="34" selection-end-column="115" />
+            <state relative-caret-position="495">
+              <caret line="291" selection-start-line="291" selection-end-line="292" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#632#633#0" expanded="true" />
-                <element signature="e#695#696#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/service/ProjectService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="31" lean-forward="true" selection-end-line="31" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#458#459#0" expanded="true" />
-                <element signature="e#508#509#0" expanded="true" />
-                <element signature="e#556#557#0" expanded="true" />
-                <element signature="e#609#610#0" expanded="true" />
-                <element signature="e#661#662#0" expanded="true" />
-                <element signature="e#715#716#0" expanded="true" />
-                <element signature="e#763#764#0" expanded="true" />
-                <element signature="e#811#812#0" expanded="true" />
+                <element signature="e#0#41#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -312,11 +206,11 @@
       <find>panel</find>
       <find>resourceRepository</find>
       <find>resource</find>
-      <find>project</find>
-      <find>Language</find>
-      <find>Repository</find>
-      <find>repository</find>
       <find>language</find>
+      <find>Repository</find>
+      <find>Language</find>
+      <find>project</find>
+      <find>repository</find>
     </findStrings>
     <replaceStrings>
       <replace>Project</replace>
@@ -330,12 +224,12 @@
       <replace>card</replace>
       <replace>resourceService</replace>
       <replace>project</replace>
-      <replace>language</replace>
       <replace>framework</replace>
-      <replace>Db</replace>
-      <replace>Service</replace>
-      <replace>service</replace>
       <replace>technology</replace>
+      <replace>Service</replace>
+      <replace>Db</replace>
+      <replace>language</replace>
+      <replace>service</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/controller</dir>
@@ -736,14 +630,8 @@
         <option value="$PROJECT_DIR$/frontend/client/src/pages/AddFramework.js" />
         <option value="$PROJECT_DIR$/frontend/client/src/pages/AddTechnology.js" />
         <option value="$PROJECT_DIR$/frontend/client/src/pages/AddDb.js" />
-        <option value="$PROJECT_DIR$/frontend/client/src/pages/EditFramework.js" />
-        <option value="$PROJECT_DIR$/frontend/client/src/pages/EditLanguage.js" />
-        <option value="$PROJECT_DIR$/frontend/client/src/pages/EditTechnology.js" />
-        <option value="$PROJECT_DIR$/frontend/client/src/pages/EditDb.js" />
         <option value="$PROJECT_DIR$/frontend/client/src/pages/Home.js" />
         <option value="$PROJECT_DIR$/frontend/client/src/pages/Home.css" />
-        <option value="$PROJECT_DIR$/frontend/client/src/pages/EditResource.js" />
-        <option value="$PROJECT_DIR$/frontend/client/src/pages/EditProject.js" />
         <option value="$PROJECT_DIR$/frontend/client/src/components/Navbar.js" />
         <option value="$PROJECT_DIR$/frontend/client/src/pages/Resource.css" />
         <option value="$PROJECT_DIR$/frontend/client/src/pages/Resource.js" />
@@ -762,6 +650,12 @@
         <option value="$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/controller/DbController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/service/TechnologyService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/controller/TechnologyController.java" />
+        <option value="$PROJECT_DIR$/frontend/client/src/pages/EditDb.js" />
+        <option value="$PROJECT_DIR$/frontend/client/src/pages/EditFramework.js" />
+        <option value="$PROJECT_DIR$/frontend/client/src/pages/EditLanguage.js" />
+        <option value="$PROJECT_DIR$/frontend/client/src/pages/EditTechnology.js" />
+        <option value="$PROJECT_DIR$/frontend/client/src/pages/EditProject.js" />
+        <option value="$PROJECT_DIR$/frontend/client/src/pages/EditResource.js" />
       </list>
     </option>
   </component>
@@ -786,8 +680,7 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1920" />
-    <option name="y" value="28" />
+    <option name="x" value="2023" />
     <option name="width" value="1900" />
     <option name="height" value="741" />
   </component>
@@ -812,55 +705,28 @@
             <path>
               <item name="journalplanner" type="b2602c69:ProjectViewProjectNode" />
               <item name="journalplanner" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="journalplanner" type="b2602c69:ProjectViewProjectNode" />
+              <item name="journalplanner" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="journalplanner" type="b2602c69:ProjectViewProjectNode" />
+              <item name="journalplanner" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="journalplanner" type="b2602c69:ProjectViewProjectNode" />
               <item name="journalplanner" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="journalplanner" type="b2602c69:ProjectViewProjectNode" />
-              <item name="journalplanner" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="journalplanner" type="b2602c69:ProjectViewProjectNode" />
-              <item name="journalplanner" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="journalplanner" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="journalplanner" type="b2602c69:ProjectViewProjectNode" />
-              <item name="journalplanner" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="journalplanner" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="journalplanner" type="b2602c69:ProjectViewProjectNode" />
-              <item name="journalplanner" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="journalplanner" type="462c0819:PsiDirectoryNode" />
-              <item name="repository" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="journalplanner" type="b2602c69:ProjectViewProjectNode" />
-              <item name="journalplanner" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="journalplanner" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -877,7 +743,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1535548072001" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1535553695861" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../files/react" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -943,12 +809,12 @@
       <workItem from="1535040974761" duration="1237000" />
       <workItem from="1535106250862" duration="3597000" />
       <workItem from="1535444424126" duration="22184000" />
-      <workItem from="1535530892052" duration="11702000" />
+      <workItem from="1535530892052" duration="13785000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="194911000" />
+    <option name="totallyTimeSpent" value="196994000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="-2" width="1920" height="1017" extended-state="6" />
@@ -964,7 +830,7 @@
       <window_info id="Web" order="7" sideWeight="0.50121063" side_tool="true" weight="0.22038421" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32972974" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49839914" visible="true" weight="0.05524239" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49839914" visible="true" weight="0.15107103" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.25405404" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1128,27 +994,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/client/src/pages/EditDb.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="52" column="40" selection-start-line="52" selection-start-column="40" selection-end-line="52" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/client/src/pages/EditTechnology.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="52" column="40" selection-start-line="52" selection-start-column="40" selection-end-line="52" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/client/src/pages/EditFramework.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="53" column="44" selection-start-line="53" selection-start-column="44" selection-end-line="53" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/client/src/pages/AddDb.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
@@ -1211,30 +1056,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/client/src/pages/EditLanguage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="52" column="40" selection-start-line="52" selection-start-column="40" selection-end-line="52" selection-end-column="40" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/client/src/components/Navbar.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/client/src/pages/EditProject.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="115" column="37" selection-start-line="115" selection-start-column="37" selection-end-line="115" selection-end-column="37" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1280,16 +1105,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/client/src/pages/EditResource.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-164">
-          <caret line="30" column="15" selection-start-line="30" selection-start-column="15" selection-end-line="33" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1441,6 +1256,52 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/service/TechnologyService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="44" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#479#480#0" expanded="true" />
+            <element signature="e#532#533#0" expanded="true" />
+            <element signature="e#586#587#0" expanded="true" />
+            <element signature="e#642#643#0" expanded="true" />
+            <element signature="e#706#707#0" expanded="true" />
+            <element signature="e#766#767#0" expanded="true" />
+            <element signature="e#817#818#0" expanded="true" />
+            <element signature="e#868#869#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/controller/TechnologyController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="34" column="115" selection-start-line="34" selection-start-column="115" selection-end-line="34" selection-end-column="115" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#632#633#0" expanded="true" />
+            <element signature="e#695#696#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/controller/DbController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="24" lean-forward="true" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#569#570#0" expanded="true" />
+            <element signature="e#611#612#0" expanded="true" />
+            <element signature="e#937#938#0" expanded="true" />
+            <element signature="e#985#986#0" expanded="true" />
+            <element signature="e#1394#1395#0" expanded="true" />
+            <element signature="e#1434#1435#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/service/DbService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
@@ -1471,48 +1332,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/controller/DbController.java">
+    <entry file="file://$PROJECT_DIR$/frontend/client/src/pages/EditDb.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="24" lean-forward="true" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
+        <state relative-caret-position="476">
+          <caret line="82" column="40" selection-start-line="62" selection-start-column="32" selection-end-line="84" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/client/src/pages/EditFramework.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="885">
+          <caret line="84" column="38" selection-start-line="84" selection-start-column="38" selection-end-line="84" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/client/src/pages/EditLanguage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="446">
+          <caret line="84" column="38" selection-start-line="84" selection-start-column="38" selection-end-line="84" selection-end-column="38" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#569#570#0" expanded="true" />
-            <element signature="e#611#612#0" expanded="true" />
-            <element signature="e#937#938#0" expanded="true" />
-            <element signature="e#985#986#0" expanded="true" />
-            <element signature="e#1394#1395#0" expanded="true" />
-            <element signature="e#1434#1435#0" expanded="true" />
+            <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/service/TechnologyService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="44" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#479#480#0" expanded="true" />
-            <element signature="e#532#533#0" expanded="true" />
-            <element signature="e#586#587#0" expanded="true" />
-            <element signature="e#642#643#0" expanded="true" />
-            <element signature="e#706#707#0" expanded="true" />
-            <element signature="e#766#767#0" expanded="true" />
-            <element signature="e#817#818#0" expanded="true" />
-            <element signature="e#868#869#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/controller/TechnologyController.java">
+    <entry file="file://$PROJECT_DIR$/frontend/client/src/pages/EditTechnology.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
-          <caret line="34" column="115" selection-start-line="34" selection-start-column="115" selection-end-line="34" selection-end-column="115" />
+          <caret line="84" column="38" selection-start-line="84" selection-start-column="38" selection-end-line="84" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/client/src/pages/EditProject.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="671">
+          <caret line="284" column="38" selection-start-line="284" selection-start-column="38" selection-end-line="284" selection-end-column="38" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#632#633#0" expanded="true" />
-            <element signature="e#695#696#0" expanded="true" />
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/client/src/pages/EditResource.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="291" selection-start-line="291" selection-end-line="292" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
