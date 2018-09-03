@@ -14,7 +14,7 @@ public class ProjectService {
     private ProjectRepository projectRepository;
 
     public Set<Project> getAllProjects(){
-        return projectRepository.findAll();
+        return projectRepository.findAllByOrderByIdAsc();
     }
 
     public Project getProjectById(Integer id){

@@ -14,7 +14,7 @@ public class ResourceService {
     private ResourceRepository resourceRepository;
 
     public Set<Resource> getAllResources(){
-        return resourceRepository.findAll();
+        return resourceRepository.findAllByOrderByIdAsc();
     }
 
     public Resource getResourceById(Integer id){

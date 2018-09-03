@@ -9,11 +9,13 @@ class Project extends Component {
     constructor(){
         super();
         this.state={
-            projects:[],
-            search:""
+            projects:[]
         };
     }
     componentDidMount(){
+        this.getProjects();
+    }
+    getProjects(){
         var url = 'http://localhost:8080/api/project/all';
         axios.get(url).then(res => {
             this.setState({
@@ -22,14 +24,19 @@ class Project extends Component {
         });
     }
     updateSearch(e){
-        this.setState({
-            search:e.target.value
-        });
+        if(e.target.value!=="") {
+            var url = 'http://localhost:8080/api/project/search/' + e.target.value.toString();
+            axios.get(url).then(res => {
+                this.setState({
+                    projects: res.data
+                });
+            });
+        }
+        else{
+            this.getProjects();
+        }
     }
     render() {
-        let filteredList=this.state.projects.filter((project) => {
-            return project.name.toLowerCase().indexOf(this.state.search.toLowerCase()) !== -1;
-        });
         return (
             <div>
                 <Navbar/>
@@ -58,7 +65,7 @@ class Project extends Component {
                         </tr>
                         </thead>
                         <tbody>
-                        {filteredList.map((p) => {
+                        {this.state.projects.map((p) => {
                             return(
                                 <tr key={p.id}>
                                     <th scope="row">{p.id}</th>

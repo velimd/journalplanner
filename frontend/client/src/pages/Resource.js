@@ -9,11 +9,13 @@ class Resource extends Component {
     constructor(){
         super();
         this.state={
-            resources:[],
-            search:""
+            resources:[]
         };
     }
     componentDidMount(){
+        this.getResources();
+    }
+    getResources(){
         var url = 'http://localhost:8080/api/resource/all';
         axios.get(url).then(res => {
             this.setState({
@@ -22,14 +24,19 @@ class Resource extends Component {
         });
     }
     updateSearch(e){
-        this.setState({
-           search:e.target.value
-        });
+        if(e.target.value!=="") {
+            var url = 'http://localhost:8080/api/resource/search/' + e.target.value.toString();
+            axios.get(url).then(res => {
+                this.setState({
+                    resources: res.data
+                });
+            });
+        }
+        else{
+            this.getResources();
+        }
     }
     render() {
-        let filteredList=this.state.resources.filter((resource) => {
-            return resource.name.toLowerCase().indexOf(this.state.search.toLowerCase()) !== -1;
-        });
         return (
             <div>
                 <Navbar/>
@@ -59,7 +66,7 @@ class Resource extends Component {
                         </tr>
                         </thead>
                         <tbody>
-                        {filteredList.map((r, key) => {
+                        {this.state.resources.map((r) => {
                             return (
                                 <tr key={r.id}>
                                     <th scope="row">{r.id}</th>
