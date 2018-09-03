@@ -9,7 +9,8 @@ class Project extends Component {
     constructor(){
         super();
         this.state={
-            projects:[]
+            projects:[],
+            search:""
         };
     }
     componentDidMount(){
@@ -20,14 +21,32 @@ class Project extends Component {
             });
         });
     }
-
+    updateSearch(e){
+        this.setState({
+            search:e.target.value
+        });
+    }
     render() {
+        let filteredList=this.state.projects.filter((project) => {
+            return project.name.toLowerCase().indexOf(this.state.search.toLowerCase()) !== -1;
+        });
         return (
             <div>
                 <Navbar/>
-                <div style={{textAlign:'center'}}>
-                    <Link to="/projects/add"><button type="button" id="btn-add" className="btn btn-dark">Add</button></Link>
+                <div className="row">
+                    <div className="col">
+                        <form className="form-inline" id="search">
+                            <input type="text" className="form-control my-2" placeholder="Search" onChange={this.updateSearch.bind(this)}/>
+                        </form>
+                    </div>
+                    <div className="col">
+                        <div style={{textAlign:'center'}}>
+                            <Link to="/projects/add" ><button type="button" id="btn-add" className="btn btn-dark">Add</button></Link>
+                        </div>
+                    </div>
+                    <div className="col"></div>
                 </div>
+
                 <div>
                     <table className="table table-dark">
                         <thead>
@@ -39,7 +58,7 @@ class Project extends Component {
                         </tr>
                         </thead>
                         <tbody>
-                        {this.state.projects.map((p, key) => {
+                        {filteredList.map((p) => {
                             return(
                                 <tr key={p.id}>
                                     <th scope="row">{p.id}</th>
