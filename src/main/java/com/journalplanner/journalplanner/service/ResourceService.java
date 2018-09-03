@@ -28,4 +28,8 @@ public class ResourceService {
     public void deleteResourceById(Integer id){
         resourceRepository.deleteById(id);
     }
+
+    public Set<Resource> getResourcesBySearch(String name, String url, String memo, String language,String framework,String technology,String db){
+        return resourceRepository.findByNameContainingIgnoreCaseOrUrlContainingIgnoreCaseOrMemoContainingIgnoreCaseOrLanguages_NameContainingIgnoreCaseOrFrameworks_NameContainingIgnoreCaseOrTechnologies_NameContainingIgnoreCaseOrDbs_NameContainingIgnoreCase(name, url, memo, language, framework, technology, db);
+    }
 }

@@ -12,4 +12,5 @@ public interface ResourceRepository extends CrudRepository<Resource, Long> {
     Set<Resource> findAll();
     Resource findById(Integer id);
     void deleteById(Integer id);
+    Set<Resource> findByNameContainingIgnoreCaseOrUrlContainingIgnoreCaseOrMemoContainingIgnoreCaseOrLanguages_NameContainingIgnoreCaseOrFrameworks_NameContainingIgnoreCaseOrTechnologies_NameContainingIgnoreCaseOrDbs_NameContainingIgnoreCase(String name, String url, String memo, String language,String framework,String technology,String db);
 }
