@@ -24,25 +24,25 @@ public class Resource {
     @Column(name="memo", nullable = true)
     private String memo;
 
-    @ManyToMany
+    @ManyToMany(fetch = FetchType.LAZY)
     @JoinTable(name = "resource_language", joinColumns = { @JoinColumn(name = "resource_id") }, inverseJoinColumns = { @JoinColumn(name = "language_id") })
     @Column(name = "language", nullable = true)
     @JsonIgnoreProperties({"projects", "resources"})
     private Set<Language> languages = new HashSet<>();
 
-    @ManyToMany
+    @ManyToMany(fetch = FetchType.LAZY)
     @JoinTable(name = "resource_framework", joinColumns = { @JoinColumn(name = "resource_id") }, inverseJoinColumns = { @JoinColumn(name = "framework_id") })
     @Column(name = "framework", nullable = true)
     @JsonIgnoreProperties({"projects", "resources"})
     private Set<Framework> frameworks = new HashSet<>();
 
-    @ManyToMany
+    @ManyToMany(fetch = FetchType.LAZY)
     @JoinTable(name = "resource_technology", joinColumns = { @JoinColumn(name = "resource_id") }, inverseJoinColumns = { @JoinColumn(name = "technology_id") })
     @Column(name = "technology", nullable = true)
     @JsonIgnoreProperties({"projects", "resources"})
     private Set<Technology> technologies = new HashSet<>();
 
-    @ManyToMany
+    @ManyToMany(fetch = FetchType.LAZY)
     @JoinTable(name = "resource_database", joinColumns = { @JoinColumn(name = "resource_id") }, inverseJoinColumns = { @JoinColumn(name = "database_id") })
     @Column(name = "db", nullable = true)
     @JsonIgnoreProperties({"projects", "resources"})

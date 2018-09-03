@@ -18,11 +18,11 @@ public class Db {
     @Column(name = "name")
     private String name;
 
-    @ManyToMany(mappedBy = "dbs")
+    @ManyToMany(fetch = FetchType.LAZY, mappedBy = "dbs")
     @JsonIgnoreProperties({"languages","frameworks","technologies","dbs"})
     private Set<Resource> resources = new HashSet<>();
 
-    @ManyToMany(mappedBy = "dbs")
+    @ManyToMany(fetch = FetchType.LAZY, mappedBy = "dbs")
     @JsonIgnoreProperties({"languages","frameworks","technologies","dbs"})
     private Set<Project> projects = new HashSet<>();
 

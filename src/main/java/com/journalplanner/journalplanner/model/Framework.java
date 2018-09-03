@@ -16,11 +16,11 @@ public class Framework {
     @Column(name = "name")
     private String name;
 
-    @ManyToMany(mappedBy = "frameworks")
+    @ManyToMany(fetch = FetchType.LAZY, mappedBy = "frameworks")
     @JsonIgnoreProperties({"languages","frameworks","technologies","dbs"})
     private Set<Resource> resources = new HashSet<>();
 
-    @ManyToMany(mappedBy = "frameworks")
+    @ManyToMany(fetch = FetchType.LAZY, mappedBy = "frameworks")
     @JsonIgnoreProperties({"languages","frameworks","technologies","dbs"})
     private Set<Project> projects = new HashSet<>();
 
