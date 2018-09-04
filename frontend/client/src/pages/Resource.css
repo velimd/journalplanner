@@ -10,7 +10,7 @@
     border-radius: 8px;
     position: center;
     color: white;
-    background-color: #51a8ba;
+    background-color: #5bc0de;
 }
 
 #search{
@@ -19,5 +19,5 @@
 }
 
 .resource a{
-    color: #51a8ba;
+    color: #5bc0de;
 }

@@ -9,20 +9,20 @@
     border-width: thin;*/
     border-radius: 8px;
     color: white;
-    background-color: #9e6af2;
+    background-color: orange;
 }
 
 .project #stack{
     border-radius: 8px;
     color: white;
-    background-color: #9e6af2;
+    background-color: orange;
 }
 
 .project a{
-    color: #9e6af2;
+    color: orange;
 }
 
 .project #search-alert{
     color: white;
-    background-color: #9e6af2;
+    background-color: orange;
 }
