@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc6d923d-4d4f-4518-b455-ef3e2065a658" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/frontend/client/src/pages/Project.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/client/src/pages/Project.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/client/src/pages/Project.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/client/src/pages/Project.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/client/src/pages/Resource.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/client/src/pages/Resource.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -66,12 +68,12 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="1" />
-          <entry key="css" value="44" />
+          <entry key="css" value="46" />
           <entry key="gitignore" value="1" />
           <entry key="gradle" value="8" />
           <entry key="html" value="15" />
           <entry key="java" value="232" />
-          <entry key="js" value="258" />
+          <entry key="js" value="261" />
           <entry key="json" value="4" />
           <entry key="properties" value="14" />
           <entry key="rnc" value="1" />
@@ -80,12 +82,12 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="1" />
-          <entry key="CSS" value="44" />
+          <entry key="CSS" value="46" />
           <entry key="Groovy" value="8" />
           <entry key="HTML" value="15" />
           <entry key="JAVA" value="232" />
           <entry key="JSON" value="4" />
-          <entry key="JavaScript" value="258" />
+          <entry key="JavaScript" value="261" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="Properties" value="14" />
           <entry key="RNG Compact" value="1" />
@@ -93,21 +95,21 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="769" />
+          <entry key="css" value="801" />
           <entry key="gradle" value="4" />
           <entry key="html" value="299" />
           <entry key="java" value="8786" />
-          <entry key="js" value="15534" />
+          <entry key="js" value="15610" />
           <entry key="properties" value="50" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="769" />
+          <entry key="CSS" value="801" />
           <entry key="Groovy" value="4" />
           <entry key="HTML" value="299" />
           <entry key="JAVA" value="8786" />
-          <entry key="JavaScript" value="15534" />
+          <entry key="JavaScript" value="15610" />
           <entry key="Properties" value="50" />
         </counts>
       </usages-collector>
@@ -121,11 +123,41 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/frontend/client/src/pages/Resource.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
-              <caret line="30" column="30" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
+            <state relative-caret-position="390">
+              <caret line="114" column="105" selection-start-line="114" selection-start-column="105" selection-end-line="114" selection-end-column="105" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/client/src/pages/Resource.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="20" column="12" lean-forward="true" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/client/src/pages/Project.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="394">
+              <caret line="78" column="64" selection-start-line="78" selection-start-column="64" selection-end-line="78" selection-end-column="64" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/client/src/pages/Project.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="24" selection-start-line="24" selection-end-line="27" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -597,10 +629,10 @@
         <option value="$PROJECT_DIR$/frontend/client/src/pages/AddResource.js" />
         <option value="$PROJECT_DIR$/frontend/client/src/pages/AddTechnology.js" />
         <option value="$PROJECT_DIR$/frontend/client/src/pages/Resource.css" />
-        <option value="$PROJECT_DIR$/frontend/client/src/pages/Project.js" />
-        <option value="$PROJECT_DIR$/frontend/client/src/pages/Project.css" />
         <option value="$PROJECT_DIR$/frontend/client/public/index.html" />
         <option value="$PROJECT_DIR$/frontend/client/src/index.js" />
+        <option value="$PROJECT_DIR$/frontend/client/src/pages/Project.js" />
+        <option value="$PROJECT_DIR$/frontend/client/src/pages/Project.css" />
         <option value="$PROJECT_DIR$/frontend/client/src/pages/Resource.js" />
       </list>
     </option>
@@ -672,6 +704,14 @@
               <item name="client" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="journalplanner" type="b2602c69:ProjectViewProjectNode" />
+              <item name="journalplanner" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -688,7 +728,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536072109834" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536075133073" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -763,12 +803,12 @@
       <workItem from="1536052573258" duration="697000" />
       <workItem from="1536069780010" duration="2301000" />
       <workItem from="1536072211961" duration="94000" />
-      <workItem from="1536072444294" duration="1596000" />
+      <workItem from="1536072444294" duration="2565000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="232161000" />
+    <option name="totallyTimeSpent" value="233130000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-2" width="1920" height="1017" extended-state="6" />
@@ -1129,30 +1169,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/client/src/pages/Project.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/client/src/pages/Project.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="74" column="60" selection-start-line="74" selection-start-column="60" selection-end-line="74" selection-end-column="60" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/client/src/pages/Resource.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/client/src/pages/EditFramework.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="584">
@@ -1191,10 +1207,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/client/src/pages/Project.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="394">
+          <caret line="78" column="64" selection-start-line="78" selection-start-column="64" selection-end-line="78" selection-end-column="64" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/client/src/pages/Resource.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="12" lean-forward="true" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/client/src/pages/Project.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" selection-start-line="24" selection-end-line="27" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/client/src/pages/Resource.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="30" column="30" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
+        <state relative-caret-position="390">
+          <caret line="114" column="105" selection-start-line="114" selection-start-column="105" selection-end-line="114" selection-end-column="105" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>

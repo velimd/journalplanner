@@ -57,7 +57,7 @@ class Resource extends Component {
                 message:""
             }
         });
-        this.getResources()
+        this.getResources();
     }
     render() {
         return (
@@ -71,7 +71,7 @@ class Resource extends Component {
                     </div>
                     <div className="col">
                         <div style={{textAlign:'center'}}>
-                            <Link to="/resources/add" ><button type="button" id="btn-add" className="btn btn-dark">Add</button></Link>
+                            <Link to="/resources/add" ><button type="button" id="btn-add" className="btn">Add</button></Link>
                         </div>
                     </div>
                     <div className="col"></div>
@@ -103,16 +103,16 @@ class Resource extends Component {
                                     <td>{r.memo}</td>
                                     <td>
                                         {r.languages.map((l, k) =>
-                                            <button type="button" value={l.name} className="btn btn-info btn-sm" key={l.id} onClick={this.searchMessage.bind(this)}>{l.name} </button>
+                                            <button type="button" value={l.name} className="btn btn-info btn-sm" key={l.id} onClick={this.searchMessage.bind(this)}>{l.name}</button>
                                         )}
                                         {r.frameworks.map((f, i) =>
-                                            <button type="button" value={f.name} className="btn btn-info btn-sm" key={f.id} onClick={this.searchMessage.bind(this)}>{f.name} </button>
+                                            <button type="button" value={f.name} className="btn btn-info btn-sm" key={f.id} onClick={this.searchMessage.bind(this)}>{f.name}</button>
                                         )}
                                         {r.technologies.map((t, n) =>
-                                            <button type="button" value={t.name} className="btn btn-info btn-sm" key={t.id} onClick={this.searchMessage.bind(this)}>{t.name} </button>
+                                            <button type="button" value={t.name} className="btn btn-info btn-sm" key={t.id} onClick={this.searchMessage.bind(this)}>{t.name}</button>
                                         )}
                                         {r.dbs.map((d, j) =>
-                                            <button type="button" value={d.name} className="btn btn-info btn-sm" key={d.id} onClick={this.searchMessage.bind(this)}>{d.name} </button>
+                                            <button type="button" value={d.name} className="btn btn-info btn-sm" key={d.id} onClick={this.searchMessage.bind(this)}>{d.name}</button>
                                         )}
                                     </td>
                                 </tr>
@@ -122,7 +122,7 @@ class Resource extends Component {
                     </table>
                 </div>
                 <div style={{textAlign:'center'}}>
-                    <Link to="/resources/add"><button type="button" id="btn-add" className="btn btn-dark">Add</button></Link>
+                    <Link to="/resources/add"><button type="button" id="btn-add" className="btn">Add</button></Link>
                 </div>
             </div>
         );

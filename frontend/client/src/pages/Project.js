@@ -9,7 +9,11 @@ class Project extends Component {
     constructor(){
         super();
         this.state={
-            projects:[]
+            projects:[],
+            search:[{
+                show:false,
+                message:""
+            }]
         };
     }
     componentDidMount(){
@@ -36,6 +40,25 @@ class Project extends Component {
             this.getProjects();
         }
     }
+    searchMessage(e){
+        var message = "You Search for "+e.target.textContent;
+        this.setState({
+            search:{
+                show:true,
+                message:message
+            }
+        });
+        this.updateSearch(e)
+    };
+    searchMessageClosed(e){
+        this.setState({
+            search:{
+                show:false,
+                message:""
+            }
+        });
+        this.getProjects();
+    }
     render() {
         return (
             <div className="project">
@@ -48,12 +71,17 @@ class Project extends Component {
                     </div>
                     <div className="col">
                         <div style={{textAlign:'center'}}>
-                            <Link to="/projects/add" ><button type="button" id="btn-add" className="btn btn-dark">Add</button></Link>
+                            <Link to="/projects/add" ><button type="button" id="btn-add" className="btn">Add</button></Link>
                         </div>
                     </div>
                     <div className="col"></div>
                 </div>
-
+                {this.state.search.show && <div className="alert" id="search-alert" role="alert">
+                    {this.state.search.message}
+                    <button type="button" className="close" onClick={this.searchMessageClosed.bind(this)} aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>}
                 <div>
                     <table className="table table-dark">
                         <thead>
@@ -73,16 +101,16 @@ class Project extends Component {
                                     <td><a href={"http://"+p.url}>{p.url}</a></td>
                                     <td>
                                         {p.languages.map((l) =>
-                                            <button type="button" id="stack" className="btn btn-primary btn-sm" key={l.id}>{l.name} </button>
+                                            <button type="button" value={l.name} id="stack" className="btn btn-sm" key={l.id} onClick={this.searchMessage.bind(this)}>{l.name}</button>
                                         )}
                                         {p.frameworks.map((f) =>
-                                            <button type="button" id="stack" className="btn btn-primary btn-sm" key={f.id}>{f.name} </button>
-                                        )}
-                                        {p.dbs.map((d) =>
-                                            <button type="button" id="stack" className="btn btn-primary btn-sm" key={d.id}>{d.name} </button>
+                                            <button type="button" value={f.name} id="stack" className="btn btn-sm" key={f.id} onClick={this.searchMessage.bind(this)}>{f.name}</button>
                                         )}
                                         {p.technologies.map((t) =>
-                                            <button type="button" id="stack" className="btn btn-primary btn-sm" key={t.id}>{t.name} </button>
+                                            <button type="button" value={t.name} id="stack" className="btn btn-sm" key={t.id} onClick={this.searchMessage.bind(this)}>{t.name}</button>
+                                        )}
+                                        {p.dbs.map((d) =>
+                                            <button type="button" value={d.name} id="stack" className="btn btn-sm" key={d.id} onClick={this.searchMessage.bind(this)}>{d.name}</button>
                                         )}
                                     </td>
                                 </tr>
@@ -92,7 +120,7 @@ class Project extends Component {
                     </table>
                 </div>
                 <div style={{textAlign:'center'}}>
-                    <Link to="/projects/add"><button type="button" id="btn-add" className="btn btn-dark">Add</button></Link>
+                    <Link to="/projects/add"><button type="button" id="btn-add" className="btn">Add</button></Link>
                 </div>
             </div>
         );
