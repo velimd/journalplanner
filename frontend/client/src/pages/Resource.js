@@ -28,7 +28,7 @@ class Resource extends Component {
         });
     }
     updateSearch(e){
-        if(e.target.value!=="" || e.target!==undefined) {
+        if(e.target.value!=="") {
             var url = 'http://localhost:8080/api/resource/search/' + e.target.value.toString();
             axios.get(url).then(res => {
                 this.setState({
