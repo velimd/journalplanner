@@ -66,7 +66,7 @@ class Project extends Component {
                 <div className="row">
                     <div className="col">
                         <form className="form-inline" id="search">
-                            <input type="text" className="form-control my-2" placeholder="Search" onChange={this.updateSearch.bind(this)}/>
+                            <input type="text" className="form-control my-2" placeholder="Search" onInput={this.searchMessageClosed.bind(this)} onChange={this.updateSearch.bind(this)}/>
                         </form>
                     </div>
                     <div className="col">
