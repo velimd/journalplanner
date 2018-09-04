@@ -9,7 +9,11 @@ class Resource extends Component {
     constructor(){
         super();
         this.state={
-            resources:[]
+            resources:[],
+            search:[{
+                show:false,
+                message:""
+            }]
         };
     }
     componentDidMount(){
@@ -24,7 +28,7 @@ class Resource extends Component {
         });
     }
     updateSearch(e){
-        if(e.target.value!=="") {
+        if(e.target.value!=="" || e.target!==undefined) {
             var url = 'http://localhost:8080/api/resource/search/' + e.target.value.toString();
             axios.get(url).then(res => {
                 this.setState({
@@ -35,6 +39,25 @@ class Resource extends Component {
         else{
             this.getResources();
         }
+    }
+    searchMessage(e){
+        var message = "You Search for "+e.target.textContent;
+        this.setState({
+                search:{
+                    show:true,
+                    message:message
+                }
+            });
+        this.updateSearch(e)
+    };
+    searchMessageClosed(e){
+        this.setState({
+            search:{
+                show:false,
+                message:""
+            }
+        });
+        this.getResources()
     }
     render() {
         return (
@@ -53,7 +76,12 @@ class Resource extends Component {
                     </div>
                     <div className="col"></div>
                 </div>
-
+                {this.state.search.show && <div className="alert alert-info" role="alert">
+                    {this.state.search.message}
+                    <button type="button" className="close" onClick={this.searchMessageClosed.bind(this)} aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>}
                 <div>
                     <table className="table table-dark">
                         <thead>
@@ -75,16 +103,16 @@ class Resource extends Component {
                                     <td>{r.memo}</td>
                                     <td>
                                         {r.languages.map((l, k) =>
-                                            <button type="button" className="btn btn-info btn-sm" key={l.id}>{l.name} </button>
+                                            <button type="button" value={l.name} className="btn btn-info btn-sm" key={l.id} onClick={this.searchMessage.bind(this)}>{l.name} </button>
                                         )}
                                         {r.frameworks.map((f, i) =>
-                                            <button type="button" className="btn btn-info btn-sm" key={f.id}>{f.name} </button>
-                                        )}
-                                        {r.dbs.map((d, j) =>
-                                            <button type="button" className="btn btn-info btn-sm" key={d.id}>{d.name} </button>
+                                            <button type="button" value={f.name} className="btn btn-info btn-sm" key={f.id} onClick={this.searchMessage.bind(this)}>{f.name} </button>
                                         )}
                                         {r.technologies.map((t, n) =>
-                                            <button type="button" className="btn btn-info btn-sm" key={t.id}>{t.name} </button>
+                                            <button type="button" value={t.name} className="btn btn-info btn-sm" key={t.id} onClick={this.searchMessage.bind(this)}>{t.name} </button>
+                                        )}
+                                        {r.dbs.map((d, j) =>
+                                            <button type="button" value={d.name} className="btn btn-info btn-sm" key={d.id} onClick={this.searchMessage.bind(this)}>{d.name} </button>
                                         )}
                                     </td>
                                 </tr>

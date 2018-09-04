@@ -2,20 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc6d923d-4d4f-4518-b455-ef3e2065a658" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/journalplanner_test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/journalplanner_test.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/client/src/pages/AddDb.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/client/src/pages/AddDb.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/client/src/pages/AddFramework.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/client/src/pages/AddFramework.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/client/src/pages/AddLanguage.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/client/src/pages/AddLanguage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/client/src/pages/AddProject.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/client/src/pages/AddProject.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/client/src/pages/AddResource.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/client/src/pages/AddResource.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/client/src/pages/AddTechnology.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/client/src/pages/AddTechnology.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/client/src/pages/Project.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/client/src/pages/Project.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/client/src/pages/Project.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/client/src/pages/Project.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/client/src/pages/Resource.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/client/src/pages/Resource.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/client/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/client/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/client/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/client/src/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/client/src/pages/Resource.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/client/src/pages/Resource.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/client/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/client/yarn.lock" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -55,11 +47,11 @@
     <session id="-1655409992">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="29" />
-          <entry key="project.open.time.0" value="1" />
+          <entry key="project.closed" value="31" />
+          <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.10" value="8" />
-          <entry key="project.open.time.11" value="1" />
+          <entry key="project.open.time.11" value="2" />
           <entry key="project.open.time.12" value="2" />
           <entry key="project.open.time.14" value="2" />
           <entry key="project.open.time.15" value="1" />
@@ -69,11 +61,11 @@
           <entry key="project.open.time.23" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.5" value="1" />
-          <entry key="project.open.time.6" value="2" />
+          <entry key="project.open.time.6" value="3" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.8" value="3" />
           <entry key="project.open.time.9" value="2" />
-          <entry key="project.opened" value="32" />
+          <entry key="project.opened" value="35" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -82,10 +74,10 @@
           <entry key="css" value="44" />
           <entry key="gitignore" value="1" />
           <entry key="gradle" value="8" />
-          <entry key="html" value="13" />
+          <entry key="html" value="15" />
           <entry key="java" value="232" />
-          <entry key="js" value="249" />
-          <entry key="json" value="3" />
+          <entry key="js" value="258" />
+          <entry key="json" value="4" />
           <entry key="properties" value="14" />
           <entry key="rnc" value="1" />
         </counts>
@@ -95,10 +87,10 @@
           <entry key="CLASS" value="1" />
           <entry key="CSS" value="44" />
           <entry key="Groovy" value="8" />
-          <entry key="HTML" value="13" />
+          <entry key="HTML" value="15" />
           <entry key="JAVA" value="232" />
-          <entry key="JSON" value="3" />
-          <entry key="JavaScript" value="249" />
+          <entry key="JSON" value="4" />
+          <entry key="JavaScript" value="258" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="Properties" value="14" />
           <entry key="RNG Compact" value="1" />
@@ -110,7 +102,7 @@
           <entry key="gradle" value="4" />
           <entry key="html" value="299" />
           <entry key="java" value="8786" />
-          <entry key="js" value="14628" />
+          <entry key="js" value="15534" />
           <entry key="properties" value="50" />
         </counts>
       </usages-collector>
@@ -120,7 +112,7 @@
           <entry key="Groovy" value="4" />
           <entry key="HTML" value="299" />
           <entry key="JAVA" value="8786" />
-          <entry key="JavaScript" value="14628" />
+          <entry key="JavaScript" value="15534" />
           <entry key="Properties" value="50" />
         </counts>
       </usages-collector>
@@ -131,41 +123,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/client/src/pages/Resource.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="4" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/client/src/pages/Project.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="74" column="60" selection-start-line="74" selection-start-column="60" selection-end-line="74" selection-end-column="60" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/frontend/client/src/pages/Project.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/client/src/pages/Resource.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="40" column="36" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="36" />
+            <state relative-caret-position="184">
+              <caret line="29" column="20" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -458,7 +420,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="6137392102000" />
+        <entry key="$PROJECT_DIR$" value="6144278852000" />
         <entry key="$PROJECT_DIR$/.gradle" value="0" />
         <entry key="$PROJECT_DIR$/build.gradle" value="667107480" />
         <entry key="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" value="1613248354" />
@@ -594,7 +556,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/MyConfiguration.java" />
         <option value="$PROJECT_DIR$/frontend/client/src/pages/Add.css" />
         <option value="$PROJECT_DIR$/frontend/client/src/components/Navbar.css" />
         <option value="$PROJECT_DIR$/frontend/client/src/pages/Language.js" />
@@ -602,7 +563,6 @@
         <option value="$PROJECT_DIR$/frontend/client/src/pages/Framework.js" />
         <option value="$PROJECT_DIR$/frontend/client/src/pages/Db.js" />
         <option value="$PROJECT_DIR$/frontend/client/src/pages/Technology.js" />
-        <option value="$PROJECT_DIR$/frontend/client/public/index.html" />
         <option value="$PROJECT_DIR$/frontend/client/src/pages/Home.js" />
         <option value="$PROJECT_DIR$/frontend/client/src/pages/Home.css" />
         <option value="$PROJECT_DIR$/frontend/client/src/components/Navbar.js" />
@@ -641,10 +601,12 @@
         <option value="$PROJECT_DIR$/frontend/client/src/pages/AddProject.js" />
         <option value="$PROJECT_DIR$/frontend/client/src/pages/AddResource.js" />
         <option value="$PROJECT_DIR$/frontend/client/src/pages/AddTechnology.js" />
-        <option value="$PROJECT_DIR$/frontend/client/src/pages/Resource.js" />
         <option value="$PROJECT_DIR$/frontend/client/src/pages/Resource.css" />
         <option value="$PROJECT_DIR$/frontend/client/src/pages/Project.js" />
         <option value="$PROJECT_DIR$/frontend/client/src/pages/Project.css" />
+        <option value="$PROJECT_DIR$/frontend/client/public/index.html" />
+        <option value="$PROJECT_DIR$/frontend/client/src/index.js" />
+        <option value="$PROJECT_DIR$/frontend/client/src/pages/Resource.js" />
       </list>
     </option>
   </component>
@@ -681,9 +643,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="AndroidView" />
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -707,7 +668,7 @@
               <item name="journalplanner" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="frontend" type="462c0819:PsiDirectoryNode" />
               <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="journalplanner" type="b2602c69:ProjectViewProjectNode" />
@@ -715,12 +676,12 @@
               <item name="frontend" type="462c0819:PsiDirectoryNode" />
               <item name="client" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -732,8 +693,8 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536052024600" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../files/react" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536072109834" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -805,17 +766,20 @@
       <workItem from="1535962561526" duration="20197000" />
       <workItem from="1536049696969" duration="2658000" />
       <workItem from="1536052573258" duration="697000" />
+      <workItem from="1536069780010" duration="2301000" />
+      <workItem from="1536072211961" duration="94000" />
+      <workItem from="1536072444294" duration="1451000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="228170000" />
+    <option name="totallyTimeSpent" value="232016000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-2" width="1920" height="1017" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49878934" visible="true" weight="0.24759872" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49878934" visible="true" weight="0.255603" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -922,19 +886,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/client/src/index.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/client/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="36" column="56" lean-forward="true" selection-start-line="36" selection-start-column="56" selection-end-line="36" selection-end-column="56" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-jpa/2.0.9.RELEASE/368ab3f9dc40db5f4ceaeff9e9e474d75687a271/spring-data-jpa-2.0.9.RELEASE-sources.jar!/org/springframework/data/jpa/repository/query/JpaQueryExecution.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="570">
@@ -960,16 +911,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="499">
           <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/client/package.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/client/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
         </state>
       </provider>
     </entry>
@@ -1111,13 +1052,6 @@
     <entry file="file://$PROJECT_DIR$/frontend/client/src/pages/Db.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/client/src/pages/EditFramework.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1260">
-          <caret line="84" column="38" selection-start-line="84" selection-start-column="38" selection-end-line="84" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/client/src/pages/EditLanguage.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1259">
@@ -1132,13 +1066,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3960">
           <caret line="264" column="106" selection-start-line="264" selection-start-column="106" selection-end-line="264" selection-end-column="106" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/client/src/pages/EditResource.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4364">
-          <caret line="291" selection-start-line="291" selection-end-line="291" />
         </state>
       </provider>
     </entry>
@@ -1207,13 +1134,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/client/src/pages/Resource.js">
+    <entry file="file://$PROJECT_DIR$/frontend/client/src/pages/Project.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="40" column="36" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="315">
+          <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -1230,14 +1154,55 @@
     <entry file="file://$PROJECT_DIR$/frontend/client/src/pages/Resource.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="6" column="4" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="21" />
+          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/client/src/pages/Project.css">
+    <entry file="file://$PROJECT_DIR$/frontend/client/src/pages/EditFramework.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
+        <state relative-caret-position="584">
+          <caret line="84" column="38" selection-start-line="84" selection-start-column="38" selection-end-line="84" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/client/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="42" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/client/package.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/client/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="4" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/client/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/client/src/pages/EditResource.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="98" column="27" lean-forward="true" selection-start-line="98" selection-start-column="27" selection-end-line="98" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/client/src/pages/Resource.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="29" column="20" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
