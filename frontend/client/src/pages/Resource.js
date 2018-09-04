@@ -38,7 +38,7 @@ class Resource extends Component {
     }
     render() {
         return (
-            <div>
+            <div className="resource">
                 <Navbar/>
                 <div className="row">
                     <div className="col">
@@ -75,16 +75,16 @@ class Resource extends Component {
                                     <td>{r.memo}</td>
                                     <td>
                                         {r.languages.map((l, k) =>
-                                            <button type="button" className="btn btn-primary btn-sm" key={l.id}>{l.name} </button>
+                                            <button type="button" className="btn btn-info btn-sm" key={l.id}>{l.name} </button>
                                         )}
                                         {r.frameworks.map((f, i) =>
-                                            <button type="button" className="btn btn-primary btn-sm" key={f.id}>{f.name} </button>
+                                            <button type="button" className="btn btn-info btn-sm" key={f.id}>{f.name} </button>
                                         )}
                                         {r.dbs.map((d, j) =>
-                                            <button type="button" className="btn btn-primary btn-sm" key={d.id}>{d.name} </button>
+                                            <button type="button" className="btn btn-info btn-sm" key={d.id}>{d.name} </button>
                                         )}
                                         {r.technologies.map((t, n) =>
-                                            <button type="button" className="btn btn-primary btn-sm" key={t.id}>{t.name} </button>
+                                            <button type="button" className="btn btn-info btn-sm" key={t.id}>{t.name} </button>
                                         )}
                                     </td>
                                 </tr>

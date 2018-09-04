@@ -38,7 +38,7 @@ class Project extends Component {
     }
     render() {
         return (
-            <div>
+            <div className="project">
                 <Navbar/>
                 <div className="row">
                     <div className="col">
@@ -72,17 +72,17 @@ class Project extends Component {
                                     <td><Link to={"projects/edit/"+p.id}>{p.name}</Link></td>
                                     <td><a href={"http://"+p.url}>{p.url}</a></td>
                                     <td>
-                                        {p.languages.map((l, k) =>
-                                            <button type="button" className="btn btn-primary btn-sm" key={l.id}>{l.name} </button>
+                                        {p.languages.map((l) =>
+                                            <button type="button" id="stack" className="btn btn-primary btn-sm" key={l.id}>{l.name} </button>
                                         )}
-                                        {p.frameworks.map((f, i) =>
-                                            <button type="button" className="btn btn-primary btn-sm" key={f.id}>{f.name} </button>
+                                        {p.frameworks.map((f) =>
+                                            <button type="button" id="stack" className="btn btn-primary btn-sm" key={f.id}>{f.name} </button>
                                         )}
-                                        {p.dbs.map((d, j) =>
-                                            <button type="button" className="btn btn-primary btn-sm" key={d.id}>{d.name} </button>
+                                        {p.dbs.map((d) =>
+                                            <button type="button" id="stack" className="btn btn-primary btn-sm" key={d.id}>{d.name} </button>
                                         )}
-                                        {p.technologies.map((t, n) =>
-                                            <button type="button" className="btn btn-primary btn-sm" key={t.id}>{t.name} </button>
+                                        {p.technologies.map((t) =>
+                                            <button type="button" id="stack" className="btn btn-primary btn-sm" key={t.id}>{t.name} </button>
                                         )}
                                     </td>
                                 </tr>

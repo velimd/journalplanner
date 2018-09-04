@@ -2,10 +2,22 @@
     margin-right: 2px;
 }
 
-#btn-add {
-    /*float: right;*/
+.project #btn-add {
     margin-bottom: 20px;
+    margin-top: 20px;
     /*border: solid;
     border-width: thin;*/
     border-radius: 8px;
+    color: white;
+    background-color: #9e6af2;
+}
+
+.project #stack{
+    border-radius: 8px;
+    color: white;
+    background-color: #9e6af2;
+}
+
+.project a{
+    color: #9e6af2;
 }

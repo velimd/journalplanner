@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 
-import './Resource.css';
 import Navbar from '../components/Navbar.js'
 
 class AddLanguage extends Component {
