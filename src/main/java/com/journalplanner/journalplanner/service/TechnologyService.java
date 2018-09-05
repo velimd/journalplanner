@@ -14,7 +14,7 @@ public class TechnologyService {
     private TechnologyRepository technologyRepository;
 
     public Set<Technology> getAllTechnologies(){
-        return technologyRepository.findAll();
+        return technologyRepository.findAllByOrderByIdAsc();
     }
 
     public Technology getTechnologyById(Integer id){

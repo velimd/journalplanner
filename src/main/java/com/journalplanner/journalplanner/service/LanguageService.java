@@ -14,7 +14,7 @@ public class LanguageService {
     private LanguageRepository languageRepository;
 
     public Set<Language> getAllLanguages(){
-        return languageRepository.findAll();
+        return languageRepository.findAllByOrderByIdAsc();
     }
 
     public Language getLanguageById(Integer id){

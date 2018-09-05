@@ -14,7 +14,7 @@ public class FrameworkService {
     private FrameworkRepository frameworkRepository;
 
     public Set<Framework> getAllFrameworks(){
-        return frameworkRepository.findAll();
+        return frameworkRepository.findAllByOrderByIdAsc();
     }
 
     public Framework getFrameworkById(Integer id){

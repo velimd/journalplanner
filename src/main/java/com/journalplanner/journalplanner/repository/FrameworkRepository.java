@@ -6,7 +6,7 @@ import org.springframework.data.repository.CrudRepository;
 import java.util.Set;
 
 public interface FrameworkRepository extends CrudRepository<Framework, Long> {
-    Set<Framework> findAll();
+    Set<Framework> findAllByOrderByIdAsc();
     void deleteById(Integer id);
     Framework findById(Integer id);
 }

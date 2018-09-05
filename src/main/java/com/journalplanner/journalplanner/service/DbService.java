@@ -14,7 +14,7 @@ public class DbService {
     private DbRepository dbRepository;
 
     public Set<Db> getAllDbs(){
-        return dbRepository.findAll();
+        return dbRepository.findAllByOrderByIdAsc();
     }
 
     public Db getDbById(Integer id){
