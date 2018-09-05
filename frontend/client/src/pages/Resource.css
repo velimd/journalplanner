@@ -2,9 +2,12 @@
     margin-right: 2px;
 }
 
-.resource #btn-add {
+#btn-add{
     margin-bottom: 20px;
     margin-top: 20px;
+}
+
+.resource #btn-add {
     /*border: solid;
     border-width: thin;*/
     border-radius: 8px;

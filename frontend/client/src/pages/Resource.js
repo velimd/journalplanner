@@ -105,16 +105,16 @@ class Resource extends Component {
                                     <td><a href={"http://"+r.url}>{r.url}</a></td>
                                     <td>{r.memo}</td>
                                     <td>
-                                        {r.languages.map((l, k) =>
+                                        {r.languages.map((l) =>
                                             <button type="button" value={l.name} className="btn btn-info btn-sm" key={l.id} onClick={this.searchMessage.bind(this)}>{l.name}</button>
                                         )}
-                                        {r.frameworks.map((f, i) =>
+                                        {r.frameworks.map((f) =>
                                             <button type="button" value={f.name} className="btn btn-info btn-sm" key={f.id} onClick={this.searchMessage.bind(this)}>{f.name}</button>
                                         )}
-                                        {r.technologies.map((t, n) =>
+                                        {r.technologies.map((t) =>
                                             <button type="button" value={t.name} className="btn btn-info btn-sm" key={t.id} onClick={this.searchMessage.bind(this)}>{t.name}</button>
                                         )}
-                                        {r.dbs.map((d, j) =>
+                                        {r.dbs.map((d) =>
                                             <button type="button" value={d.name} className="btn btn-info btn-sm" key={d.id} onClick={this.searchMessage.bind(this)}>{d.name}</button>
                                         )}
                                     </td>

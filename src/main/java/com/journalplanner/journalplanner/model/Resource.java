@@ -1,6 +1,7 @@
 package com.journalplanner.journalplanner.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import org.springframework.core.annotation.Order;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
@@ -28,24 +29,28 @@ public class Resource {
     @JoinTable(name = "resource_language", joinColumns = { @JoinColumn(name = "resource_id") }, inverseJoinColumns = { @JoinColumn(name = "language_id") })
     @Column(name = "language", nullable = true)
     @JsonIgnoreProperties({"projects", "resources"})
+    @OrderBy("id")
     private Set<Language> languages = new HashSet<>();
 
     @ManyToMany(fetch = FetchType.LAZY)
     @JoinTable(name = "resource_framework", joinColumns = { @JoinColumn(name = "resource_id") }, inverseJoinColumns = { @JoinColumn(name = "framework_id") })
     @Column(name = "framework", nullable = true)
     @JsonIgnoreProperties({"projects", "resources"})
+    @OrderBy("id")
     private Set<Framework> frameworks = new HashSet<>();
 
     @ManyToMany(fetch = FetchType.LAZY)
     @JoinTable(name = "resource_technology", joinColumns = { @JoinColumn(name = "resource_id") }, inverseJoinColumns = { @JoinColumn(name = "technology_id") })
     @Column(name = "technology", nullable = true)
     @JsonIgnoreProperties({"projects", "resources"})
+    @OrderBy("id")
     private Set<Technology> technologies = new HashSet<>();
 
     @ManyToMany(fetch = FetchType.LAZY)
     @JoinTable(name = "resource_database", joinColumns = { @JoinColumn(name = "resource_id") }, inverseJoinColumns = { @JoinColumn(name = "database_id") })
     @Column(name = "db", nullable = true)
     @JsonIgnoreProperties({"projects", "resources"})
+    @OrderBy("id")
     private Set<Db> dbs = new HashSet<>();
 
     public Integer getId(){
