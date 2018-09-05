@@ -43,13 +43,14 @@ class Resource extends Component {
     searchMessage(e){
         var message = "You search for "+e.target.textContent;
         this.refs.search.value="";
-        this.setState({
+        return new Promise((resolve, reject) => {
+            this.setState({
                 search:{
                     show:true,
                     message:message
                 }
             });
-        this.updateSearch(e)
+        }).then(this.updateSearch(e));
     };
     searchMessageClosed(e){
         this.setState({
