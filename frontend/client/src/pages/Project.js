@@ -41,7 +41,8 @@ class Project extends Component {
         }
     }
     searchMessage(e){
-        var message = "You Search for "+e.target.textContent;
+        var message = "You search for "+e.target.textContent;
+        this.refs.search.value="";
         this.setState({
             search:{
                 show:true,
@@ -57,7 +58,9 @@ class Project extends Component {
                 message:""
             }
         });
-        this.getProjects();
+        if(e.target.value===""||e.target.value===undefined) {
+            this.getProjects();
+        }
     }
     render() {
         return (
@@ -66,7 +69,7 @@ class Project extends Component {
                 <div className="row">
                     <div className="col">
                         <form className="form-inline" id="search">
-                            <input type="text" className="form-control my-2" placeholder="Search" onInput={this.searchMessageClosed.bind(this)} onChange={this.updateSearch.bind(this)}/>
+                            <input type="text" className="form-control my-2" ref="search" placeholder="Search" onClick={this.searchMessageClosed.bind(this)} onChange={this.updateSearch.bind(this)}/>
                         </form>
                     </div>
                     <div className="col">

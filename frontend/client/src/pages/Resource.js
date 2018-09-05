@@ -41,7 +41,7 @@ class Resource extends Component {
         }
     }
     searchMessage(e){
-        var message = "You Search for "+e.target.textContent;
+        var message = "You search for "+e.target.textContent;
         this.refs.search.value="";
         this.setState({
                 search:{
