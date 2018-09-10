@@ -4,8 +4,10 @@ import axios from 'axios';
 
 import './Resource.css';
 import Navbar from '../components/Navbar.js'
+import Table from '../components/Table.js'
 
 class Resource extends Component {
+
     constructor(){
         super();
         this.state={
@@ -16,9 +18,11 @@ class Resource extends Component {
             }]
         };
     }
+
     componentDidMount(){
         this.getResources();
     }
+
     getResources(){
         var url = 'http://localhost:8080/api/resource/all';
         axios.get(url).then(res => {
@@ -27,6 +31,7 @@ class Resource extends Component {
             });
         });
     }
+
     updateSearch(e){
         if(e.target.value!=="") {
             var url = 'http://localhost:8080/api/resource/search/' + e.target.value.toString();
@@ -40,6 +45,7 @@ class Resource extends Component {
             this.getResources();
         }
     }
+
     searchMessage(e){
         var message = "You search for "+e.target.textContent;
         this.refs.search.value="";
@@ -52,6 +58,7 @@ class Resource extends Component {
             });
         }).then(this.updateSearch(e));
     };
+
     searchMessageClosed(e){
         this.setState({
             search:{
@@ -63,6 +70,36 @@ class Resource extends Component {
             this.getResources();
         }
     }
+
+    tableRow() {
+        let tableRowData = this.state.resources.map( o =>
+            <tr key={o.id}>
+                <th scope="row">{o.id}</th>
+                <td><Link to={"resources/edit/"+o.id}>{o.name}</Link></td>
+                <td><a href={"http://"+o.url}>{o.url}</a></td>
+                <td>{o.memo}</td>
+                <td>
+                    {o.languages.map((l) =>
+                        <button type="button" value={l.name} id="stack" className="btn btn-info btn-sm" key={l.id} onClick={this.searchMessage.bind(this)}>{l.name}</button>
+                    )}
+                    {o.frameworks.map((f) =>
+                        <button type="button" value={f.name} id="stack" className="btn btn-info btn-sm" key={f.id} onClick={this.searchMessage.bind(this)}>{f.name}</button>
+                    )}
+                    {o.technologies.map((t) =>
+                        <button type="button" value={t.name} id="stack" className="btn btn-info btn-sm" key={t.id} onClick={this.searchMessage.bind(this)}>{t.name}</button>
+                    )}
+                    {o.dbs.map((d) =>
+                        <button type="button" value={d.name} id="stack" className="btn btn-info btn-sm" key={d.id} onClick={this.searchMessage.bind(this)}>{d.name}</button>
+                    )}
+                </td>
+            </tr>
+        );
+
+        return(
+            tableRowData
+        )
+    }
+
     render() {
         return (
             <div className="resource">
@@ -87,43 +124,9 @@ class Resource extends Component {
                     </button>
                 </div>}
                 <div>
-                    <table className="table table-dark">
-                        <thead>
-                        <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">Name</th>
-                            <th scope="col">URL</th>
-                            <th scope="col">Memo</th>
-                            <th scope="col">Stack</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        {this.state.resources.map((r) => {
-                            return (
-                                <tr key={r.id}>
-                                    <th scope="row">{r.id}</th>
-                                    <td><Link to={"resources/edit/"+r.id}>{r.name}</Link></td>
-                                    <td><a href={"http://"+r.url}>{r.url}</a></td>
-                                    <td>{r.memo}</td>
-                                    <td>
-                                        {r.languages.map((l) =>
-                                            <button type="button" value={l.name} className="btn btn-info btn-sm" key={l.id} onClick={this.searchMessage.bind(this)}>{l.name}</button>
-                                        )}
-                                        {r.frameworks.map((f) =>
-                                            <button type="button" value={f.name} className="btn btn-info btn-sm" key={f.id} onClick={this.searchMessage.bind(this)}>{f.name}</button>
-                                        )}
-                                        {r.technologies.map((t) =>
-                                            <button type="button" value={t.name} className="btn btn-info btn-sm" key={t.id} onClick={this.searchMessage.bind(this)}>{t.name}</button>
-                                        )}
-                                        {r.dbs.map((d) =>
-                                            <button type="button" value={d.name} className="btn btn-info btn-sm" key={d.id} onClick={this.searchMessage.bind(this)}>{d.name}</button>
-                                        )}
-                                    </td>
-                                </tr>
-                            )
-                        })}
-                        </tbody>
-                    </table>
+
+                    <Table titles={['#', 'Name', 'URL', 'Memo', 'Stack']} objects={this.tableRow()}/>
+
                 </div>
                 <div style={{textAlign:'center'}}>
                     <Link to="/resources/add"><button type="button" id="btn-add" className="btn">Add</button></Link>

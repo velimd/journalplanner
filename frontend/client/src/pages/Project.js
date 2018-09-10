@@ -4,8 +4,12 @@ import axios from 'axios';
 
 import './Project.css';
 import Navbar from '../components/Navbar.js'
+import Table from '../components/Table.js'
+
+const path = "http://localhost:8080/api/project";
 
 class Project extends Component {
+
     constructor(){
         super();
         this.state={
@@ -16,20 +20,23 @@ class Project extends Component {
             }]
         };
     }
+
     componentDidMount(){
         this.getProjects();
     }
+
     getProjects(){
-        var url = 'http://localhost:8080/api/project/all';
+        var url = `${path}/all`;
         axios.get(url).then(res => {
             this.setState({
                 projects:res.data
             });
         });
     }
+
     updateSearch(e){
         if(e.target.value!=="") {
-            var url = 'http://localhost:8080/api/project/search/' + e.target.value.toString();
+            var url = `${path}/search/${e.target.value.toString()}`;
             axios.get(url).then(res => {
                 this.setState({
                     projects: res.data
@@ -40,8 +47,9 @@ class Project extends Component {
             this.getProjects();
         }
     }
+
     searchMessage(e){
-        var message = "You search for "+e.target.textContent;
+        let message = `You search for ${e.target.textContent}`;
         this.refs.search.value="";
         this.setState({
             search:{
@@ -50,18 +58,53 @@ class Project extends Component {
             }
         });
         this.updateSearch(e)
-    };
-    searchMessageClosed(e){
-        this.setState({
-            search:{
-                show:false,
-                message:""
-            }
-        });
-        if(e.target.value===""||e.target.value===undefined) {
-            this.getProjects();
-        }
     }
+
+    searchMessageClosed(e){
+        return new Promise((resolve) => {
+            if (e.target.value === "" || e.target.value === undefined) {
+                resolve(this.getProjects());
+
+            }
+        }).then( () => {
+            this.setState({
+                search:{
+                    show:false,
+                    message:""
+                }
+            });
+        });
+
+    }
+
+    tableRow() {
+        let tableRowData = this.state.projects.map( o =>
+            <tr key={o.id}>
+                <th scope="row">{o.id}</th>
+                <td><Link to={"projects/edit/"+o.id}>{o.name}</Link></td>
+                <td><a href={"http://"+o.url}>{o.url}</a></td>
+                <td>
+                    {o.languages.map((l) =>
+                        <button type="button" value={l.name} id="stack" className="btn btn-sm" key={l.id} onClick={this.searchMessage.bind(this)}>{l.name}</button>
+                    )}
+                    {o.frameworks.map((f) =>
+                        <button type="button" value={f.name} id="stack" className="btn btn-sm" key={f.id} onClick={this.searchMessage.bind(this)}>{f.name}</button>
+                    )}
+                    {o.technologies.map((t) =>
+                        <button type="button" value={t.name} id="stack" className="btn btn-sm" key={t.id} onClick={this.searchMessage.bind(this)}>{t.name}</button>
+                    )}
+                    {o.dbs.map((d) =>
+                        <button type="button" value={d.name} id="stack" className="btn btn-sm" key={d.id} onClick={this.searchMessage.bind(this)}>{d.name}</button>
+                    )}
+                </td>
+            </tr>
+        );
+
+        return(
+            tableRowData
+        )
+    }
+
     render() {
         return (
             <div className="project">
@@ -86,41 +129,9 @@ class Project extends Component {
                     </button>
                 </div>}
                 <div>
-                    <table className="table table-dark">
-                        <thead>
-                        <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">Name</th>
-                            <th scope="col">URL</th>
-                            <th scope="col">Stack</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        {this.state.projects.map((p) => {
-                            return(
-                                <tr key={p.id}>
-                                    <th scope="row">{p.id}</th>
-                                    <td><Link to={"projects/edit/"+p.id}>{p.name}</Link></td>
-                                    <td><a href={"http://"+p.url}>{p.url}</a></td>
-                                    <td>
-                                        {p.languages.map((l) =>
-                                            <button type="button" value={l.name} id="stack" className="btn btn-sm" key={l.id} onClick={this.searchMessage.bind(this)}>{l.name}</button>
-                                        )}
-                                        {p.frameworks.map((f) =>
-                                            <button type="button" value={f.name} id="stack" className="btn btn-sm" key={f.id} onClick={this.searchMessage.bind(this)}>{f.name}</button>
-                                        )}
-                                        {p.technologies.map((t) =>
-                                            <button type="button" value={t.name} id="stack" className="btn btn-sm" key={t.id} onClick={this.searchMessage.bind(this)}>{t.name}</button>
-                                        )}
-                                        {p.dbs.map((d) =>
-                                            <button type="button" value={d.name} id="stack" className="btn btn-sm" key={d.id} onClick={this.searchMessage.bind(this)}>{d.name}</button>
-                                        )}
-                                    </td>
-                                </tr>
-                            )
-                        })}
-                        </tbody>
-                    </table>
+
+                    <Table titles={['#', 'Name', 'URL', 'Stack']} objects={this.tableRow()}/>
+
                 </div>
                 <div style={{textAlign:'center'}}>
                     <Link to="/projects/add"><button type="button" id="btn-add" className="btn">Add</button></Link>
