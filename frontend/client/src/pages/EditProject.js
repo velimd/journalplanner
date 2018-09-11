@@ -65,7 +65,6 @@ class EditProject extends Component {
 
     onSubmit(e){
         e.preventDefault();
-        console.log(this.state.name)
         const project ={
             name:this.state.name || this.state.project.name,
             url:this.state.url || this.state.project.url,
