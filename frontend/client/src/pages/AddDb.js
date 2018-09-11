@@ -4,6 +4,7 @@ import axios from 'axios';
 import Navbar from '../components/Navbar.js'
 
 class AddDb extends Component {
+
     addDb(e){
         var URL = 'http://localhost:8080/api/db/add';
 
@@ -14,17 +15,17 @@ class AddDb extends Component {
         };
 
         axios.post(URL, db).then(res =>{
-            console.log(res);
-            console.log(res.data);
             this.props.history.push('/dbs');
         });
     }
+
     handleChange(e) {
         const name=e.target.name;
         this.setState({
             [name]:e.target.value,
         });
     }
+
     render() {
         return (
             <div>

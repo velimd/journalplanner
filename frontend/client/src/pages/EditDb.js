@@ -5,6 +5,7 @@ import './Add.css';
 import Navbar from '../components/Navbar.js'
 
 class EditDb extends Component {
+
     constructor(props){
         super(props);
         this.state={
@@ -13,38 +14,39 @@ class EditDb extends Component {
             }]
         };
     }
+
     componentDidMount(){
         var url = 'http://localhost:8080/api/db/'+this.props.match.params.id;
         axios.get(url).then(res => {
             this.setState({db:res.data})
         });
     }
+
     handleChange(e) {
         const name=e.target.name;
         this.setState({
             [name]:e.target.value,
         });
     }
+
     onSubmit(e){
         e.preventDefault();
         const db ={
             name:this.state.name || this.state.db.name
         };
         axios.put('http://localhost:8080/api/db/'+this.props.match.params.id, db).then(res =>{
-            console.log(res);
-            console.log(res.data);
             this.props.history.push('/dbs');
         });
     }
+
     delete(e){
         e.preventDefault();
 
         axios.delete('http://localhost:8080/api/db/delete/'+this.props.match.params.id).then(res =>{
-            console.log(res);
-            console.log(res.data);
             this.props.history.push('/dbs');
         });
     }
+
     render() {
         return (
             <div>

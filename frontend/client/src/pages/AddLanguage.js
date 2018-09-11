@@ -4,6 +4,7 @@ import axios from 'axios';
 import Navbar from '../components/Navbar.js'
 
 class AddLanguage extends Component {
+
     addLanguage(e){
         var URL = 'http://localhost:8080/api/language/add';
 
@@ -14,17 +15,17 @@ class AddLanguage extends Component {
         };
 
         axios.post(URL, language).then(res =>{
-            console.log(res);
-            console.log(res.data);
             this.props.history.push('/languages');
         });
     }
+
     handleChange(e) {
         const name=e.target.name;
         this.setState({
             [name]:e.target.value,
         });
     }
+
     render() {
         return (
             <div>

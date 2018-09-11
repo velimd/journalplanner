@@ -4,6 +4,7 @@ import axios from 'axios';
 import Navbar from '../components/Navbar.js'
 
 class AddTechnology extends Component {
+
     addTechnology(e){
         var URL = 'http://localhost:8080/api/technology/add';
 
@@ -14,17 +15,17 @@ class AddTechnology extends Component {
         };
 
         axios.post(URL, technology).then(res =>{
-            console.log(res);
-            console.log(res.data);
             this.props.history.push('/technologies');
         });
     }
+
     handleChange(e) {
         const name=e.target.name;
         this.setState({
             [name]:e.target.value,
         });
     }
+
     render() {
         return (
             <div>

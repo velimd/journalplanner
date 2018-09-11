@@ -5,6 +5,7 @@ import './Add.css';
 import Navbar from '../components/Navbar.js'
 
 class EditFramework extends Component {
+
     constructor(props){
         super(props);
         this.state={
@@ -13,38 +14,39 @@ class EditFramework extends Component {
             }]
         };
     }
+
     componentDidMount(){
         var url = 'http://localhost:8080/api/framework/'+this.props.match.params.id;
         axios.get(url).then(res => {
             this.setState({framework:res.data})
         });
     }
+
     handleChange(e) {
         const name=e.target.name;
         this.setState({
             [name]:e.target.value,
         });
     }
+
     onSubmit(e){
         e.preventDefault();
         const framework ={
             name:this.state.name || this.state.framework.name
         };
         axios.put('http://localhost:8080/api/framework/'+this.props.match.params.id, framework).then(res =>{
-            console.log(res);
-            console.log(res.data);
             this.props.history.push('/frameworks');
         });
     }
+
     delete(e){
         e.preventDefault();
 
         axios.delete('http://localhost:8080/api/framework/delete/'+this.props.match.params.id).then(res =>{
-            console.log(res);
-            console.log(res.data);
             this.props.history.push('/frameworks');
         });
     }
+
     render() {
         return (
             <div>

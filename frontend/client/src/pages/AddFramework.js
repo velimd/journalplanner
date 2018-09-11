@@ -4,6 +4,7 @@ import axios from 'axios';
 import Navbar from '../components/Navbar.js'
 
 class AddFramework extends Component {
+
     addFramework(e){
         var URL = 'http://localhost:8080/api/framework/add';
 
@@ -14,17 +15,17 @@ class AddFramework extends Component {
         }
 
         axios.post(URL, framework).then(res =>{
-            console.log(res);
-            console.log(res.data);
             this.props.history.push('/frameworks');
         });
     }
+
     handleChange(e) {
         const name=e.target.name;
         this.setState({
             [name]:e.target.value,
         });
     }
+
     render() {
         return (
             <div>

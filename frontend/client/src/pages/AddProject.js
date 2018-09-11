@@ -4,6 +4,7 @@ import axios from 'axios';
 import Navbar from '../components/Navbar.js'
 
 class AddProject extends Component {
+
     addProject(e){
         e.preventDefault();
         var URL = 'http://localhost:8080/api/project/add';
@@ -12,16 +13,17 @@ class AddProject extends Component {
             url:this.state.url
         };
         axios.post(URL, project).then(res =>{
-            console.log(res);
             this.props.history.push('/projects/edit/'+res.data.id);
         });
     }
+
     handleChange(e) {
         const name=e.target.name;
         this.setState({
             [name]:e.target.value,
         });
     }
+
     render() {
         return (
             <div>

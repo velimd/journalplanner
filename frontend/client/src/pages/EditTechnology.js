@@ -5,6 +5,7 @@ import './Add.css';
 import Navbar from '../components/Navbar.js'
 
 class EditTechnology extends Component {
+
     constructor(props){
         super(props);
         this.state={
@@ -13,38 +14,39 @@ class EditTechnology extends Component {
             }]
         };
     }
+
     componentDidMount(){
         var url = 'http://localhost:8080/api/technology/'+this.props.match.params.id;
         axios.get(url).then(res => {
             this.setState({technology:res.data})
         });
     }
+
     handleChange(e) {
         const name=e.target.name;
         this.setState({
             [name]:e.target.value,
         });
     }
+
     onSubmit(e){
         e.preventDefault();
         const technology ={
             name:this.state.name || this.state.technology.name
         };
         axios.put('http://localhost:8080/api/technology/'+this.props.match.params.id, technology).then(res =>{
-            console.log(res);
-            console.log(res.data);
             this.props.history.push('/technologies');
         });
     }
+
     delete(e){
         e.preventDefault();
 
         axios.delete('http://localhost:8080/api/technology/delete/'+this.props.match.params.id).then(res =>{
-            console.log(res);
-            console.log(res.data);
             this.props.history.push('/technologies');
         });
     }
+
     render() {
         return (
             <div>

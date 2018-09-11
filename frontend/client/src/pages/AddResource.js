@@ -4,6 +4,7 @@ import axios from 'axios';
 import Navbar from '../components/Navbar.js'
 
 class AddResource extends Component {
+
     addResource(e){
         e.preventDefault();
         var URL = 'http://localhost:8080/api/resource/add';
@@ -13,17 +14,17 @@ class AddResource extends Component {
             memo:this.state.memo
         };
         axios.post(URL, resource).then(res =>{
-            console.log(res);
-            console.log(res.data);
             this.props.history.push('/resources/edit/'+res.data.id);
         });
     }
+
     handleChange(e) {
         const name=e.target.name;
         this.setState({
             [name]:e.target.value,
         });
     }
+
     render() {
         return (
             <div>

@@ -5,6 +5,7 @@ import './Add.css';
 import Navbar from '../components/Navbar.js'
 
 class EditResource extends Component {
+
     constructor(props){
         super(props);
         this.state={
@@ -23,6 +24,7 @@ class EditResource extends Component {
             db:[]
         };
     }
+
     componentDidMount(){
         var url = 'http://localhost:8080/api/resource/'+this.props.match.params.id;
         axios.get(url).then(res => {
@@ -56,12 +58,14 @@ class EditResource extends Component {
             });
         });
     }
+
     handleChange(e) {
         const name=e.target.name;
         this.setState({
             [name]:e.target.value,
         });
     }
+
     onSubmit(e){
         e.preventDefault();
         const resource ={
@@ -77,15 +81,15 @@ class EditResource extends Component {
             this.props.history.push('/resources');
         });
     }
+
     delete(e){
         e.preventDefault();
 
         axios.delete('http://localhost:8080/api/resource/delete/'+this.props.match.params.id).then(res =>{
-            console.log(res);
-            console.log(res.data);
             this.props.history.push('/resources');
         });
     }
+
     addStack(e){
         const stackName=e.target.name;
         const stack={
@@ -108,6 +112,7 @@ class EditResource extends Component {
             console.log("Stack is already added");
         }
     }
+
     removeStack(e){
         const stackName=e.target.name;
         const newArr = this.state[stackName].filter(function(e1){
@@ -121,6 +126,7 @@ class EditResource extends Component {
             [stackName]: newArr
         });
     }
+
     render() {
         return (
             <div>

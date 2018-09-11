@@ -5,6 +5,7 @@ import './Add.css';
 import Navbar from '../components/Navbar.js'
 
 class EditProject extends Component {
+
     constructor(props){
         super(props);
         this.state={
@@ -22,6 +23,7 @@ class EditProject extends Component {
             dbs:[]
         };
     }
+
     componentDidMount(){
         var url = 'http://localhost:8080/api/project/'+this.props.match.params.id;
         axios.get(url).then(res => {
@@ -53,12 +55,14 @@ class EditProject extends Component {
             });
         });
     }
+
     handleChange(e) {
         const name=e.target.name;
         this.setState({
             [name]:e.target.value,
         });
     }
+
     onSubmit(e){
         e.preventDefault();
         console.log(this.state.name)
@@ -71,20 +75,18 @@ class EditProject extends Component {
             dbs: this.state.project.dbs
         };
         axios.put('http://localhost:8080/api/project/'+this.props.match.params.id, project).then(res =>{
-            console.log(res);
-            console.log(res.data);
             this.props.history.push('/projects');
         });
     }
+
     delete(e){
         e.preventDefault();
 
         axios.delete('http://localhost:8080/api/project/delete/'+this.props.match.params.id).then(res =>{
-            console.log(res);
-            console.log(res.data);
             this.props.history.push('/projects');
         });
     }
+
     addStack(e){
         const stackName=e.target.name;
         const stack={
@@ -106,6 +108,7 @@ class EditProject extends Component {
             console.log("Stack is already added");
         }
     }
+
     removeStack(e){
         const stackName=e.target.name;
         const newArr = this.state[stackName].filter(function(e1){
@@ -119,6 +122,7 @@ class EditProject extends Component {
             [stackName]: newArr
         });
     }
+
     render() {
         return (
             <div>
