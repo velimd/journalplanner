@@ -35,14 +35,19 @@ class Project extends Component {
     }
 
     searchMessage(e){
-        let message = `You search for ${e.target.value}`;
-        this.setState({
-            search:{
-                searchText:e.target.value,
-                show:true,
-                message:message
-            }
-        });
+        if(e.target.value!==""){
+            let message = `You search for ${e.target.value}`;
+            this.setState({
+                search:{
+                    searchText:e.target.value,
+                    show:true,
+                    message:message
+                }
+            });
+        }
+        else{
+            this.searchMessageClosed(e);
+        }
     }
 
     searchMessageClosed(e){
