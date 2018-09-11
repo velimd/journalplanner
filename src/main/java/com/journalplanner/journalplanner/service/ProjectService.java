@@ -28,5 +28,5 @@ public class ProjectService {
     public void deleteProjectById(Integer id){
         projectRepository.deleteById(id);
     }
-    
+
 }
