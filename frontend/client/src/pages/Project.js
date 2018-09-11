@@ -4,7 +4,6 @@ import axios from 'axios';
 
 import './Project.css';
 import Navbar from '../components/Navbar.js'
-import Table from '../components/Table.js'
 
 const path = "http://localhost:8080/api/project";
 
@@ -14,10 +13,11 @@ class Project extends Component {
         super();
         this.state={
             projects:[],
-            search:[{
+            search:{
+                searchText:"",
                 show:false,
                 message:""
-            }]
+            }
         };
     }
 
@@ -34,85 +34,82 @@ class Project extends Component {
         });
     }
 
-    updateSearch(e){
-        if(e.target.value!=="") {
-            var url = `${path}/search/${e.target.value.toString()}`;
-            axios.get(url).then(res => {
-                this.setState({
-                    projects: res.data
-                });
-            });
-        }
-        else{
-            this.getProjects();
-        }
-    }
-
     searchMessage(e){
-        let message = `You search for ${e.target.textContent}`;
-        this.refs.search.value="";
+        let message = `You search for ${e.target.value}`;
         this.setState({
             search:{
+                searchText:e.target.value,
                 show:true,
                 message:message
             }
         });
-        this.updateSearch(e)
     }
 
     searchMessageClosed(e){
-        return new Promise((resolve) => {
-            if (e.target.value === "" || e.target.value === undefined) {
-                resolve(this.getProjects());
-
+        this.refs.search.value="";
+        this.setState({
+            search:{
+                searchText:"",
+                show:false,
+                message:""
             }
-        }).then( () => {
-            this.setState({
-                search:{
-                    show:false,
-                    message:""
-                }
-            });
         });
-
-    }
-
-    tableRow() {
-        let tableRowData = this.state.projects.map( o =>
-            <tr key={o.id}>
-                <th scope="row">{o.id}</th>
-                <td><Link to={"projects/edit/"+o.id}>{o.name}</Link></td>
-                <td><a href={"http://"+o.url}>{o.url}</a></td>
-                <td>
-                    {o.languages.map((l) =>
-                        <button type="button" value={l.name} id="stack" className="btn btn-sm" key={l.id} onClick={this.searchMessage.bind(this)}>{l.name}</button>
-                    )}
-                    {o.frameworks.map((f) =>
-                        <button type="button" value={f.name} id="stack" className="btn btn-sm" key={f.id} onClick={this.searchMessage.bind(this)}>{f.name}</button>
-                    )}
-                    {o.technologies.map((t) =>
-                        <button type="button" value={t.name} id="stack" className="btn btn-sm" key={t.id} onClick={this.searchMessage.bind(this)}>{t.name}</button>
-                    )}
-                    {o.dbs.map((d) =>
-                        <button type="button" value={d.name} id="stack" className="btn btn-sm" key={d.id} onClick={this.searchMessage.bind(this)}>{d.name}</button>
-                    )}
-                </td>
-            </tr>
-        );
-
-        return(
-            tableRowData
-        )
     }
 
     render() {
+        let filteredList = this.state.projects.filter( (project) => {
+
+            if(project.name.toLowerCase().indexOf(this.state.search.searchText.toLowerCase()) !== -1){
+                return true;
+            }
+
+            if(project.url.toLowerCase().indexOf(this.state.search.searchText.toLowerCase()) !== -1){
+                return true;
+            }
+
+            if(project.languages.length !== 0){
+                for(let i = 0; i<project.languages.length; i++){
+                    if(project.languages[i].name.toLowerCase().indexOf(this.state.search.searchText.toLowerCase()) !== -1){
+                        return true;
+                    }
+                }
+            }
+
+            if(project.frameworks.length !== 0){
+                for(let i = 0; i<project.frameworks.length; i++){
+                    if(project.frameworks[i].name.toLowerCase().indexOf(this.state.search.searchText.toLowerCase()) !== -1){
+                        return true;
+                    }
+                }
+            }
+
+            if(project.technologies.length !== 0){
+                for(let i = 0; i<project.technologies.length; i++){
+                    if(project.technologies[i].name.toLowerCase().indexOf(this.state.search.searchText.toLowerCase()) !== -1){
+                        return true;
+                    }
+                }
+            }
+
+            if(project.dbs.length !== 0){
+                for(let i = 0; i<project.dbs.length; i++){
+                    if(project.dbs[i].name.toLowerCase().indexOf(this.state.search.searchText.toLowerCase()) !== -1){
+                        return true;
+                    }
+                }
+            }
+
+            return false;
+
+        });
+
         return (
             <div className="project">
                 <Navbar/>
                 <div className="row">
                     <div className="col">
                         <form className="form-inline" id="search">
-                            <input type="text" className="form-control my-2" ref="search" placeholder="Search" onClick={this.searchMessageClosed.bind(this)} onChange={this.updateSearch.bind(this)}/>
+                            <input type="text" className="form-control my-2" ref="search" placeholder="Search" onClick={this.searchMessageClosed.bind(this)} onChange={this.searchMessage.bind(this)}/>
                         </form>
                     </div>
                     <div className="col">
@@ -130,7 +127,39 @@ class Project extends Component {
                 </div>}
                 <div>
 
-                    <Table titles={['#', 'Name', 'URL', 'Stack']} objects={this.tableRow()}/>
+                    <table className="table table-dark">
+                        <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Url</th>
+                            <th scope="col">Stack</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                            {filteredList.map( o =>
+                                <tr key={o.id}>
+                                    <th scope="row">{o.id}</th>
+                                    <td><Link to={"projects/edit/"+o.id}>{o.name}</Link></td>
+                                    <td><a href={"http://"+o.url}>{o.url}</a></td>
+                                    <td>
+                                        {o.languages.map((l) =>
+                                            <button type="button" value={l.name} id="stack" className="btn btn-sm" key={l.id} onClick={this.searchMessage.bind(this)}>{l.name}</button>
+                                        )}
+                                        {o.frameworks.map((f) =>
+                                            <button type="button" value={f.name} id="stack" className="btn btn-sm" key={f.id} onClick={this.searchMessage.bind(this)}>{f.name}</button>
+                                        )}
+                                        {o.technologies.map((t) =>
+                                            <button type="button" value={t.name} id="stack" className="btn btn-sm" key={t.id} onClick={this.searchMessage.bind(this)}>{t.name}</button>
+                                        )}
+                                        {o.dbs.map((d) =>
+                                            <button type="button" value={d.name} id="stack" className="btn btn-sm" key={d.id} onClick={this.searchMessage.bind(this)}>{d.name}</button>
+                                        )}
+                                    </td>
+                                </tr>
+                            )}
+                        </tbody>
+                    </table>
 
                 </div>
                 <div style={{textAlign:'center'}}>

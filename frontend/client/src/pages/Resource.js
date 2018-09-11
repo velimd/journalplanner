@@ -4,7 +4,6 @@ import axios from 'axios';
 
 import './Resource.css';
 import Navbar from '../components/Navbar.js'
-import Table from '../components/Table.js'
 
 class Resource extends Component {
 
@@ -12,10 +11,11 @@ class Resource extends Component {
         super();
         this.state={
             resources:[],
-            search:[{
+            search:{
+                searchText:"",
                 show:false,
                 message:""
-            }]
+            }
         };
     }
 
@@ -32,82 +32,81 @@ class Resource extends Component {
         });
     }
 
-    updateSearch(e){
-        if(e.target.value!=="") {
-            var url = 'http://localhost:8080/api/resource/search/' + e.target.value.toString();
-            axios.get(url).then(res => {
-                this.setState({
-                    resources: res.data
-                });
-            });
-        }
-        else{
-            this.getResources();
-        }
-    }
-
     searchMessage(e){
-        var message = "You search for "+e.target.textContent;
-        this.refs.search.value="";
-        return new Promise((resolve, reject) => {
-            this.setState({
-                search:{
-                    show:true,
-                    message:message
-                }
-            });
-        }).then(this.updateSearch(e));
-    };
-
-    searchMessageClosed(e){
+        let message = `You search for ${e.target.value}`;
         this.setState({
             search:{
+                searchText:e.target.value,
+                show:true,
+                message:message
+            }
+        });
+    }
+
+    searchMessageClosed(e){
+        this.refs.search.value="";
+        this.setState({
+            search:{
+                searchText:"",
                 show:false,
                 message:""
             }
         });
-        if(e.target.value===""||e.target.value===undefined) {
-            this.getResources();
-        }
-    }
-
-    tableRow() {
-        let tableRowData = this.state.resources.map( o =>
-            <tr key={o.id}>
-                <th scope="row">{o.id}</th>
-                <td><Link to={"resources/edit/"+o.id}>{o.name}</Link></td>
-                <td><a href={"http://"+o.url}>{o.url}</a></td>
-                <td>{o.memo}</td>
-                <td>
-                    {o.languages.map((l) =>
-                        <button type="button" value={l.name} id="stack" className="btn btn-info btn-sm" key={l.id} onClick={this.searchMessage.bind(this)}>{l.name}</button>
-                    )}
-                    {o.frameworks.map((f) =>
-                        <button type="button" value={f.name} id="stack" className="btn btn-info btn-sm" key={f.id} onClick={this.searchMessage.bind(this)}>{f.name}</button>
-                    )}
-                    {o.technologies.map((t) =>
-                        <button type="button" value={t.name} id="stack" className="btn btn-info btn-sm" key={t.id} onClick={this.searchMessage.bind(this)}>{t.name}</button>
-                    )}
-                    {o.dbs.map((d) =>
-                        <button type="button" value={d.name} id="stack" className="btn btn-info btn-sm" key={d.id} onClick={this.searchMessage.bind(this)}>{d.name}</button>
-                    )}
-                </td>
-            </tr>
-        );
-
-        return(
-            tableRowData
-        )
     }
 
     render() {
+        let filteredList = this.state.resources.filter( (resource) => {
+
+            if(resource.name.toLowerCase().indexOf(this.state.search.searchText.toLowerCase()) !== -1){
+                return true;
+            }
+
+            if(resource.url.toLowerCase().indexOf(this.state.search.searchText.toLowerCase()) !== -1){
+                return true;
+            }
+
+            if(resource.languages.length !== 0){
+                for(let i = 0; i<resource.languages.length; i++){
+                    if(resource.languages[i].name.toLowerCase().indexOf(this.state.search.searchText.toLowerCase()) !== -1){
+                        return true;
+                    }
+                }
+            }
+
+            if(resource.frameworks.length !== 0){
+                for(let i = 0; i<resource.frameworks.length; i++){
+                    if(resource.frameworks[i].name.toLowerCase().indexOf(this.state.search.searchText.toLowerCase()) !== -1){
+                        return true;
+                    }
+                }
+            }
+
+            if(resource.technologies.length !== 0){
+                for(let i = 0; i<resource.technologies.length; i++){
+                    if(resource.technologies[i].name.toLowerCase().indexOf(this.state.search.searchText.toLowerCase()) !== -1){
+                        return true;
+                    }
+                }
+            }
+
+            if(resource.dbs.length !== 0){
+                for(let i = 0; i<resource.dbs.length; i++){
+                    if(resource.dbs[i].name.toLowerCase().indexOf(this.state.search.searchText.toLowerCase()) !== -1){
+                        return true;
+                    }
+                }
+            }
+
+            return false;
+
+        });
         return (
             <div className="resource">
                 <Navbar/>
                 <div className="row">
                     <div className="col">
                         <form className="form-inline" id="search">
-                            <input className="form-control my-2" ref="search" placeholder="Search" onClick={this.searchMessageClosed.bind(this)} onChange={this.updateSearch.bind(this)}/>
+                            <input className="form-control my-2" ref="search" placeholder="Search" onClick={this.searchMessageClosed.bind(this)} onChange={this.searchMessage.bind(this)}/>
                         </form>
                     </div>
                     <div className="col">
@@ -125,7 +124,41 @@ class Resource extends Component {
                 </div>}
                 <div>
 
-                    <Table titles={['#', 'Name', 'URL', 'Memo', 'Stack']} objects={this.tableRow()}/>
+                    <table className="table table-dark">
+                        <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Url</th>
+                            <th scope="col">Memo</th>
+                            <th scope="col">Stack</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {filteredList.map( r =>
+                            <tr key={r.id}>
+                                <th scope="row">{r.id}</th>
+                                <td><Link to={"resources/edit/"+r.id}>{r.name}</Link></td>
+                                <td><a href={"http://"+r.url}>{r.url}</a></td>
+                                <td>{r.memo}</td>
+                                <td>
+                                    {r.languages.map((l) =>
+                                        <button type="button" value={l.name} id="stack" className="btn btn-info btn-sm" key={l.id} onClick={this.searchMessage.bind(this)}>{l.name}</button>
+                                    )}
+                                    {r.frameworks.map((f) =>
+                                        <button type="button" value={f.name} id="stack" className="btn btn-info btn-sm" key={f.id} onClick={this.searchMessage.bind(this)}>{f.name}</button>
+                                    )}
+                                    {r.technologies.map((t) =>
+                                        <button type="button" value={t.name} id="stack" className="btn btn-info btn-sm" key={t.id} onClick={this.searchMessage.bind(this)}>{t.name}</button>
+                                    )}
+                                    {r.dbs.map((d) =>
+                                        <button type="button" value={d.name} id="stack" className="btn btn-info btn-sm" key={d.id} onClick={this.searchMessage.bind(this)}>{d.name}</button>
+                                    )}
+                                </td>
+                            </tr>
+                        )}
+                        </tbody>
+                    </table>
 
                 </div>
                 <div style={{textAlign:'center'}}>
