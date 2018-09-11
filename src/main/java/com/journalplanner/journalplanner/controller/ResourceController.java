@@ -53,9 +53,4 @@ public class ResourceController {
     public void deleteResourceById(@PathVariable(value = "id") Integer id){
         resourceService.deleteResourceById(id);
     }
-
-    @GetMapping(path="/search/{search}")
-    public @ResponseBody Iterable<Resource> getResourcesBySearch(@PathVariable(value="search") String search){
-        return resourceService.getResourcesBySearch(search, search, search, search, search, search, search);
-    }
 }

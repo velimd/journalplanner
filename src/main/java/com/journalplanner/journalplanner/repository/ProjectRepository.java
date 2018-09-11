@@ -11,5 +11,4 @@ public interface ProjectRepository extends CrudRepository<Project, Long> {
     Set<Project> findAllByOrderByIdAsc();
     Project findById(Integer id);
     void deleteById(Integer id);
-    Set<Project> findByNameContainingIgnoreCaseOrUrlContainingIgnoreCaseOrLanguages_NameContainingIgnoreCaseOrFrameworks_NameContainingIgnoreCaseOrTechnologies_NameContainingIgnoreCaseOrDbs_NameContainingIgnoreCase(String name, String url, String language,String framework,String technology,String db);
 }

@@ -43,9 +43,4 @@ public class ProjectController {
     public void deleteProjectById(@PathVariable(value = "id") Integer id){
         projectService.deleteProjectById(id);
     }
-
-    @GetMapping(path="/search/{search}")
-    public @ResponseBody Iterable<Project> getGetProjectBySearch(@PathVariable(value="search") String search){
-        return projectService.getProjectsBySearch(search, search, search, search, search, search);
-    }
 }

@@ -28,8 +28,5 @@ public class ProjectService {
     public void deleteProjectById(Integer id){
         projectRepository.deleteById(id);
     }
-
-    public Set<Project> getProjectsBySearch(String name, String url, String language,String framework,String technology,String db){
-        return projectRepository.findByNameContainingIgnoreCaseOrUrlContainingIgnoreCaseOrLanguages_NameContainingIgnoreCaseOrFrameworks_NameContainingIgnoreCaseOrTechnologies_NameContainingIgnoreCaseOrDbs_NameContainingIgnoreCase(name, url, language, framework, technology, db);
-    }
+    
 }
