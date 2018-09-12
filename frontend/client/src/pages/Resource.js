@@ -33,7 +33,7 @@ class Resource extends Component {
     }
 
     searchMessage(e){
-        if(e.target.value!==""){
+        if(e.target.value !== ""){
             let message = `You search for ${e.target.value}`;
             this.setState({
                 search:{
@@ -49,7 +49,7 @@ class Resource extends Component {
     }
 
     searchMessageClosed(e){
-        this.refs.search.value="";
+        this.refs.search.value = "";
         this.setState({
             search:{
                 searchText:"",
