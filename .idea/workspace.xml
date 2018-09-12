@@ -71,7 +71,7 @@
           <entry key="gradle" value="8" />
           <entry key="html" value="17" />
           <entry key="iml" value="1" />
-          <entry key="java" value="282" />
+          <entry key="java" value="283" />
           <entry key="js" value="339" />
           <entry key="json" value="6" />
           <entry key="properties" value="16" />
@@ -86,8 +86,8 @@
           <entry key="Groovy" value="8" />
           <entry key="HTML" value="17" />
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="282" />
-          <entry key="JSON" value="6" />
+          <entry key="JAVA" value="283" />
+          <entry key="JSON" value="5" />
           <entry key="JavaScript" value="339" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="Properties" value="16" />
@@ -100,7 +100,7 @@
           <entry key="css" value="927" />
           <entry key="gradle" value="4" />
           <entry key="html" value="299" />
-          <entry key="java" value="8896" />
+          <entry key="java" value="8900" />
           <entry key="js" value="21891" />
           <entry key="properties" value="72" />
         </counts>
@@ -110,7 +110,7 @@
           <entry key="CSS" value="927" />
           <entry key="Groovy" value="4" />
           <entry key="HTML" value="299" />
-          <entry key="JAVA" value="8896" />
+          <entry key="JAVA" value="8900" />
           <entry key="JavaScript" value="21891" />
           <entry key="Properties" value="72" />
         </counts>
@@ -121,7 +121,17 @@
     <favorites_list name="journalplanner" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/journalplanner/journalplanner/JournalplannerApplicationTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -617,10 +627,10 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1920" />
-    <option name="y" value="25" />
-    <option name="width" value="1920" />
-    <option name="height" value="990" />
+    <option name="x" value="1877" />
+    <option name="y" value="540" />
+    <option name="width" value="1910" />
+    <option name="height" value="741" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -681,7 +691,7 @@
     <property name="RequestMappingsPanelWidth1" value="908" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536747808149" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536756756361" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -803,7 +813,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="307858000" />
+    <option name="totallyTimeSpent" value="309584000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="25" width="1920" height="990" extended-state="6" />
@@ -1201,8 +1211,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/journalplanner/journalplanner/JournalplannerApplicationTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="210">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
