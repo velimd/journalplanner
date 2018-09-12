@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc6d923d-4d4f-4518-b455-ef3e2065a658" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/journalplanner/journalplanner/JournalplannerApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/journalplanner/journalplanner/JournalplannerApplicationTests.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -103,7 +102,7 @@
           <entry key="css" value="927" />
           <entry key="gradle" value="4" />
           <entry key="html" value="299" />
-          <entry key="java" value="8900" />
+          <entry key="java" value="8902" />
           <entry key="js" value="21891" />
           <entry key="properties" value="72" />
         </counts>
@@ -113,7 +112,7 @@
           <entry key="CSS" value="927" />
           <entry key="Groovy" value="4" />
           <entry key="HTML" value="299" />
-          <entry key="JAVA" value="8900" />
+          <entry key="JAVA" value="8902" />
           <entry key="JavaScript" value="21891" />
           <entry key="Properties" value="72" />
         </counts>
@@ -125,25 +124,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/journalplanner/journalplanner/JournalplannerApplicationTests.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="165">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="19" selection-start-column="19" selection-end-column="19" />
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
             </state>
           </provider>
         </entry>
@@ -621,8 +606,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/MyConfiguration.java" />
         <option value="$PROJECT_DIR$/frontend/client/src/pages/Resource.js" />
         <option value="$PROJECT_DIR$/frontend/client/src/pages/Project.js" />
-        <option value="$PROJECT_DIR$/src/test/java/com/journalplanner/journalplanner/JournalplannerApplicationTests.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/test/java/com/journalplanner/journalplanner/JournalplannerApplicationTests.java" />
       </list>
     </option>
   </component>
@@ -682,7 +667,7 @@
     <property name="RequestMappingsPanelWidth1" value="908" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536757530783" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536757654972" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -804,7 +789,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="310358000" />
+    <option name="totallyTimeSpent" value="310473000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="25" width="1920" height="990" extended-state="6" />
@@ -1193,20 +1178,20 @@
     <entry file="file://$PROJECT_DIR$/frontend/client/package.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/journalplanner/journalplanner/JournalplannerApplicationTests.java">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        <state>
+          <caret column="19" lean-forward="true" selection-start-column="19" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/journalplanner/journalplanner/JournalplannerApplicationTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="19" selection-start-column="19" selection-end-column="19" />
+        <state relative-caret-position="165">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>
