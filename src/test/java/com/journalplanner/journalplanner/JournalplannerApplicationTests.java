@@ -13,5 +13,4 @@ public class JournalplannerApplicationTests {
 	public void contextLoads() {
 	}
 
-	//hi
 }
