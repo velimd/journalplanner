@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cc6d923d-4d4f-4518-b455-ef3e2065a658" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/out/test/classes/com/journalplanner/journalplanner/JournalplannerApplicationTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/client/src/pages/Project.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/client/src/pages/Project.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/client/src/pages/Resource.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/client/src/pages/Resource.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/journalplanner/journalplanner/MyConfiguration$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/journalplanner/journalplanner/MyConfiguration$1.class" afterDir="false" />
-    </list>
+    <list default="true" id="cc6d923d-4d4f-4518-b455-ef3e2065a658" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -46,7 +40,7 @@
     <session id="-1655409992">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="35" />
+          <entry key="project.closed" value="36" />
           <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.10" value="8" />
@@ -62,9 +56,9 @@
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.6" value="4" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.open.time.8" value="3" />
+          <entry key="project.open.time.8" value="4" />
           <entry key="project.open.time.9" value="2" />
-          <entry key="project.opened" value="41" />
+          <entry key="project.opened" value="42" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -125,12 +119,12 @@
     <favorites_list name="journalplanner" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/journalplanner/journalplanner/JournalplannerApplicationTests.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="195">
-              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
             </state>
           </provider>
         </entry>
@@ -423,7 +417,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="6144278852000" />
+        <entry key="$PROJECT_DIR$" value="6146985664000" />
         <entry key="$PROJECT_DIR$/.gradle" value="0" />
         <entry key="$PROJECT_DIR$/build.gradle" value="667107480" />
         <entry key="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" value="1613248354" />
@@ -625,18 +619,16 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="NodeModulesDirectoryManager">
-    <handled-path value="$PROJECT_DIR$/frontend/client/node_modules" />
-  </component>
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths>
       <path value="$PROJECT_DIR$/frontend/client/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="y" value="28" />
-    <option name="width" value="1910" />
-    <option name="height" value="761" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1920" />
+    <option name="y" value="25" />
+    <option name="width" value="1920" />
+    <option name="height" value="990" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -646,6 +638,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -684,8 +678,6 @@
         </subPane>
       </pane>
       <pane id="AndroidView" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -805,6 +797,7 @@
       <workItem from="1536578472276" duration="6779000" />
       <workItem from="1536650050014" duration="17677000" />
       <workItem from="1536738432390" duration="1697000" />
+      <workItem from="1536746438804" duration="5000" />
     </task>
     <servers />
   </component>
@@ -817,13 +810,12 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="306523000" />
+    <option name="totallyTimeSpent" value="306528000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="-2" width="1920" height="1017" extended-state="7" />
-    <editor active="true" />
+    <frame x="1920" y="25" width="1920" height="990" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49878934" visible="true" weight="0.27374598" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49878934" visible="true" weight="0.2769477" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -1221,7 +1213,7 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/com/journalplanner/journalplanner/JournalplannerApplicationTests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>
