@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cc6d923d-4d4f-4518-b455-ef3e2065a658" name="Default Changelist" comment="" />
+    <list default="true" id="cc6d923d-4d4f-4518-b455-ef3e2065a658" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/journalplanner/journalplanner/JournalplannerApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/journalplanner/journalplanner/JournalplannerApplicationTests.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -69,7 +71,7 @@
           <entry key="gradle" value="8" />
           <entry key="html" value="17" />
           <entry key="iml" value="1" />
-          <entry key="java" value="282" />
+          <entry key="java" value="283" />
           <entry key="js" value="339" />
           <entry key="json" value="5" />
           <entry key="properties" value="16" />
@@ -84,7 +86,7 @@
           <entry key="Groovy" value="8" />
           <entry key="HTML" value="17" />
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="282" />
+          <entry key="JAVA" value="283" />
           <entry key="JSON" value="5" />
           <entry key="JavaScript" value="339" />
           <entry key="PLAIN_TEXT" value="1" />
@@ -98,7 +100,7 @@
           <entry key="css" value="927" />
           <entry key="gradle" value="4" />
           <entry key="html" value="299" />
-          <entry key="java" value="8895" />
+          <entry key="java" value="8900" />
           <entry key="js" value="21891" />
           <entry key="properties" value="72" />
         </counts>
@@ -108,7 +110,7 @@
           <entry key="CSS" value="927" />
           <entry key="Groovy" value="4" />
           <entry key="HTML" value="299" />
-          <entry key="JAVA" value="8895" />
+          <entry key="JAVA" value="8900" />
           <entry key="JavaScript" value="21891" />
           <entry key="Properties" value="72" />
         </counts>
@@ -123,8 +125,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/journalplanner/journalplanner/JournalplannerApplicationTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="16" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="180">
+              <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -553,7 +555,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/controller/TechnologyController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/controller/LanguageController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/controller/IndexController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/model/Technology.java" />
@@ -604,6 +605,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/journalplanner/journalplanner/MyConfiguration.java" />
         <option value="$PROJECT_DIR$/frontend/client/src/pages/Resource.js" />
         <option value="$PROJECT_DIR$/frontend/client/src/pages/Project.js" />
+        <option value="$PROJECT_DIR$/src/test/java/com/journalplanner/journalplanner/JournalplannerApplicationTests.java" />
       </list>
     </option>
   </component>
@@ -638,8 +640,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -678,6 +678,8 @@
         </subPane>
       </pane>
       <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -689,7 +691,7 @@
     <property name="RequestMappingsPanelWidth1" value="908" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536683343800" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536748119804" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -810,12 +812,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="306528000" />
+    <option name="totallyTimeSpent" value="306545000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="25" width="1920" height="990" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49878934" visible="true" weight="0.2769477" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49878934" visible="true" weight="0.2801494" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -1212,8 +1215,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/journalplanner/journalplanner/JournalplannerApplicationTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="180">
+          <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
         </state>
       </provider>
     </entry>
