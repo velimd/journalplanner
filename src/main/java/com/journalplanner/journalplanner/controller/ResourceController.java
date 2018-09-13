@@ -48,12 +48,21 @@ public class ResourceController {
     @PostMapping("/add")
     @ResponseStatus(HttpStatus.CREATED)
     public ResponseEntity addResource(@RequestBody Resource resource){
-        if (resource.getName() != null && resource.getUrl() != null){
-            Resource newResource = resourceService.createResource(resource);
-            return new ResponseEntity(newResource, HttpStatus.OK);
+        if(resourceService.getResourceById(resource.getId())==null) {
+            if(resource.getId()==null) {
+                if (resource.getName() != null && resource.getUrl() != null) {
+                    Resource newResource = resourceService.createResource(resource);
+                    return new ResponseEntity(newResource, HttpStatus.CREATED);
+                } else {
+                    return new ResponseEntity("Please Enter Name AND Url", HttpStatus.NOT_ACCEPTABLE);
+                }
+            }
+            else {
+                return new ResponseEntity("Please Remove Id", HttpStatus.NOT_ACCEPTABLE);
+            }
         }
         else {
-            return new ResponseEntity("Please Enter Name AND Url", HttpStatus.NOT_ACCEPTABLE);
+            return new ResponseEntity("The Resource With that Idea Already Exist", HttpStatus.NOT_ACCEPTABLE);
         }
     }
 
