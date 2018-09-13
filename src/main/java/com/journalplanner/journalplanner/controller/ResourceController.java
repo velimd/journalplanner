@@ -1,7 +1,9 @@
 package com.journalplanner.journalplanner.controller;
 
+import org.aspectj.bridge.Message;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import com.journalplanner.journalplanner.model.Resource;
@@ -12,6 +14,7 @@ import javax.transaction.Transactional;
 @RestController
 @RequestMapping(path="/api/resource")
 public class ResourceController {
+
     @Autowired
     private ResourceService resourceService;
 
@@ -31,26 +34,50 @@ public class ResourceController {
     }
 
     @GetMapping(path = "/{id}")
-    public @ResponseBody Resource getResourceById(@PathVariable(value="id") Integer id){
-        return resourceService.getResourceById(id); //if statement to return message if the id doesnt exist.
+    public ResponseEntity getResourceById(@PathVariable(value="id") Integer id){
+
+        Resource resource = resourceService.getResourceById(id);
+        if (resource != null){
+            return new ResponseEntity(resource, HttpStatus.OK);
+        }
+        else {
+            return new ResponseEntity("Resource Not Found", HttpStatus.NOT_FOUND);
+        }
     }
 
     @PostMapping("/add")
     @ResponseStatus(HttpStatus.CREATED)
-    public Resource addResource(@RequestBody Resource resource){
-        return resourceService.createResource(resource);
+    public ResponseEntity addResource(@RequestBody Resource resource){
+        if (resource.getName() != null && resource.getUrl() != null){
+            Resource newResource = resourceService.createResource(resource);
+            return new ResponseEntity(newResource, HttpStatus.OK);
+        }
+        else {
+            return new ResponseEntity("Please Enter Name AND Url", HttpStatus.NOT_ACCEPTABLE);
+        }
     }
 
     @PutMapping("/{id}")
-    public Resource updateResource(@PathVariable(value = "id") Integer id, @RequestBody Resource resource){
-        resource.setId(id);
-        return resourceService.createResource(resource);
-
+    public ResponseEntity updateResource(@PathVariable(value = "id") Integer id, @RequestBody Resource resource){
+        if(resourceService.getResourceById(id) != null){
+            resource.setId(id);
+            Resource newResource = resourceService.createResource(resource);
+            return new ResponseEntity(newResource, HttpStatus.OK);
+        }
+        else {
+            return new ResponseEntity("Resource Not Found", HttpStatus.NOT_FOUND);
+        }
     }
 
     @Transactional
     @DeleteMapping(path = "delete/{id}")
-    public void deleteResourceById(@PathVariable(value = "id") Integer id){
-        resourceService.deleteResourceById(id);
+    public ResponseEntity deleteResourceById(@PathVariable(value = "id") Integer id){
+        if (resourceService.getResourceById(id) != null){
+            resourceService.deleteResourceById(id);
+            return new ResponseEntity("Deleted Resource", HttpStatus.OK);
+        }
+        else {
+            return new ResponseEntity("Resource Not Found", HttpStatus.NOT_FOUND);
+        }
     }
 }
