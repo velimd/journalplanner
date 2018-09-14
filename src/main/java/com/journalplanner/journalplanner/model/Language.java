@@ -4,8 +4,8 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
 @Table(name = "language")
@@ -20,11 +20,11 @@ public class Language {
 
     @ManyToMany(fetch = FetchType.LAZY, mappedBy = "languages")
     @JsonIgnoreProperties({"languages","frameworks","technologies","dbs"})
-    private List<Resource> resources = new ArrayList<>();
+    private Set<Resource> resources = new HashSet<>();
 
     @ManyToMany(fetch = FetchType.LAZY, mappedBy = "languages")
     @JsonIgnoreProperties({"languages","frameworks","technologies","dbs"})
-    private List<Project> projects = new ArrayList<>();
+    private Set<Project> projects = new HashSet<>();
 
     public Integer getId() {
         return id;
@@ -38,16 +38,16 @@ public class Language {
     public void setName(String name) {
         this.name = name;
     }
-    public List<Resource> getResources() {
+    public Set<Resource> getResources() {
         return resources;
     }
-    public void setResources(List<Resource> resources) {
+    public void setResources(Set<Resource> resources) {
         this.resources = resources;
     }
-    public List<Project> getProjects() {
+    public Set<Project> getProjects() {
         return projects;
     }
-    public void setProjects(List<Project> projects) {
+    public void setProjects(Set<Project> projects) {
         this.projects = projects;
     }
 }

@@ -6,14 +6,14 @@ import org.springframework.stereotype.Service;
 
 import com.journalplanner.journalplanner.model.Db;
 
-import java.util.List;
+import java.util.Set;
 
 @Service
 public class DbService {
     @Autowired
     private DbRepository dbRepository;
 
-    public List<Db> getAllDbs(){
+    public Set<Db> getAllDbs(){
         return dbRepository.findAllByOrderByIdAsc();
     }
 

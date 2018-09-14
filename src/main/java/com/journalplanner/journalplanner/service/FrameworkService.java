@@ -6,14 +6,14 @@ import org.springframework.stereotype.Service;
 
 import com.journalplanner.journalplanner.model.Framework;
 
-import java.util.List;
+import java.util.Set;
 
 @Service
 public class FrameworkService {
     @Autowired
     private FrameworkRepository frameworkRepository;
 
-    public List<Framework> getAllFrameworks(){
+    public Set<Framework> getAllFrameworks(){
         return frameworkRepository.findAllByOrderByIdAsc();
     }
 

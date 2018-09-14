@@ -6,14 +6,14 @@ import org.springframework.stereotype.Service;
 
 import com.journalplanner.journalplanner.model.Resource;
 
-import java.util.List;
+import java.util.Set;
 
 @Service
 public class ResourceService {
     @Autowired
     private ResourceRepository resourceRepository;
 
-    public List<Resource> getAllResources(){
+    public Set<Resource> getAllResources(){
         return resourceRepository.findAllByOrderByIdAsc();
     }
 
