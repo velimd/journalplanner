@@ -24,9 +24,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.ArgumentMatchers.anyInt;
 import static org.mockito.ArgumentMatchers.anyObject;
 import static org.mockito.BDDMockito.given;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.put;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 
@@ -257,11 +255,46 @@ public class ResourceControllerTest {
         testResource6.setName("test post resource");
 
         String resourceJSON = mapper.writeValueAsString(testResource6);
-
         given(resourceService.createResource(anyObject())).willReturn(testResource6);
 
         MvcResult result = mockMvc.perform(put(url+"1").contentType(MediaType.APPLICATION_JSON).content(resourceJSON)).andExpect(status().is2xxSuccessful()).andReturn();
 
-        System.out.println(result.getResponse().getContentAsString());
+        Resource resultResources = mapper.readValue(result.getResponse().getContentAsString(), Resource.class);
+
+        assertThat(resultResources).isEqualToComparingFieldByField(testResource6);
+    }
+
+    @Test
+    public void testPutResourceWithNonExistingId() throws Exception {
+        Resource testResource7 = new Resource();
+        testResource7.setName("test post resource");
+
+        String resourceJSON = mapper.writeValueAsString(testResource7);
+        given(resourceService.createResource(anyObject())).willReturn(testResource7);
+
+        MvcResult result = mockMvc.perform(put(url+"100").contentType(MediaType.APPLICATION_JSON).content(resourceJSON)).andReturn();
+
+        assertEquals(result.getResponse().getContentAsString(), "Resource Not Found");
+        assertEquals(result.getResponse().getStatus(), 404);
+    }
+
+    @Test
+    public void testDeleteResource() throws Exception {
+//        given(resourceService.deleteResourceById(anyInt())).willReturn(HttpStatus)
+
+        MvcResult result = mockMvc.perform(delete(url+"delete/1")).andReturn();
+
+        assertEquals(result.getResponse().getStatus(), 200);
+        assertEquals(result.getResponse().getContentAsString(), "Deleted Resource");
+    }
+
+    @Test
+    public void testDeleteNonExistingResource() throws Exception {
+//        given(resourceService.deleteResourceById(anyInt())).willReturn(HttpStatus)
+
+        MvcResult result = mockMvc.perform(delete(url+"delete/3")).andReturn();
+
+        assertEquals(result.getResponse().getStatus(), 404);
+        assertEquals(result.getResponse().getContentAsString(), "Resource Not Found");
     }
 }
