@@ -6,14 +6,14 @@ import org.springframework.stereotype.Service;
 
 import com.journalplanner.journalplanner.model.Language;
 
-import java.util.Set;
+import java.util.List;
 
 @Service
 public class LanguageService {
     @Autowired
     private LanguageRepository languageRepository;
 
-    public Set<Language> getAllLanguages(){
+    public List<Language> getAllLanguages(){
         return languageRepository.findAllByOrderByIdAsc();
     }
 

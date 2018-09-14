@@ -6,14 +6,14 @@ import org.springframework.stereotype.Service;
 
 import com.journalplanner.journalplanner.model.Project;
 
-import java.util.Set;
+import java.util.List;
 
 @Service
 public class ProjectService {
     @Autowired
     private ProjectRepository projectRepository;
 
-    public Set<Project> getAllProjects(){
+    public List<Project> getAllProjects(){
         return projectRepository.findAllByOrderByIdAsc();
     }
 

@@ -1,12 +1,11 @@
 package com.journalplanner.journalplanner.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import org.springframework.core.annotation.Order;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name="resource")
@@ -30,28 +29,28 @@ public class Resource {
     @Column(name = "language", nullable = true)
     @JsonIgnoreProperties({"projects", "resources"})
     @OrderBy("id")
-    private Set<Language> languages = new HashSet<>();
+    private List<Language> languages = new ArrayList<>();
 
     @ManyToMany(fetch = FetchType.LAZY)
     @JoinTable(name = "resource_framework", joinColumns = { @JoinColumn(name = "resource_id") }, inverseJoinColumns = { @JoinColumn(name = "framework_id") })
     @Column(name = "framework", nullable = true)
     @JsonIgnoreProperties({"projects", "resources"})
     @OrderBy("id")
-    private Set<Framework> frameworks = new HashSet<>();
+    private List<Framework> frameworks = new ArrayList<>();
 
     @ManyToMany(fetch = FetchType.LAZY)
     @JoinTable(name = "resource_technology", joinColumns = { @JoinColumn(name = "resource_id") }, inverseJoinColumns = { @JoinColumn(name = "technology_id") })
     @Column(name = "technology", nullable = true)
     @JsonIgnoreProperties({"projects", "resources"})
     @OrderBy("id")
-    private Set<Technology> technologies = new HashSet<>();
+    private List<Technology> technologies = new ArrayList<>();
 
     @ManyToMany(fetch = FetchType.LAZY)
     @JoinTable(name = "resource_database", joinColumns = { @JoinColumn(name = "resource_id") }, inverseJoinColumns = { @JoinColumn(name = "database_id") })
     @Column(name = "db", nullable = true)
     @JsonIgnoreProperties({"projects", "resources"})
     @OrderBy("id")
-    private Set<Db> dbs = new HashSet<>();
+    private List<Db> dbs = new ArrayList<>();
 
     public Integer getId(){
         return id;
@@ -76,28 +75,28 @@ public class Resource {
     public void setMemo(String memo) {
         this.memo = memo;
     }
-    public Set<Language> getLanguages() {
+    public List<Language> getLanguages() {
         return languages;
     }
-    public void setLanguages(Set<Language> languages) {
+    public void setLanguages(List<Language> languages) {
         this.languages = languages;
     }
-    public Set<Framework> getFrameworks() {
+    public List<Framework> getFrameworks() {
         return frameworks;
     }
-    public void setFrameworks(Set<Framework> frameworks) {
+    public void setFrameworks(List<Framework> frameworks) {
         this.frameworks = frameworks;
     }
-    public Set<Technology> getTechnologies() {
+    public List<Technology> getTechnologies() {
         return technologies;
     }
-    public void setTechnologies(Set<Technology> technologies) {
+    public void setTechnologies(List<Technology> technologies) {
         this.technologies = technologies;
     }
-    public Set<Db> getDbs() {
+    public List<Db> getDbs() {
         return dbs;
     }
-    public void setDbs(Set<Db> dbs) {
+    public void setDbs(List<Db> dbs) {
         this.dbs = dbs;
     }
 }
