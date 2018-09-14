@@ -6,14 +6,14 @@ import org.springframework.stereotype.Service;
 
 import com.journalplanner.journalplanner.model.Technology;
 
-import java.util.Set;
+import java.util.List;
 
 @Service
 public class TechnologyService {
     @Autowired
     private TechnologyRepository technologyRepository;
 
-    public Set<Technology> getAllTechnologies(){
+    public List<Technology> getAllTechnologies(){
         return technologyRepository.findAllByOrderByIdAsc();
     }
 
