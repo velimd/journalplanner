@@ -1,6 +1,5 @@
 package com.journalplanner.journalplanner.controller;
 
-import org.aspectj.bridge.Message;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -68,7 +67,29 @@ public class ResourceController {
 
     @PutMapping("/{id}")
     public ResponseEntity updateResource(@PathVariable(value = "id") Integer id, @RequestBody Resource resource){
-        if(resourceService.getResourceById(id) != null){
+        Resource oldResource = resourceService.getResourceById(id);
+        if(oldResource != null){
+            if (resource.getName()==null){
+                resource.setName(oldResource.getName());
+            }
+            if (resource.getUrl()==null){
+                resource.setUrl(oldResource.getUrl());
+            }
+            if (resource.getMemo()==null){
+                resource.setMemo(oldResource.getMemo());
+            }
+            if (resource.getLanguages()==null){
+                resource.setLanguages(oldResource.getLanguages());
+            }
+            if (resource.getFrameworks()==null){
+                resource.setFrameworks(oldResource.getFrameworks());
+            }
+            if (resource.getTechnologies()==null){
+                resource.setTechnologies(oldResource.getTechnologies());
+            }
+            if (resource.getDbs()==null){
+                resource.setDbs(oldResource.getDbs());
+            }
             resource.setId(id);
             Resource newResource = resourceService.createResource(resource);
             return new ResponseEntity(newResource, HttpStatus.OK);

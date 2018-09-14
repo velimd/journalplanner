@@ -18,8 +18,6 @@ import org.springframework.test.web.servlet.MvcResult;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 
 import java.util.*;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 import static junit.framework.TestCase.assertEquals;
 import static org.assertj.core.api.Assertions.assertThat;
@@ -28,6 +26,7 @@ import static org.mockito.ArgumentMatchers.anyObject;
 import static org.mockito.BDDMockito.given;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.put;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 
@@ -49,7 +48,7 @@ public class ResourceControllerTest {
 
     private ObjectMapper mapper = new ObjectMapper();
 
-    Set<Resource> testResources = new HashSet<>();
+    List<Resource> testResources = new ArrayList<>();
 
     @Before
     public void setup(){
@@ -58,14 +57,14 @@ public class ResourceControllerTest {
         Resource testResource = new Resource();
         testResource.setId(1);
         testResource.setName("testResource1");
-        testResource.setMemo("testing memo 1");
+        testResource.setUrl("testing memo 1");
 
         Resource testResource2 = new Resource();
         testResource2.setId(2);
         testResource2.setName("test Resource 2");
-        testResource2.setMemo("testing memo 2");
+        testResource2.setUrl("testing memo 2");
 
-        testResources = Stream.of(testResource, testResource2).collect(Collectors.toSet());
+        testResources = Arrays.asList(testResource, testResource2);
         given(resourceService.getAllResources()).willReturn(testResources);
         given(resourceService.getResourceById(1)).willReturn(testResource);
         given(resourceService.getResourceById(2)).willReturn(testResource2);
@@ -73,19 +72,20 @@ public class ResourceControllerTest {
 
     @Test
     public void testGetAllResources() throws Exception {
-        given(resourceService.getAllResources()).willReturn(testResources);
         MvcResult result = mockMvc.perform(get(url+"all"))
                 .andReturn();
 
-        Set<Resource> resultResources = mapper.readValue(result.getResponse().getContentAsString(),
-                mapper.getTypeFactory().constructCollectionType(Set.class, Resource.class));
+        List<Resource> resultResources = mapper.readValue(result.getResponse().getContentAsString(),
+                mapper.getTypeFactory().constructCollectionType(List.class, Resource.class));
         assertEquals(resultResources.size(), testResources.size());
     }
 
     @Test
     public void testGetAllResourcesAndStatus200() throws Exception {
-        mockMvc.perform(get(url+"all"))
+        MvcResult result = mockMvc.perform(get(url+"all"))
                 .andExpect(status().is2xxSuccessful()).andReturn();
+
+        assertEquals(result.getResponse().getStatus(), 200);
     }
 
     @Test
@@ -106,11 +106,23 @@ public class ResourceControllerTest {
 
         given(resourceService.getResourceById(anyInt())).willReturn(testResource3);
 
-        MvcResult result = mockMvc.perform(get(url+"3")).andReturn();
+        MvcResult result = mockMvc.perform(get(url+"3")).andExpect(status().is2xxSuccessful()).andReturn();
 
         Resource resultResources = mapper.readValue(result.getResponse().getContentAsString(), Resource.class);
 
         assertThat(resultResources).isEqualToComparingFieldByField(testResource3);
+    }
+
+    @Test
+    public void testGetResourceByIdForExistingResource() throws Exception {
+        given(resourceService.getResourceById(anyInt())).willReturn(testResources.get(0));
+
+        MvcResult result = mockMvc.perform(get(url+"1")).andReturn();
+
+        Resource resource = mapper.readValue(result.getResponse().getContentAsString(), Resource.class);
+
+        assertEquals(resource.getName(), testResources.get(0).getName());
+        assertThat(resource).isEqualToComparingFieldByField(testResources.get(0));
     }
 
     @Test
@@ -237,5 +249,19 @@ public class ResourceControllerTest {
 
         assertEquals(result.getResponse().getStatus(), 406);
         assertEquals(result.getResponse().getContentAsString(), "Please Remove Id");
+    }
+
+    @Test
+    public void testPutResourceWithExistingId() throws Exception {
+        Resource testResource6 = new Resource();
+        testResource6.setName("test post resource");
+
+        String resourceJSON = mapper.writeValueAsString(testResource6);
+
+        given(resourceService.createResource(anyObject())).willReturn(testResource6);
+
+        MvcResult result = mockMvc.perform(put(url+"1").contentType(MediaType.APPLICATION_JSON).content(resourceJSON)).andExpect(status().is2xxSuccessful()).andReturn();
+
+        System.out.println(result.getResponse().getContentAsString());
     }
 }
