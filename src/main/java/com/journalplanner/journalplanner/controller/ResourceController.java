@@ -78,18 +78,6 @@ public class ResourceController {
             if (resource.getMemo()==null){
                 resource.setMemo(oldResource.getMemo());
             }
-            if (resource.getLanguages()==null){
-                resource.setLanguages(oldResource.getLanguages());
-            }
-            if (resource.getFrameworks()==null){
-                resource.setFrameworks(oldResource.getFrameworks());
-            }
-            if (resource.getTechnologies()==null){
-                resource.setTechnologies(oldResource.getTechnologies());
-            }
-            if (resource.getDbs()==null){
-                resource.setDbs(oldResource.getDbs());
-            }
             resource.setId(id);
             Resource newResource = resourceService.createResource(resource);
             return new ResponseEntity(newResource, HttpStatus.OK);
